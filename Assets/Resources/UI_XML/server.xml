@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+    <TotalInfo DlgCnt="1">
+		<DlgInfo ID="3" TextureCnt="3" ControlCnt="26">
+			<TextureInfo TexturePath="sever_channel2.dds" TextureIndex="1" />
+			<TextureInfo TexturePath="common_ui.dds" TextureIndex="3" />
+			<TextureInfo TexturePath="sever_channel2_2.dds" TextureIndex="4" />
+			
+			
+			<Component Type="Image" Id="100" ParentsId="3" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="1024" Height="768" Text="" Note="서버배경" Visible="true"> 
+				<SubElement ElementName="Main Button" Left="0" Top="256" Right="1024" Bottom="1024" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="101" ParentsId="3" Layer="1" Xpos="417" Xpos2="417" Ypos="121" Ypos2="121" Width="198" Height="62" Text="" Note="서버선택버튼" Visible="true"> 
+				<SubElement ElementName="Main Button" Left="0" Top="156" Right="198" Bottom="218" TextureNum="4" />
+			</Component>
+
+			<Component Type="Image" Id="103" ParentsId="3" Layer="1" Xpos="417" Xpos2="417" Ypos="121" Ypos2="121" Width="198" Height="62" Text="" Note="채널선택버튼" Visible="true"> 
+				<SubElement ElementName="Main Button" Left="198" Top="156" Right="396" Bottom="218" TextureNum="4" />
+			</Component>
+
+			<Component Type="Button" Id="102" ParentsId="3" Layer="1" Xpos="894" Xpos2="894" Ypos="14" Ypos2="14" Width="115" Height="56" Text="" Note="종료버튼" Visible="true" Command="MAIN_SEVER_EXIT">
+				<SubElement ElementName="Main Button" Left="535" Top="198" Right="650" Bottom="254" TextureNum="1" RectType="Right" />
+			</Component>
+
+			<Component Type="Image" Id="104" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="371" Height="199" Text="" Note="종료확인 질문창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1677" Top="560" Right="2048" Bottom="759" TextureNum="3" />
+				<SubElement ElementName="Sub Button" Xpos="38" Xpos2="38" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="268" Right="139" Bottom="306" TextureNum="3" Visible="true" Command="SERVER_EXITQUES_OK" />
+				<SubElement ElementName="Sub Button" Xpos="191" Xpos2="191" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="582" Right="139" Bottom="621" TextureNum="3" Visible="true" Command="SERVER_EXITQUES_CANCEL" />
+				<SubElement ElementName="Sub Static" Xpos="35" Xpos2="35" Ypos="70" Ypos2="70" Width="300" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+
+			<Component Type="Image" Id="105" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="371" Height="199" Text="" Note="경고창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1677" Top="560" Right="2048" Bottom="759" TextureNum="3" />
+				<SubElement ElementName="Sub Button" Xpos="110" Xpos2="110" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="268" Right="139" Bottom="306" TextureNum="3" Visible="true" Command="SERVER_POP_NOTE_OK" />
+				<SubElement ElementName="Sub Static" Xpos="35" Xpos2="35" Ypos="70" Ypos2="70" Width="300" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+
+
+			<Component Type="Button" Id="201" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="205" Ypos2="205" Width="472" Height="39" Text="" Note="서버선택1" Visible="true" Command="MAIN_SEVER_SELECT_1">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="4" RectType="Bottom" />
+				<SubElement ElementName="Sub Image" Xpos="158" Xpos2="158" Ypos="0" Ypos2="0" Width="156" Height="39" Left="473" Top="0" Right="629" Bottom="39" TextureNum="4" Note="서버 이름" />
+			</Component>
+			<Component Type="Button" Id="202" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="248" Ypos2="248" Width="472" Height="39" Text="" Note="서버선택2" Visible="true" Command="MAIN_SEVER_SELECT_2">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="4" RectType="Bottom" />		
+				<SubElement ElementName="Sub Image" Xpos="158" Xpos2="158" Ypos="0" Ypos2="0" Width="156" Height="39" Left="629" Top="0" Right="785" Bottom="39" TextureNum="4" Note="서버 이름" />				
+			</Component>
+			<Component Type="Button" Id="203" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="291" Ypos2="291" Width="472" Height="39" Text="" Note="서버선택3" Visible="true" Command="MAIN_SEVER_SELECT_3">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="4" RectType="Bottom" />
+				<SubElement ElementName="Sub Image" Xpos="158" Xpos2="158" Ypos="0" Ypos2="0" Width="156" Height="39" Left="785" Top="0" Right="941" Bottom="39" TextureNum="4" Note="서버 이름" />				
+			</Component>
+			<Component Type="Button" Id="204" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="334" Ypos2="334" Width="472" Height="39" Text="" Note="서버선택4" Visible="true" Command="MAIN_SEVER_SELECT_4">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="4" RectType="Bottom" />
+				<SubElement ElementName="Sub Image" Xpos="158" Xpos2="158" Ypos="0" Ypos2="0" Width="156" Height="39" Left="473" Top="39" Right="629" Bottom="78" TextureNum="4" Note="서버 이름" />				
+			</Component>
+			<Component Type="Button" Id="205" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="377" Ypos2="377" Width="472" Height="39" Text="" Note="서버선택5" Visible="true" Command="MAIN_SEVER_SELECT_5">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="4" RectType="Bottom" />
+				<SubElement ElementName="Sub Image" Xpos="158" Xpos2="158" Ypos="0" Ypos2="0" Width="156" Height="39" Left="629" Top="39" Right="785" Bottom="78" TextureNum="4" Note="서버 이름" />				
+			</Component>
+			<Component Type="Button" Id="206" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="420" Ypos2="420" Width="472" Height="39" Text="" Note="서버선택6" Visible="true" Command="MAIN_SEVER_SELECT_6">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="4" RectType="Bottom" />
+				<SubElement ElementName="Sub Image" Xpos="158" Xpos2="158" Ypos="0" Ypos2="0" Width="156" Height="39" Left="785" Top="39" Right="941" Bottom="78" TextureNum="4" Note="서버 이름" />				
+			</Component>
+			<Component Type="Button" Id="207" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="463" Ypos2="463" Width="472" Height="39" Text="" Note="서버선택7" Visible="true" Command="MAIN_SEVER_SELECT_7">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="4" RectType="Bottom" />
+				<SubElement ElementName="Sub Image" Xpos="158" Xpos2="158" Ypos="0" Ypos2="0" Width="156" Height="39" Left="473" Top="78" Right="629" Bottom="117" TextureNum="4" Note="서버 이름" />				
+			</Component>
+			<Component Type="Button" Id="208" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="506" Ypos2="506" Width="472" Height="39" Text="" Note="서버선택8" Visible="true" Command="MAIN_SEVER_SELECT_8">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="4" RectType="Bottom" />
+				<SubElement ElementName="Sub Image" Xpos="158" Xpos2="158" Ypos="0" Ypos2="0" Width="156" Height="39" Left="629" Top="78" Right="785" Bottom="117" TextureNum="4" Note="서버 이름" />				
+			</Component>
+			<Component Type="Button" Id="209" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="549" Ypos2="549" Width="472" Height="39" Text="" Note="서버선택9" Visible="true" Command="MAIN_SEVER_SELECT_9">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="4" RectType="Bottom" />
+				<SubElement ElementName="Sub Image" Xpos="158" Xpos2="158" Ypos="0" Ypos2="0" Width="156" Height="39" Left="785" Top="78" Right="941" Bottom="117" TextureNum="4" Note="서버 이름" />				
+			</Component>
+			<Component Type="Button" Id="210" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="592" Ypos2="592" Width="472" Height="39" Text="" Note="서버선택10" Visible="true" Command="MAIN_SEVER_SELECT_10">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="4" RectType="Bottom" />
+				<SubElement ElementName="Sub Image" Xpos="158" Xpos2="158" Ypos="0" Ypos2="0" Width="156" Height="39" Left="473" Top="117" Right="629" Bottom="156" TextureNum="4" Note="서버 이름" />				
+			</Component>
+
+
+				
+
+
+			<Component Type="Button" Id="401" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="205" Ypos2="205" Width="472" Height="39" Text="" Note="채널선택1" Visible="true" Command="MAIN_CHANNEL_SELECT_1">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="1" RectType="Bottom"/>
+				<SubElement ElementName="Sub Image" Xpos="223" Xpos2="223" Ypos="8" Ypos2="8" Width="27" Height="25" Left="889" Top="158" Right="914"  Bottom="183" Visible="false" DrawNumWidth="1" TextureNum="1" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="410" Xpos2="410" Ypos="0" Ypos2="0" Width="56" Height="39" Left="473" Top="0" Right="529" Bottom="39" Visible="false" DrawNumWidth="1" TextureNum="1" Note="채널 상태" />
+				<SubElement ElementName="Sub Image" Xpos="6" Xpos2="6" Ypos="9" Ypos2="9" Width="19" Height="18" Left="969" Top="158" Right="988" Bottom="176" Visible="false" TextureNum="1" Note="포커스" />
+				<SubElement ElementName="Sub Image" Xpos="25" Xpos2="25" Ypos="0" Ypos2="0" Width="127" Height="39" Left="0" Top="118" Right="127" Bottom="157" TextureNum="1" Note="채널 이름" />
+			</Component>
+			<Component Type="Button" Id="402" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="248" Ypos2="248" Width="472" Height="39" Text="" Note="채널선택2" Visible="true" Command="MAIN_CHANNEL_SELECT_2">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="1" RectType="Bottom"/>
+				<SubElement ElementName="Sub Image" Xpos="223" Xpos2="223" Ypos="8" Ypos2="8" Width="27" Height="25" Left="889" Top="158" Right="914"  Bottom="183" Visible="false" DrawNumWidth="1" TextureNum="1" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="410" Xpos2="410" Ypos="0" Ypos2="0" Width="56" Height="39" Left="473" Top="0" Right="529" Bottom="39" Visible="false" DrawNumWidth="1" TextureNum="1" Note="채널 상태" />
+				<SubElement ElementName="Sub Image" Xpos="6" Xpos2="6" Ypos="9" Ypos2="9" Width="19" Height="18" Left="969" Top="158" Right="988" Bottom="176" Visible="false" TextureNum="1" Note="포커스" />
+				<SubElement ElementName="Sub Image" Xpos="25" Xpos2="25" Ypos="0" Ypos2="0" Width="127" Height="39" Left="127" Top="118" Right="254" Bottom="157" TextureNum="1" Note="채널 이름" />
+			</Component>
+			<Component Type="Button" Id="403" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="291" Ypos2="291" Width="472" Height="39" Text="" Note="채널선택3" Visible="true" Command="MAIN_CHANNEL_SELECT_3">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="1" RectType="Bottom"/>
+				<SubElement ElementName="Sub Image" Xpos="223" Xpos2="223" Ypos="8" Ypos2="8" Width="27" Height="25" Left="889" Top="158" Right="914"  Bottom="183" Visible="false" DrawNumWidth="1" TextureNum="1" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="410" Xpos2="410" Ypos="0" Ypos2="0" Width="56" Height="39" Left="473" Top="0" Right="529" Bottom="39" Visible="false" DrawNumWidth="1" TextureNum="1" Note="채널 상태" />
+				<SubElement ElementName="Sub Image" Xpos="6" Xpos2="6" Ypos="9" Ypos2="9" Width="19" Height="18" Left="969" Top="158" Right="988" Bottom="176" Visible="false" TextureNum="1" Note="포커스" />
+				<SubElement ElementName="Sub Image" Xpos="25" Xpos2="25" Ypos="0" Ypos2="0" Width="127" Height="39"  Left="254" Top="118" Right="381" Bottom="157" TextureNum="1" Note="채널 이름" />
+			</Component>
+			<Component Type="Button" Id="404" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="334" Ypos2="334" Width="472" Height="39" Text="" Note="채널선택4" Visible="true" Command="MAIN_CHANNEL_SELECT_4">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="1" RectType="Bottom"/>
+				<SubElement ElementName="Sub Image" Xpos="223" Xpos2="223" Ypos="8" Ypos2="8" Width="27" Height="25" Left="889" Top="158" Right="914"  Bottom="183" Visible="false" DrawNumWidth="1" TextureNum="1" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="410" Xpos2="410" Ypos="0" Ypos2="0" Width="56" Height="39" Left="473" Top="0" Right="529" Bottom="39" Visible="false" DrawNumWidth="1" TextureNum="1" Note="채널 상태" />
+				<SubElement ElementName="Sub Image" Xpos="6" Xpos2="6" Ypos="9" Ypos2="9" Width="19" Height="18" Left="969" Top="158" Right="988" Bottom="176" Visible="false" TextureNum="1" Note="포커스" />
+				<SubElement ElementName="Sub Image" Xpos="25" Xpos2="25" Ypos="0" Ypos2="0" Width="127" Height="39" Left="381" Top="118" Right="508" Bottom="157" TextureNum="1" Note="채널 이름" />
+			</Component>
+			<Component Type="Button" Id="405" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="377" Ypos2="377" Width="472" Height="39" Text="" Note="채널선택5" Visible="true" Command="MAIN_CHANNEL_SELECT_5">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="1" RectType="Bottom"/>
+				<SubElement ElementName="Sub Image" Xpos="223" Xpos2="223" Ypos="8" Ypos2="8" Width="27" Height="25" Left="889" Top="158" Right="914"  Bottom="183" Visible="false" DrawNumWidth="1" TextureNum="1" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="410" Xpos2="410" Ypos="0" Ypos2="0" Width="56" Height="39" Left="473" Top="0" Right="529" Bottom="39" Visible="false" DrawNumWidth="1" TextureNum="1" Note="채널 상태" />
+				<SubElement ElementName="Sub Image" Xpos="6" Xpos2="6" Ypos="9" Ypos2="9" Width="19" Height="18" Left="969" Top="158" Right="988" Bottom="176" Visible="false" TextureNum="1" Note="포커스" />
+				<SubElement ElementName="Sub Image" Xpos="25" Xpos2="25" Ypos="0" Ypos2="0" Width="127" Height="39" Left="0" Top="158" Right="127" Bottom="197" TextureNum="1" Note="채널 이름" />
+			</Component>
+			<Component Type="Button" Id="406" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="420" Ypos2="420" Width="472" Height="39" Text="" Note="채널선택6" Visible="true" Command="MAIN_CHANNEL_SELECT_6">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="1" RectType="Bottom"/>
+				<SubElement ElementName="Sub Image" Xpos="223" Xpos2="223" Ypos="8" Ypos2="8" Width="27" Height="25" Left="889" Top="158" Right="914"  Bottom="183" Visible="false" DrawNumWidth="1" TextureNum="1" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="410" Xpos2="410" Ypos="0" Ypos2="0" Width="56" Height="39" Left="473" Top="0" Right="529" Bottom="39" Visible="false" DrawNumWidth="1" TextureNum="1" Note="채널 상태" />
+				<SubElement ElementName="Sub Image" Xpos="6" Xpos2="6" Ypos="9" Ypos2="9" Width="19" Height="18" Left="969" Top="158" Right="988" Bottom="176" Visible="false" TextureNum="1" Note="포커스" />
+				<SubElement ElementName="Sub Image" Xpos="25" Xpos2="25" Ypos="0" Ypos2="0" Width="127" Height="39" Left="127" Top="158" Right="254" Bottom="197" TextureNum="1" Note="채널 이름" />
+			</Component>
+			<Component Type="Button" Id="407" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="463" Ypos2="463" Width="472" Height="39" Text="" Note="채널선택7" Visible="true" Command="MAIN_CHANNEL_SELECT_7">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="1" RectType="Bottom"/>
+				<SubElement ElementName="Sub Image" Xpos="223" Xpos2="223" Ypos="8" Ypos2="8" Width="27" Height="25" Left="889" Top="158" Right="914"  Bottom="183" Visible="false" DrawNumWidth="1" TextureNum="1" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="410" Xpos2="410" Ypos="0" Ypos2="0" Width="56" Height="39" Left="473" Top="0" Right="529" Bottom="39" Visible="false" DrawNumWidth="1" TextureNum="1" Note="채널 상태" />
+				<SubElement ElementName="Sub Image" Xpos="6" Xpos2="6" Ypos="9" Ypos2="9" Width="19" Height="18" Left="969" Top="158" Right="988" Bottom="176" Visible="false" TextureNum="1" Note="포커스" />
+				<SubElement ElementName="Sub Image" Xpos="25" Xpos2="25" Ypos="0" Ypos2="0" Width="127" Height="39" Left="254" Top="158" Right="381" Bottom="197" TextureNum="1" Note="채널 이름" />
+			</Component>
+			<Component Type="Button" Id="408" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="506" Ypos2="506" Width="472" Height="39" Text="" Note="채널선택8" Visible="true" Command="MAIN_CHANNEL_SELECT_8">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="1" RectType="Bottom"/>
+				<SubElement ElementName="Sub Image" Xpos="223" Xpos2="223" Ypos="8" Ypos2="8" Width="27" Height="25" Left="889" Top="158" Right="914"  Bottom="183" Visible="false" DrawNumWidth="1" TextureNum="1" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="410" Xpos2="410" Ypos="0" Ypos2="0" Width="56" Height="39" Left="473" Top="0" Right="529" Bottom="39" Visible="false" DrawNumWidth="1" TextureNum="1" Note="채널 상태" />
+				<SubElement ElementName="Sub Image" Xpos="6" Xpos2="6" Ypos="9" Ypos2="9" Width="19" Height="18" Left="969" Top="158" Right="988" Bottom="176" Visible="false" TextureNum="1" Note="포커스" />
+				<SubElement ElementName="Sub Image" Xpos="25" Xpos2="25" Ypos="0" Ypos2="0" Width="127" Height="39" Left="381" Top="158" Right="508" Bottom="197" TextureNum="1" Note="채널 이름" />
+			</Component>
+			<Component Type="Button" Id="409" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="549" Ypos2="549" Width="472" Height="39" Text="" Note="채널선택9" Visible="true" Command="MAIN_CHANNEL_SELECT_9">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="1" RectType="Bottom"/>
+				<SubElement ElementName="Sub Image" Xpos="223" Xpos2="223" Ypos="8" Ypos2="8" Width="27" Height="25" Left="889" Top="158" Right="914"  Bottom="183" Visible="false" DrawNumWidth="1" TextureNum="1" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="410" Xpos2="410" Ypos="0" Ypos2="0" Width="56" Height="39" Left="473" Top="0" Right="529" Bottom="39" Visible="false" DrawNumWidth="1" TextureNum="1" Note="채널 상태" />
+				<SubElement ElementName="Sub Image" Xpos="6" Xpos2="6" Ypos="9" Ypos2="9" Width="19" Height="18" Left="969" Top="158" Right="988" Bottom="176" Visible="false" TextureNum="1" Note="포커스" />
+				<SubElement ElementName="Sub Image" Xpos="25" Xpos2="25" Ypos="0" Ypos2="0" Width="127" Height="39" Left="0" Top="198" Right="127" Bottom="237" TextureNum="1" Note="채널 이름" />
+			</Component>
+			<Component Type="Button" Id="410" ParentsId="3" Layer="1" Xpos="275" Xpos2="275" Ypos="592" Ypos2="592" Width="472" Height="39" Text="" Note="채널선택10" Visible="true" Command="MAIN_CHANNEL_SELECT_10">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="39" TextureNum="1" RectType="Bottom"/>
+				<SubElement ElementName="Sub Image" Xpos="223" Xpos2="223" Ypos="8" Ypos2="8" Width="27" Height="25" Left="889" Top="158" Right="914"  Bottom="183" Visible="false" DrawNumWidth="1" TextureNum="1" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="410" Xpos2="410" Ypos="0" Ypos2="0" Width="56" Height="39" Left="473" Top="0" Right="529" Bottom="39" Visible="false" DrawNumWidth="1" TextureNum="1" Note="채널 상태" />
+				<SubElement ElementName="Sub Image" Xpos="6" Xpos2="6" Ypos="9" Ypos2="9" Width="19" Height="18" Left="969" Top="158" Right="988" Bottom="176" Visible="false" TextureNum="1" Note="포커스" />
+				<SubElement ElementName="Sub Image" Xpos="25" Xpos2="25" Ypos="0" Ypos2="0" Width="127" Height="39" Left="127" Top="198" Right="254" Bottom="237" TextureNum="1" Note="채널 이름" />
+
+			</Component>
+
+	    </DlgInfo>
+    </TotalInfo>
+</UIXml>
+

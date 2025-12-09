@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+    <TotalInfo DlgCnt="1">
+		<DlgInfo ID="44" TextureCnt="1" ControlCnt="8">
+		<TextureInfo TexturePath="common_ui2.dds" TextureIndex="1" />
+			<Component Type="Image" Id="100" ParentsId="1" Layer="5" Xpos="6" Xpos2="6" Ypos="3" Ypos2="3" Width="195" Height="114" Text="" Note="부스터 타임" Visible="false">
+				<SubElement ElementName="Main Button" Left="372" Top="217" Right="567" Bottom="331" TextureNum="1" />
+			</Component>			
+			<Component Type="Image" Id="101" ParentsId="1" Layer="5" Xpos="195" Xpos2="195" Ypos="23" Ypos2="23" Width="68" Height="89" Text="" Note="부스터 설명 " Visible="false">
+				<SubElement ElementName="Main Button" Left="860" Top="664" Right="928" Bottom="753" TextureNum="1" />
+				<SubElement ElementName="Sub Image" Xpos="64" Xpos2="64" Ypos="20" Ypos2="20" Width="33" Height="36" Left="981" Top="664" Right="1012" Bottom="700" TextureNum="1" Note="퍼센트" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="90" Height="49" Left="480" Top="135" Right="570" Bottom="184" TextureNum="1" Note="게임머니" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="61" Height="31" Left="480" Top="185" Right="541" Bottom="216" TextureNum="1" Note="게임EXP" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="126" Height="39" Left="372" Top="332" Right="498" Bottom="371" TextureNum="1" Note="게임EXPANDMONEY" />
+				<SubElement ElementName="Sub Image" Xpos="40" Xpos2="40" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_1%" />
+				<SubElement ElementName="Sub Image" Xpos="16" Xpos2="16" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_10%" />
+				<SubElement ElementName="Sub Image" Xpos="-6" Xpos2="-6" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_100%" />		
+			</Component>
+			
+			<Component Type="Image" Id="200" ParentsId="1" Layer="5" Xpos="3" Xpos2="3" Ypos="24" Ypos2="24" Width="195" Height="114" Text="" Note="부스터 타임" Visible="false">
+				<SubElement ElementName="Main Button" Left="372" Top="217" Right="567" Bottom="331" TextureNum="1" />
+			</Component>			
+			<Component Type="Image" Id="201" ParentsId="1" Layer="5" Xpos="23" Xpos2="23" Ypos="152" Ypos2="152" Width="68" Height="89" Text="" Note="부스터 설명 " Visible="false">
+				<SubElement ElementName="Main Button" Left="860" Top="664" Right="928" Bottom="753" TextureNum="1" />
+				<SubElement ElementName="Sub Image" Xpos="64" Xpos2="64" Ypos="20" Ypos2="20" Width="33" Height="36" Left="981" Top="664" Right="1012" Bottom="700" TextureNum="1" Note="퍼센트" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="90" Height="49" Left="480" Top="135" Right="570" Bottom="184" TextureNum="1" Note="게임머니" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="61" Height="31" Left="480" Top="185" Right="541" Bottom="216" TextureNum="1" Note="게임EXP" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="126" Height="39" Left="372" Top="332" Right="498" Bottom="371" TextureNum="1" Note="게임EXPANDMONEY" />
+				<SubElement ElementName="Sub Image" Xpos="40" Xpos2="40" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_1%" />
+				<SubElement ElementName="Sub Image" Xpos="16" Xpos2="16" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_10%" />
+				<SubElement ElementName="Sub Image" Xpos="-6" Xpos2="-6" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_100%" />			
+			</Component>
+			
+			
+			<Component Type="Image" Id="300" ParentsId="1" Layer="5" Xpos="466" Xpos2="466" Ypos="626" Ypos2="626" Width="195" Height="114" Text="" Note="부스터 타임" Visible="false">
+				<SubElement ElementName="Main Button" Left="372" Top="217" Right="567" Bottom="331" TextureNum="1" />
+			</Component>			
+			<Component Type="Image" Id="301" ParentsId="1" Layer="5" Xpos="662" Xpos2="662" Ypos="641" Ypos2="641" Width="68" Height="89" Text="" Note="부스터 설명 " Visible="false">
+				<SubElement ElementName="Main Button" Left="860" Top="664" Right="928" Bottom="753" TextureNum="1" />
+				<SubElement ElementName="Sub Image" Xpos="64" Xpos2="64" Ypos="20" Ypos2="20" Width="33" Height="36" Left="981" Top="664" Right="1012" Bottom="700" TextureNum="1" Note="퍼센트" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="90" Height="49" Left="480" Top="135" Right="570" Bottom="184" TextureNum="1" Note="게임머니" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="61" Height="31" Left="480" Top="185" Right="541" Bottom="216" TextureNum="1" Note="게임EXP" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="126" Height="39" Left="372" Top="332" Right="498" Bottom="371" TextureNum="1" Note="게임EXPANDMONEY" />
+				<SubElement ElementName="Sub Image" Xpos="40" Xpos2="40" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_1%" />
+				<SubElement ElementName="Sub Image" Xpos="16" Xpos2="16" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_10%" />
+				<SubElement ElementName="Sub Image" Xpos="-6" Xpos2="-6" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_100%" />			
+			</Component>
+			
+			
+			<Component Type="Image" Id="400" ParentsId="1" Layer="5" Xpos="716" Xpos2="716" Ypos="601" Ypos2="601" Width="195" Height="114" Text="" Note="부스터 타임" Visible="false">
+				<SubElement ElementName="Main Button" Left="372" Top="217" Right="567" Bottom="331" TextureNum="1" />
+			</Component>			
+			<Component Type="Image" Id="401" ParentsId="1" Layer="5" Xpos="908" Xpos2="908" Ypos="617" Ypos2="617" Width="68" Height="89" Text="" Note="부스터 설명 " Visible="false">
+				<SubElement ElementName="Main Button" Left="860" Top="664" Right="928" Bottom="753" TextureNum="1" />
+				<SubElement ElementName="Sub Image" Xpos="64" Xpos2="64" Ypos="20" Ypos2="20" Width="33" Height="36" Left="981" Top="664" Right="1012" Bottom="700" TextureNum="1" Note="퍼센트" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="90" Height="49" Left="480" Top="135" Right="570" Bottom="184" TextureNum="1" Note="게임머니" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="61" Height="31" Left="480" Top="185" Right="541" Bottom="216" TextureNum="1" Note="게임EXP" />
+				<SubElement ElementName="Sub Image" Xpos="-21" Xpos2="-21" Ypos="50" Ypos2="50" Width="126" Height="39" Left="372" Top="332" Right="498" Bottom="371" TextureNum="1" Note="게임EXPANDMONEY" />
+				<SubElement ElementName="Sub Image" Xpos="40" Xpos2="40" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_1%" />
+				<SubElement ElementName="Sub Image" Xpos="16" Xpos2="16" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_10%" />
+				<SubElement ElementName="Sub Image" Xpos="-6" Xpos2="-6" Ypos="20" Ypos2="20" Width="33" Height="36" Left="941" Top="664" Right="974" Bottom="700" TextureNum="1" Note="_100%" />			
+			</Component>
+			
+    	</DlgInfo>
+    </TotalInfo>
+</UIXml>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

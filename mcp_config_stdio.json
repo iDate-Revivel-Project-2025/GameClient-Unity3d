@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "ida-pro-mcp": {
+            "command": "/opt/homebrew/bin/ida-pro-mcp",
+            "args": [
+                "--transport",
+                "stdio",
+                "--ida-rpc",
+                "http://127.0.0.1:13337"
+            ]
+        },
+        "unityMCP": {
+            "serverUrl": "http://localhost:8080/mcp",
+            "disabled": false
+        }
+    }
+}

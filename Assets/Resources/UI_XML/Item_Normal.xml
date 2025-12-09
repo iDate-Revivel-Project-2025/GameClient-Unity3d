@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+	<TotalInfo DlgCnt="1">
+		<DlgInfo ID="25" TextureCnt="2" ControlCnt="50">
+		<TextureInfo TexturePath="FM01_PA_NORMAL_0001_00.dds" TextureIndex="1" />
+		<TextureInfo TexturePath="FM01_PA_NORMAL_0001_99.dds" TextureIndex="2" />
+		
+			<Component Type="Image" Id="900" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_00001" Note="Normal Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="0" Right="192" Bottom="64" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="901" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_00002" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="64" Bottom="64" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="902" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_00003" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="0" Right="128" Bottom="64" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="903" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_00004" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="0" Right="256" Bottom="64" TextureNum="1" />
+			</Component>
+			
+			
+			<Component Type="Image" Id="904" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10001" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="0" Right="512" Bottom="64" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="905" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10002" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="0" Right="448" Bottom="64" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="906" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10003" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="64" Right="192" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="907" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10004" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="64" Right="128" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="908" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10005" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="64" Right="256" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="909" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10006" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="256" Top="64" Right="320" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="925" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10009" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="128" Right="192" Bottom="192" TextureNum="1" />
+			</Component>
+			
+			
+			<Component Type="Image" Id="910" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10019" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="64" Right="448" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="911" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10020" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="320" Top="64" Right="384" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="912" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10021" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="128" Right="64" Bottom="192" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="913" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10022" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="128" Right="128" Bottom="192" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="914" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10023" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="64" Right="512" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			
+			
+			<Component Type="Image" Id="915" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_01001" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="64" Bottom="64" TextureNum="2" />
+			</Component>
+			
+			<Component Type="Image" Id="916" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_01003" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="0" Right="128" Bottom="64" TextureNum="2" />
+			</Component>
+			
+			<Component Type="Image" Id="917" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_01005" Note="Normal Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="0" Right="192" Bottom="64" TextureNum="2" />
+			</Component>
+			
+			<Component Type="Image" Id="918" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_01007" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="0" Right="256" Bottom="64" TextureNum="2" />
+			</Component>
+			
+			<Component Type="Image" Id="919" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_01009" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="256" Top="0" Right="320" Bottom="64" TextureNum="2" />
+			</Component>
+			
+
+			
+			<Component Type="Image" Id="920" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_01002" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="320" Top="0" Right="384" Bottom="64" TextureNum="2" />
+			</Component>
+			
+			<Component Type="Image" Id="921" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_01004" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="0" Right="448" Bottom="64" TextureNum="2" />
+			</Component>
+			
+			<Component Type="Image" Id="922" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_01006" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="0" Right="512" Bottom="64" TextureNum="2" />
+			</Component>
+			
+			<Component Type="Image" Id="923" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_01008" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="512" Top="0" Right="576" Bottom="64" TextureNum="2" />
+			</Component>
+			
+			<Component Type="Image" Id="924" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_01010" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="576" Top="0" Right="640" Bottom="64" TextureNum="2" />
+			</Component>
+			
+
+			<Component Type="Image" Id="926" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10027" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="128" Right="254" Bottom="192" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="927" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10028" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="192" Right="192" Bottom="256" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="928" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10029" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="192" Right="256" Bottom="256" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="929" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10030" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="256" Top="192" Right="320" Bottom="256" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="930" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10031" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="320" Top="192" Right="384" Bottom="256" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="931" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10032" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="192" Right="448" Bottom="256" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="932" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10033" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="192" Right="128" Bottom="256" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="933" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10034" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="192" Right="64" Bottom="256" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="934" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10035" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="384" Right="192" Bottom="448" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="935" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10036" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="320" Right="512" Bottom="384" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="936" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10037" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="320" Right="448" Bottom="384" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="937" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10038" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="320" Right="128" Bottom="384" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="938" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10039" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="320" Right="192" Bottom="384" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="939" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10040" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="320" Right="256" Bottom="384" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="940" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10041" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="256" Top="320" Right="320" Bottom="384" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="941" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10042" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="320" Top="320" Right="384" Bottom="384" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="942" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10043" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="384" Right="64" Bottom="448" TextureNum="1" />
+			</Component>	
+			
+			<Component Type="Image" Id="943" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10044" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="384" Right="256" Bottom="448" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="944" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10045" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="256" Top="384" Right="320" Bottom="448" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="945" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10046" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="320" Top="384" Right="384" Bottom="448" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="946" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10047" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="384" Right="448" Bottom="448" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="947" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10048" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="384" Right="512" Bottom="448" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="948" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10049" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="448" Right="64" Bottom="512" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="949" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C51_N0_10050" Note="Cash Item" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="448" Right="128" Bottom="512" TextureNum="1" />
+			</Component>
+			
+		</DlgInfo>
+	</TotalInfo>
+</UIXml>	

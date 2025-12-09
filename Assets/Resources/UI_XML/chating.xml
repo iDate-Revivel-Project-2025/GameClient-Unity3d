@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+    <TotalInfo DlgCnt="1">
+		<DlgInfo ID="43" TextureCnt="6" ControlCnt="23">
+		<TextureInfo TexturePath="common_ui.dds" TextureIndex="1" />
+		<TextureInfo TexturePath="common_ui2.dds" TextureIndex="2" />
+		<TextureInfo TexturePath="Title.dds" TextureIndex="3" />
+		<TextureInfo TexturePath="CashAccrueResult.dds" TextureIndex="4" />
+		<TextureInfo TexturePath="gamemode.dds" TextureIndex="5" />
+		<TextureInfo TexturePath="itemmodeitem.dds" TextureIndex="6" />
+			<Component Type="Ime" Id="10000" ParentsId="1" Layer="0" Xpos="40" Xpos2="40" Ypos="748" Ypos2="748" Width="380" Height="15" Text="" Visible="false" TexLen="73">
+			</Component>
+			<Component Type="Image" Id="10001" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10002" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10003" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10004" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10005" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10006" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10007" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10008" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10009" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10010" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10011" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10012" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10013" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10014" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10015" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10016" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10017" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="10018" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="370" Height="15" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1391" Right="300" Bottom="1406" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="5" Xpos2="5" Ypos="0" Ypos2="0" Width="370" Height="18" Text="" Align="Left" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			<Component Type="Image" Id="100" ParentsId="4" Layer="4" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="180" Height="43" Note="말풍선" Visible="true">
+				<SubElement ElementName="Main Button" Left="557" Top="597" Right="737" Bottom="616" TextureNum="1" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="180" Height="7" Left="557" Top="590" Right="737" Bottom="597" TextureNum="1" Visible="true" Note="말풍선 위" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="180" Height="8" Left="557" Top="615" Right="737" Bottom="626" TextureNum="1" Visible="true" Note="말풍선 아래" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="180" Height="15" Left="557" Top="626" Right="737" Bottom="633" TextureNum="1" Visible="true" Note="말풍선 꼬리" />
+				<SubElement ElementName="Sub Static" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="175" Height="18" Text="" Align="Center" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="175" Height="18" Text="" Align="Center" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="175" Height="18" Text="" Align="Center" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="175" Height="18" Text="" Align="Center" ColorR="0" ColorG="0" ColorB="0" Visible="true" />
+			</Component>
+			
+						
+			<Component Type="Image" Id="10020" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="156" Height="40" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="156" Bottom="40" TextureNum="3" />
+			</Component>
+			
+			<Component Type="Image" Id="10021" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="196" Height="128" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="196" Bottom="128" TextureNum="4" />
+			</Component>
+			
+			<Component Type="Image" Id="1998" ParentsId="1" Layer="5" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="28" Height="28" Text="" Note="반지 " Visible="true">
+				<SubElement ElementName="Main Button" Left="433" Top="375" Right="461" Bottom="403" TextureNum="2" />
+			</Component>
+			
+    	</DlgInfo>
+    </TotalInfo>
+</UIXml>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

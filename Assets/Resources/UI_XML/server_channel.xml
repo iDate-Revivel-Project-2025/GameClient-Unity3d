@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+    <TotalInfo DlgCnt="1">
+		<DlgInfo ID="3" TextureCnt="2" ControlCnt="8">
+			<TextureInfo TexturePath="common_ui.dds" TextureIndex="1" />
+			<TextureInfo TexturePath="Server_Channel.dds" TextureIndex="2" />
+        
+			<Component Type="Image" Id="300" ParentsId="3" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="1024" Height="768" Text="" Note="채널배경" Visible="true"> 
+				<SubElement ElementName="Main Button" Left="0" Top="256" Right="1024" Bottom="1024" TextureNum="2" />
+			</Component>
+	        
+			<Component Type="Button" Id="304" ParentsId="3" Layer="1" Xpos="894" Xpos2="894" Ypos="14" Ypos2="14" Width="115" Height="56" Text="" Note="종료버튼" Visible="true" Command="MAIN_SEVER_CHANNEL_EXIT">
+				<SubElement ElementName="Main Button" Left="0" Top="130" Right="115" Bottom="186" TextureNum="2" RectType="Right" />
+			</Component>
+	        
+			<Component Type="List Box" Id="305" ParentsId="3" Layer="4" Xpos="440" Xpos2="439" Ypos="186" Ypos2="186" Width="380" Height="470" Text="" PageSize="10" Visible="true">
+				<SubElement ElementName="Scroll_Bar" Xpos="404" Xpos2="403" Ypos="13" Ypos2="13" Width="27" Height="50" Left="742" Top="300" Right="769" Bottom="350" TextureNum="1" />
+				<SubElement ElementName="Scroll_Up" Xpos="404" Xpos2="403" Ypos="-12" Ypos2="-12" Width="27" Height="27" Left="742" Top="244" Right="769" Bottom="271" TextureNum="1" />
+				<SubElement ElementName="Scroll_Down" Xpos="404" Xpos2="403" Ypos="451" Ypos2="451" Width="27" Height="27" Left="742" Top="272" Right="769" Bottom="299" TextureNum="1" />
+				<SubElement ElementName="SubElement" ListName="CHANNELLIST" SubID="306" SpaceH="47" PageSize="10" />
+			</Component>
+	        
+			<Component Type="Button" Id="306" ParentsId="3" Layer="6" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="377" Height="43" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="377" Bottom="43" TextureNum="2" RectType="Bottom" Click="Double" />
+				<SubElement ElementName="Sub Image" Xpos="167" Xpos2="130" Ypos="8" Ypos2="8" Width="27" Height="25" Left="946" Top="0" Right="972" Bottom="25" Visible="false" DrawNumWidth="1" TextureNum="2" Note="게이지" />
+				<SubElement ElementName="Sub Image" Xpos="400" Xpos2="315" Ypos="-8" Ypos2="0" Width="56" Height="43" Left="378" Top="0" Right="434" Bottom="43" Visible="false" TextureNum="2" Note="서버상태" />
+				<SubElement ElementName="Sub Image" Xpos ="0" Ypos="0"  Width="96" Height="39" Left="0" Top="216" Right="96" Bottom="255" TextureNum="2" Note="서버이름" />
+			</Component>
+	        
+			<Component Type="Image" Id="307" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="371" Height="199" Text="" Note="종료확인 질문창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1677" Top="560" Right="2048" Bottom="759" TextureNum="1" />
+				<SubElement ElementName="Sub Button" Xpos="38" Xpos2="38" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="268" Right="139" Bottom="306" TextureNum="1" Visible="true" Command="CHANNEL_EXITQUES_OK" />
+				<SubElement ElementName="Sub Button" Xpos="191" Xpos2="191" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="582" Right="139" Bottom="621" TextureNum="1" Visible="true" Command="CHANNEL_EXITQUES_CANCEL" />
+				<SubElement ElementName="Sub Static" Xpos="35" Xpos2="35" Ypos="70" Ypos2="70" Width="300" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+			
+			<Component Type="Image" Id="308" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="371" Height="199" Text="" Note="경고창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1677" Top="560" Right="2048" Bottom="759" TextureNum="1" />
+				<SubElement ElementName="Sub Button" Xpos="110" Xpos2="110" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="268" Right="139" Bottom="306" TextureNum="1" Visible="true" Command="CHANNEL_POP_NOTE_OK" />
+				<SubElement ElementName="Sub Static" Xpos="35" Xpos2="35" Ypos="70" Ypos2="70" Width="300" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+			
+			<Component Type="Button" Id="309" ParentsId="3" Layer="5" Xpos="169" Xpos2="169" Ypos="179" Ypos2="179" Width="237" Height="54" Text="" Note="서버선택1" Visible="true" Command="SELECT_SERVER1">
+				<SubElement ElementName="Main Button" Left="461" Top="0" Right="698" Bottom="54" TextureNum="2" RectType="Bottom" />
+			</Component>
+	      
+			<Component Type="Button" Id="310" ParentsId="3" Layer="5" Xpos="169" Xpos2="169" Ypos="238" Ypos2="238" Width="237" Height="54" Text="" Note="서버선택2" Visible="true" Command="SELECT_SERVER2">
+				<SubElement ElementName="Main Button" Left="699" Top="0" Right="936" Bottom="54" TextureNum="2" RectType="Bottom" />
+			</Component>
+			
+			<!-- Event Pop. UI Resource Change. Now We have net UI Resource. 
+			<Component Type="Button" Id="322" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="공지 이벤트 이미지 샘플" >
+                <SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2"/>
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Left="0" Top="0" Right="0" Bottom="0" Visible="false" />
+			</Component>
+			<Component Type="List Box" Id="321" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="275" Text="" Visible="false" Note="공지 이벤트 리스트" >
+				<SubElement ElementName="Scroll_Bar" Xpos="508" Xpos2="508" Ypos="25" Ypos2="25" Width="27" Height="50" Left="742" Top="300" Right="769" Bottom="350" TextureNum="1" Note="스크롤 Bar" />
+				<SubElement ElementName="Scroll_Up" Xpos="508" Xpos2="508" Ypos="-5" Ypos2="-5" Width="27" Height="27" Left="742" Top="244" Right="769" Bottom="271" TextureNum="1" Note="스크롤 UP" />
+				<SubElement ElementName="Scroll_Down" Xpos="508" Xpos2="508" Ypos="253" Ypos2="253" Width="27" Height="27" Left="742" Top="272" Right="769" Bottom="299" TextureNum="1" Note="스크롤 DOWN" />
+				<SubElement ElementName="SubElement" ListName="NOTICELIST" SubID="322" SpaceH="55" />
+			</Component>
+			<Component Type="Image" Id="320" ParentsId="4" Layer="2" Xpos="221" Xpos2="221" Ypos="151" Ypos2="151" Width="582" Height="467" Text="" Visible="false" Note="공지 이벤트 POPUP" >
+				<SubElement ElementName="Main Button" Left="1025" Top="0" Right="1607" Bottom="467" TextureNum="2"  />
+				<SubElement ElementName="Sub Static" Xpos="80" Xpos2="80" Ypos="130" Ypos2="130" Width="400" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+				<SubElement ElementName="Sub Button" Xpos="163" Xpos2="163" Ypos="59" Ypos2="59" Width="83" Height="38" Left="1608" Top="40" Right="1691" Bottom="78" RectType="Right" TextureNum="2" Visible="true" Note="공지" Command="NOTICE_POP_NOTICE" />
+				<SubElement ElementName="Sub Button" Xpos="250" Xpos2="250" Ypos="59" Ypos2="59" Width="83" Height="38" Left="1608" Top="79" Right="1691" Bottom="117" RectType="Right" TextureNum="2" Visible="true" Note="이벤트" Command="NOTICE_POP_EVENT"/>
+				<SubElement ElementName="Sub Button" Xpos="337" Xpos2="337" Ypos="59" Ypos2="59" Width="83" Height="38" Left="1608" Top="118" Right="1691" Bottom="156" RectType="Right" TextureNum="2" Visible="true" Note="업데이트" Command="NOTICE_POP_UPDATE"/>
+				<SubElement ElementName="Sub Button" Xpos="240" Xpos2="240" Ypos="416" Ypos2="416" Width="104" Height="39" Left="1608" Top="0" Right="1712" Bottom="39" RectType="Right" TextureNum="2" Visible="true" Note="닫기" Command="NOTICE_POP_CLOSE"/>
+				<SubElement ElementName="Sub ListBox" Xpos="24" Xpos2="24" Ypos="119" Ypos2="119" Width="505" Height="275" PageSize="5" SubID="321" />
+			</Component>
+			
+			<Component Type="Image" Id="323" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1025" Top="467" Right="1530" Bottom="522" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="324" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1025" Top="522" Right="1530" Bottom="577" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="325" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1025" Top="577" Right="1530" Bottom="632" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="326" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1025" Top="632" Right="1530" Bottom="687" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="327" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1025" Top="687" Right="1530" Bottom="742" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="328" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1025" Top="742" Right="1530" Bottom="797" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="329" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1025" Top="797" Right="1530" Bottom="852" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="330" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1025" Top="852" Right="1530" Bottom="907" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="331" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1025" Top="907" Right="1530" Bottom="962" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="332" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1025" Top="962" Right="1530" Bottom="1017" TextureNum="2"/>  
+			</Component>
+			
+			<Component Type="Image" Id="333" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1531" Top="467" Right="2036" Bottom="522" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="334" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1531" Top="522" Right="2036" Bottom="577" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="335" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1531" Top="577" Right="2036" Bottom="632" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="336" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1531" Top="632" Right="2036" Bottom="687" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="337" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1531" Top="687" Right="2036" Bottom="742" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="338" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1531" Top="742" Right="2036" Bottom="797" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="339" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1531" Top="797" Right="2036" Bottom="852" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="340" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1531" Top="852" Right="2036" Bottom="907" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="341" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1531" Top="907" Right="2036" Bottom="962" TextureNum="2"/>  
+			</Component>
+			<Component Type="Image" Id="342" ParentsId="4" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="505" Height="55" Text="" Visible="false" Note="이벤트 이미지" >
+                <SubElement ElementName="Main Button" Left="1531" Top="962" Right="2036" Bottom="1017" TextureNum="2"/>  
+			</Component>
+			-->
+			
+		  </DlgInfo>
+    </TotalInfo>
+</UIXml>
+

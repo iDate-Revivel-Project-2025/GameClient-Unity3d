@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+	<TotalInfo DlgCnt="1">
+		<DlgInfo ID="41" TextureCnt="7" ControlCnt="134">
+		<TextureInfo TexturePath="play_common.dds" TextureIndex="1" />
+		<TextureInfo TexturePath="mode_hunting1.dds" TextureIndex="2" />
+		<TextureInfo TexturePath="mode_hunting2.dds" TextureIndex="3" />
+		<TextureInfo TexturePath="mode_hunting3.dds" TextureIndex="4" />
+		<TextureInfo TexturePath="mode_mission.dds" TextureIndex="5" />
+		<TextureInfo TexturePath="BlackBG.dds" TextureIndex="6" />
+		<TextureInfo TexturePath="common_ui2.dds" TextureIndex="7" />
+		
+			<Component Type="Image" Id="100" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="53" Height="53" Text="" Note="내가 선택한 파트너 표시" Visible="false">
+				<SubElement ElementName="Main Button" Left="1981" Top="722" Right="2043" Bottom="775" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="101" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="115" Height="40" Text="" Note="누가 누구를 선택햇는지 이름표시" Visible="false">
+				<SubElement ElementName="Main Button" Left="1235" Top="1695" Right="1349" Bottom="1735" TextureNum="2" />
+				<SubElement ElementName="Sub Static" Xpos="28" Xpos2="10" Ypos="19" Ypos2="14" Width="94" Height="15" Text="아이디" Visible="true" Align="Center" ColorR="0" ColorG="255" ColorB="255" />
+			</Component>
+			<Component Type="Image" Id="817" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="1024" Height="768" Text="" Note="커플댄스때" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="1024" Bottom="768" TextureNum="6" />
+			</Component>
+			<Component Type="Image" Id="590" ParentsId="6" Layer="3" Xpos="10" Xpos2="10" Ypos="20" Ypos2="20" Width="167" Height="40" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="1714" Top="365" Right="1881" Bottom="405" TextureNum="1" />
+        		<SubElement ElementName="Sub Static" Xpos="41" Xpos2="41" Ypos="5" Ypos2="5" Width="110" Height="15" Text="" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+        		<SubElement ElementName="Sub Image" Xpos="45" Xpos2="45" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="58" Xpos2="58" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="68" Xpos2="68" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="78" Xpos2="78" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="91" Xpos2="91" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="101" Xpos2="101" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="111" Xpos2="111" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="591" ParentsId="6" Layer="2" Xpos="10" Xpos2="10" Ypos="65" Ypos2="65" Width="167" Height="40" Text="" Visible="false">
+      	  		<SubElement ElementName="Main Button" Left="1714" Top="405" Right="1881" Bottom="445" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Static" Xpos="41" Xpos2="41" Ypos="5" Ypos2="5" Width="110" Height="15" Text="" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+      	  		<SubElement ElementName="Sub Image" Xpos="45" Xpos2="45" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="58" Xpos2="58" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="68" Xpos2="68" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="78" Xpos2="78" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="91" Xpos2="91" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="101" Xpos2="101" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="111" Xpos2="111" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+			</Component>
+      			<Component Type="Image" Id="592" ParentsId="6" Layer="2" Xpos="10" Xpos2="10" Ypos="109" Ypos2="109" Width="167" Height="40" Text="" Visible="false">
+      	  		<SubElement ElementName="Main Button" Left="1714" Top="445" Right="1881" Bottom="485" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Static" Xpos="41" Xpos2="41" Ypos="5" Ypos2="5" Width="110" Height="15" Text="" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+      	  		<SubElement ElementName="Sub Image" Xpos="45" Xpos2="45" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="58" Xpos2="58" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="68" Xpos2="68" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="78" Xpos2="78" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="91" Xpos2="91" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="101" Xpos2="101" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      	  		<SubElement ElementName="Sub Image" Xpos="111" Xpos2="111" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+      		</Component>
+			<Component Type="Image" Id="593" ParentsId="6" Layer="2" Xpos="10" Xpos2="10" Ypos="153" Ypos2="153" Width="167" Height="40" Text="" Visible="false">
+     	   		<SubElement ElementName="Main Button" Left="1714" Top="485" Right="1881" Bottom="525" TextureNum="1" />
+     	   		<SubElement ElementName="Sub Static" Xpos="41" Xpos2="41" Ypos="5" Ypos2="5" Width="110" Height="15" Text="" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+     	   		<SubElement ElementName="Sub Image" Xpos="45" Xpos2="45" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+     	   		<SubElement ElementName="Sub Image" Xpos="58" Xpos2="58" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+     	   		<SubElement ElementName="Sub Image" Xpos="68" Xpos2="68" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+     	   		<SubElement ElementName="Sub Image" Xpos="78" Xpos2="78" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+     	   		<SubElement ElementName="Sub Image" Xpos="91" Xpos2="91" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+     	   		<SubElement ElementName="Sub Image" Xpos="101" Xpos2="101" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+     	   		<SubElement ElementName="Sub Image" Xpos="111" Xpos2="111" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+     		</Component>
+     		<Component Type="Image" Id="594" ParentsId="6" Layer="2" Xpos="10" Xpos2="10" Ypos="197" Ypos2="197" Width="167" Height="40" Text="" Visible="false">
+   	  			<SubElement ElementName="Main Button" Left="1714" Top="525" Right="1881" Bottom="565" TextureNum="1" />
+   	  			<SubElement ElementName="Sub Static" Xpos="41" Xpos2="41" Ypos="5" Ypos2="5" Width="110" Height="15" Text="" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+   	  			<SubElement ElementName="Sub Image" Xpos="45" Xpos2="45" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+   	  			<SubElement ElementName="Sub Image" Xpos="58" Xpos2="58" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+   	  			<SubElement ElementName="Sub Image" Xpos="68" Xpos2="68" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+   	  			<SubElement ElementName="Sub Image" Xpos="78" Xpos2="78" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+   	  			<SubElement ElementName="Sub Image" Xpos="91" Xpos2="91" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+   	  			<SubElement ElementName="Sub Image" Xpos="101" Xpos2="101" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+				<SubElement ElementName="Sub Image" Xpos="111" Xpos2="111" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+     		</Component>
+			<Component Type="Image" Id="595" ParentsId="6" Layer="2" Xpos="10" Xpos2="10" Ypos="241" Ypos2="241" Width="167" Height="40" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="1714" Top="565" Right="1881" Bottom="605" TextureNum="1" />
+	     		<SubElement ElementName="Sub Static" Xpos="41" Xpos2="41" Ypos="5" Ypos2="5" Width="110" Height="15" Text="" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+	     		<SubElement ElementName="Sub Image" Xpos="45" Xpos2="45" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+	     		<SubElement ElementName="Sub Image" Xpos="58" Xpos2="58" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+				  <SubElement ElementName="Sub Image" Xpos="68" Xpos2="68" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+				  <SubElement ElementName="Sub Image" Xpos="78" Xpos2="78" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+				  <SubElement ElementName="Sub Image" Xpos="91" Xpos2="91" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+				  <SubElement ElementName="Sub Image" Xpos="101" Xpos2="101" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+				  <SubElement ElementName="Sub Image" Xpos="111" Xpos2="111" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="596" ParentsId="6" Layer="2" Xpos="10" Xpos2="10" Ypos="285" Ypos2="285" Width="167" Height="40" Text="" Visible="false">
+        		<SubElement ElementName="Main Button" Left="1714" Top="605" Right="1881" Bottom="645" TextureNum="1" />
+        		<SubElement ElementName="Sub Static" Xpos="41" Xpos2="41" Ypos="5" Ypos2="5" Width="110" Height="15" Text="" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+        		<SubElement ElementName="Sub Image" Xpos="45" Xpos2="45" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="58" Xpos2="58" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="68" Xpos2="68" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="78" Xpos2="78" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="91" Xpos2="91" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="101" Xpos2="101" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="111" Xpos2="111" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="597" ParentsId="6" Layer="2" Xpos="10" Xpos2="10" Ypos="329" Ypos2="329" Width="167" Height="40" Text="" Visible="false">
+        		<SubElement ElementName="Main Button" Left="1714" Top="645" Right="1881" Bottom="685" TextureNum="1" />
+        		<SubElement ElementName="Sub Static" Xpos="41" Xpos2="41" Ypos="5" Ypos2="5" Width="110" Height="15" Text="" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+        		<SubElement ElementName="Sub Image" Xpos="45" Xpos2="45" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="58" Xpos2="58" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="68" Xpos2="68" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="78" Xpos2="78" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="91" Xpos2="91" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="101" Xpos2="101" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="111" Xpos2="111" Ypos="22" Ypos2="22" Width="9" Height="13" Left="1241" Top="379" Right="1250" Bottom="391" Visible="false" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="600" ParentsId="6" Layer="1" Xpos="649" Xpos2="649" Ypos="692" Ypos2="692" Width="372" Height="75" Text="" Note="노래정보" Visible="true">
+        		<SubElement ElementName="Main Button" Left="0" Top="898" Right="372" Bottom="973" TextureNum="1" />
+        		<SubElement ElementName="Sub Static" Xpos="55" Xpos2="55" Ypos="42" Ypos2="42" Width="185" Height="15" Text="음악제목" Visible="true" Align="Left" ColorR="255" ColorG="255" ColorB="255" />
+        		<SubElement ElementName="Sub Static" Xpos="270" Xpos2="270" Ypos="42" Ypos2="42" Width="30" Height="15" Text="BPM" Visible="true" Align="Center" ColorR="255" ColorG="255" ColorB="255" />
+        		<SubElement ElementName="Sub Static" Xpos="312" Xpos2="312" Ypos="42" Ypos2="42" Width="46" Height="15" Text="음악시간" Visible="true" Align="Center" ColorR="255" ColorG="255" ColorB="255" />
+			</Component>
+			<Component Type="Image" Id="605" ParentsId="6" Layer="3" Xpos="912" Xpos2="912" Ypos="8" Ypos2="8" Width="104" Height="16" Text="" Note="My Score" Visible="true">
+        		<SubElement ElementName="Main Button" Left="596" Top="569" Right="700" Bottom="585" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="-120" Xpos2="-120" Ypos="18" Ypos2="18" Width="30" Height="34" Left="940" Top="365" Right="970" Bottom="399" Visible="true" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="-83" Xpos2="-83" Ypos="18" Ypos2="18" Width="30" Height="34" Left="940" Top="365" Right="970" Bottom="399" Visible="true" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="-53" Xpos2="-53" Ypos="18" Ypos2="18" Width="30" Height="34" Left="940" Top="365" Right="970" Bottom="399" Visible="true" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="-23" Xpos2="-23" Ypos="18" Ypos2="18" Width="30" Height="34" Left="940" Top="365" Right="970" Bottom="399" Visible="true" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="14" Xpos2="14" Ypos="18" Ypos2="18" Width="30" Height="34" Left="940" Top="365" Right="970" Bottom="399" Visible="true" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="44" Xpos2="44" Ypos="18" Ypos2="18" Width="30" Height="34" Left="940" Top="365" Right="970" Bottom="399" Visible="true" TextureNum="1" />
+        		<SubElement ElementName="Sub Image" Xpos="74" Xpos2="74" Ypos="18" Ypos2="18" Width="30" Height="34" Left="940" Top="365" Right="970" Bottom="399" Visible="true" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="703" ParentsId="1" Layer="0" Xpos="161" Xpos2="161" Ypos="219" Ypos2="219" Width="702" Height="165" Text="" Note="여자PR" Visible="false">
+				<SubElement ElementName="Main Button" Left="473" Top="0" Right="1175" Bottom="165" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="706" ParentsId="1" Layer="0" Xpos="161" Xpos2="161" Ypos="219" Ypos2="219" Width="702" Height="165" Text="" Note="남자PR" Visible="false">
+				<SubElement ElementName="Main Button" Left="1177" Top="0" Right="1879" Bottom="165" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="708" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="1024" Height="768" Text="" Note="PRBG" Visible="false">
+				<SubElement ElementName="Main Button" Left="1010" Top="826" Right="2043" Bottom="1594" TextureNum="2" />
+			</Component>
+      
+			<Component Type="Image" Id="610" ParentsId="6" Layer="1" Xpos="259" Xpos2="259" Ypos="423" Ypos2="423" Width="595" Height="67" Text="" Note="오선지" Visible="true">
+				  <SubElement ElementName="Main Button" Left="0" Top="462" Right="595" Bottom="529" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="691" ParentsId="6" Layer="1" Xpos="141" Xpos2="141" Ypos="325" Ypos2="325" Width="122" Height="230" Text="" Note="악보" Visible="false">
+				  <SubElement ElementName="Main Button" Left="0" Top="231" Right="122" Bottom="461" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="611" ParentsId="6" Layer="1" Xpos="256" Xpos2="256" Ypos="392" Ypos2="392" Width="77" Height="39" Text="" Note="앞 2마디표시" Visible="false">
+				  <SubElement ElementName="Main Button" Left="0" Top="974" Right="77" Bottom="1019" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="612" ParentsId="6" Layer="1" Xpos="852" Xpos2="852" Ypos="438" Ypos2="438" Width="46" Height="42" Text="" Note="뒤 2마디표시" Visible="false">
+				  <SubElement ElementName="Main Button" Left="899" Top="308" Right="945" Bottom="350" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="613" ParentsId="6" Layer="1" Xpos="141" Xpos2="141" Ypos="325" Ypos2="325" Width="122" Height="230" Text="" Note="카운트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="0" Top="0" Right="122" Bottom="230" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="614" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="43" Height="46" Text="" Note="타임볼" Visible="false">
+				  <SubElement ElementName="Main Button" Left="739" Top="457" Right="782" Bottom="503" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="615" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="43" Height="46" Text="" Note="타임볼 점프" Visible="false">
+				  <SubElement ElementName="Main Button" Left="782" Top="457" Right="825" Bottom="503" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="616" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="40" Height="17" Text="" Note="타임볼그림자" Visible="false">
+				  <SubElement ElementName="Main Button" Left="899" Top="351" Right="939" Bottom="368" TextureNum="1" />
+			</Component>						
+			<Component Type="Image" Id="620" ParentsId="6" Layer="1" Xpos="266" Xpos2="266" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="false">
+				  <SubElement ElementName="Main Button" Left="373" Top="898" Right="419" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="621" ParentsId="6" Layer="1" Xpos="293" Xpos2="293" Ypos="485" Ypos2="485" Width="28" Height="56" Text="" Note="검정건반" Visible="false">
+				  <SubElement ElementName="Main Button" Left="650" Top="898" Right="678" Bottom="954" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="622" ParentsId="6" Layer="1" Xpos="314" Xpos2="314" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="false">
+				  <SubElement ElementName="Main Button" Left="465" Top="898" Right="511" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="623" ParentsId="6" Layer="1" Xpos="353" Xpos2="353" Ypos="485" Ypos2="485" Width="28" Height="56" Text="" Note="검정건반" Visible="false">
+				  <SubElement ElementName="Main Button" Left="652" Top="898" Right="678" Bottom="954" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="624" ParentsId="6" Layer="1" Xpos="362" Xpos2="362" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="false">
+				  <SubElement ElementName="Main Button" Left="557" Top="898" Right="603" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="625" ParentsId="6" Layer="1" Xpos="409" Xpos2="409" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="false">
+				  <SubElement ElementName="Main Button" Left="373" Top="898" Right="419" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="626" ParentsId="6" Layer="1" Xpos="436" Xpos2="436" Ypos="485" Ypos2="485" Width="28" Height="56" Text="" Note="검정건반" Visible="false">
+				  <SubElement ElementName="Main Button" Left="650" Top="898" Right="678" Bottom="954" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="627" ParentsId="6" Layer="1" Xpos="457" Xpos2="457" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="false">
+				  <SubElement ElementName="Main Button" Left="468" Top="898" Right="514" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="628" ParentsId="6" Layer="1" Xpos="496" Xpos2="496" Ypos="485" Ypos2="485" Width="28" Height="56" Text="" Note="검정건반" Visible="false">
+				  <SubElement ElementName="Main Button" Left="650" Top="898" Right="678" Bottom="954" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="629" ParentsId="6" Layer="1" Xpos="505" Xpos2="505" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="false">
+				  <SubElement ElementName="Main Button" Left="557" Top="898" Right="603" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="630" ParentsId="6" Layer="1" Xpos="552" Xpos2="552" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="true">
+				  <SubElement ElementName="Main Button" Left="373" Top="898" Right="419" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="631" ParentsId="6" Layer="1" Xpos="579" Xpos2="579" Ypos="485" Ypos2="485" Width="28" Height="56" Text="" Note="검정건반" Visible="true">
+				  <SubElement ElementName="Main Button" Left="650" Top="898" Right="678" Bottom="954" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="632" ParentsId="6" Layer="1" Xpos="600" Xpos2="600" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="true">
+				  <SubElement ElementName="Main Button" Left="468" Top="898" Right="514" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="633" ParentsId="6" Layer="1" Xpos="639" Xpos2="639" Ypos="485" Ypos2="485" Width="28" Height="56" Text="" Note="검정건반" Visible="true">
+				  <SubElement ElementName="Main Button" Left="650" Top="898" Right="678" Bottom="954" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="634" ParentsId="6" Layer="1" Xpos="648" Xpos2="648" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="true">
+				  <SubElement ElementName="Main Button" Left="557" Top="898" Right="603" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="635" ParentsId="6" Layer="1" Xpos="695" Xpos2="695" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="true">
+				  <SubElement ElementName="Main Button" Left="373" Top="898" Right="419" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="636" ParentsId="6" Layer="1" Xpos="722" Xpos2="722" Ypos="485" Ypos2="485" Width="28" Height="56" Text="" Note="검정 건반" Visible="true">
+				  <SubElement ElementName="Main Button" Left="650" Top="898" Right="678" Bottom="954" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="637" ParentsId="6" Layer="1" Xpos="743" Xpos2="743" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="true">
+				  <SubElement ElementName="Main Button" Left="468" Top="898" Right="514" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="638" ParentsId="6" Layer="1" Xpos="782" Xpos2="782" Ypos="485" Ypos2="485" Width="28" Height="56" Text="" Note="검정건반" Visible="true">
+				  <SubElement ElementName="Main Button" Left="650" Top="898" Right="678" Bottom="954" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="639" ParentsId="6" Layer="1" Xpos="791" Xpos2="791" Ypos="485" Ypos2="485" Width="46" Height="89" Text="" Note="흰 건반" Visible="true">
+				  <SubElement ElementName="Main Button" Left="557" Top="898" Right="603" Bottom="987" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="640" ParentsId="1" Layer="1" Xpos="266" Xpos2="266" Ypos="430" Ypos2="430" Width="142" Height="0" Text="" Note="타임 게이지" Visible="false">
+				  <SubElement ElementName="Main Button" Left="596" Top="457" Right="738" Bottom="457" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="641" ParentsId="1" Layer="1" Xpos="409" Xpos2="409" Ypos="430" Ypos2="430" Width="142" Height="0" Text="" Note="타임 게이지" Visible="false">
+				  <SubElement ElementName="Main Button" Left="596" Top="457" Right="738" Bottom="457" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="642" ParentsId="1" Layer="1" Xpos="552" Xpos2="552" Ypos="430" Ypos2="430" Width="142" Height="0" Text="" Note="타임 게이지" Visible="false">
+				  <SubElement ElementName="Main Button" Left="596" Top="457" Right="738" Bottom="457" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="643" ParentsId="1" Layer="1" Xpos="695" Xpos2="695" Ypos="430" Ypos2="430" Width="142" Height="0" Text="" Note="타임 게이지" Visible="false">
+				  <SubElement ElementName="Main Button" Left="596" Top="457" Right="738" Bottom="457" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="1011" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="425" Ypos2="425" Width="46" Height="51" Text="" Note="Note Left" Visible="false">
+				  <SubElement ElementName="Main Button" Left="654" Top="597" Right="700" Bottom="648" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="1012" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="409" Ypos2="409" Width="46" Height="51" Text="" Note="Note Up" Visible="false">
+				  <SubElement ElementName="Main Button" Left="607" Top="597" Right="653" Bottom="648" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="1013" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="425" Ypos2="425" Width="46" Height="51" Text="" Note="Note Right" Visible="false">
+				  <SubElement ElementName="Main Button" Left="701" Top="597" Right="747" Bottom="648" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="1014" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="438" Ypos2="438" Width="46" Height="51" Text="" Note="Note Down" Visible="false">
+				  <SubElement ElementName="Main Button" Left="560" Top="597" Right="606" Bottom="648" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="1015" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="433" Ypos2="433" Width="46" Height="51" Text="" Note="Note Space" Visible="false">
+				  <SubElement ElementName="Main Button" Left="748" Top="597" Right="794" Bottom="648" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="1022" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="425" Ypos2="425" Width="46" Height="51" Text="" Note="Note Left UP" Visible="false">
+				<SubElement ElementName="Main Button" Left="795" Top="597" Right="841" Bottom="648" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="1023" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="409" Ypos2="409" Width="46" Height="51" Text="" Note="Note Right Up" Visible="false">
+				<SubElement ElementName="Main Button" Left="842" Top="597" Right="888" Bottom="648" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="1024" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="438" Ypos2="438" Width="46" Height="51" Text="" Note="Note Right Down" Visible="false">
+				<SubElement ElementName="Main Button" Left="936" Top="597" Right="982" Bottom="648" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="1025" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="425" Ypos2="425" Width="46" Height="51" Text="" Note="Note Left Down" Visible="false">
+				<SubElement ElementName="Main Button" Left="889" Top="597" Right="935" Bottom="648" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="650" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="651" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="652" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="653" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="654" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="655" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="656" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="657" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="658" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="659" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="660" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="661" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="662" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="663" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="664" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="665" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="666" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="667" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="668" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="669" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="155" Height="225" Text="" Note="터치이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="123" Top="231" Right="278" Bottom="456" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="692" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="70" Height="76" Text="" Note="노트잔상" Visible="false">
+				  <SubElement ElementName="Main Button" Left="899" Top="231" Right="969" Bottom="307" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="741" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="153" Height="52" Text="" Note="머리위에뜨는 판정결과" Visible="false">
+			    <SubElement ElementName="Main Button" Left="977" Top="0" Right="1150" Bottom="52" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="742" ParentsId="1" Layer="0" Xpos="580" Xpos2="580" Ypos="379" Ypos2="379" Width="144" Height="46" Text="" Note="콤보 이펙트" Visible="false">
+				  <SubElement ElementName="Main Button" Left="1847" Top="0" Right="1991" Bottom="46" TextureNum="1" />
+				  <SubElement ElementName="Sub Image" Xpos="134" Xpos2="134" Ypos="-10" Ypos2="-10" Width="55" Height="60" Left="0" Top="597" Right="55" Bottom="657" Visible="false" TextureNum="1" />
+				  <SubElement ElementName="Sub Image" Xpos="172" Xpos2="172" Ypos="-10" Ypos2="-10" Width="55" Height="60" Left="0" Top="597" Right="55" Bottom="657" Visible="false" TextureNum="1" />
+				  <SubElement ElementName="Sub Image" Xpos="210" Xpos2="210" Ypos="-10" Ypos2="-10" Width="55" Height="60" Left="0" Top="597" Right="55" Bottom="657" Visible="false" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="744" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="64" Height="64" Text="" Note="Miss Effect" Visible="false">
+				  <SubElement ElementName="Main Button" Left="596" Top="512" Right="660" Bottom="568" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="715" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="56" Height="56" Text="" Note="선택버튼F1" Visible="false">
+				<SubElement ElementName="Main Button" Left="1010" Top="1695" Right="1066" Bottom="1751" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="716" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="56" Height="56" Text="" Note="선택버튼F2" Visible="false">
+				<SubElement ElementName="Main Button" Left="1066" Top="1695" Right="1122" Bottom="1751" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="717" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="56" Height="56" Text="" Note="선택버튼F3" Visible="false">
+				<SubElement ElementName="Main Button" Left="1122" Top="1695" Right="1178" Bottom="1751" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="718" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="56" Height="56" Text="" Note="선택버튼F4" Visible="false">
+				<SubElement ElementName="Main Button" Left="1178" Top="1695" Right="1234" Bottom="1751" TextureNum="2" />
+			</Component>
+      
+			<Component Type="Image" Id="800" ParentsId="1" Layer="0" Xpos="302" Xpos2="302" Ypos="157" Ypos2="157" Width="472" Height="291" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="472" Bottom="291" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="801" ParentsId="1" Layer="1" Xpos="248" Xpos2="248" Ypos="210" Ypos2="210" Width="536" Height="245" Text="" Note="NoteDance Title" Visible="false">
+				 <SubElement ElementName="Main Button" Left="279" Top="488" Right="815" Bottom="733" TextureNum="3" />
+			</Component>
+			<Component Type="Image" Id="804" ParentsId="1" Layer="1" Xpos="344" Xpos2="344" Ypos="230" Ypos2="230" Width="337" Height="232" Text="" Note="첫인상" Visible="false">
+				 <SubElement ElementName="Main Button" Left="1264" Top="1808" Right="1601" Bottom="2040" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="805" ParentsId="1" Layer="1" Xpos="304" Xpos2="304" Ypos="113" Ypos2="113" Width="432" Height="487" Text="" Note="BestCouple" Visible="false">
+				 <SubElement ElementName="Main Button" Left="0" Top="0" Right="432" Bottom="487" TextureNum="3" />
+			</Component>
+			<Component Type="Image" Id="806" ParentsId="1" Layer="1" Xpos="315" Xpos2="315" Ypos="232" Ypos2="232" Width="395" Height="232" Text="" Note="헌팅상대선택" Visible="false">
+				 <SubElement ElementName="Main Button" Left="473" Top="1808" Right="868" Bottom="2040" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="811" ParentsId="1" Layer="1" Xpos="358" Xpos2="358" Ypos="271" Ypos2="271" Width="278" Height="222" Text="" Note="헌팅댄스" Visible="false">
+				 <SubElement ElementName="Main Button" Left="0" Top="488" Right="278" Bottom="710" TextureNum="3" />
+			</Component>
+			
+			<Component Type="Image" Id="812" ParentsId="1" Layer="1" Xpos="190" Xpos2="190" Ypos="194" Ypos2="194" Width="647" Height="193" Text="" Note="헌팅수락여부" Visible="false">
+				  <SubElement ElementName="Main Button" Left="0" Top="0" Right="647" Bottom="193" TextureNum="4" />
+			</Component>
+			<Component Type="Image" Id="813" ParentsId="1" Layer="0" Xpos="316" Xpos2="316" Ypos="313" Ypos2="313" Width="56" Height="56" Text="" Note="헌팅수락btn" Visible="false">
+				  <SubElement ElementName="Main Button" Left="1010" Top="1751" Right="1066" Bottom="1807" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="814" ParentsId="1" Layer="0" Xpos="545" Xpos2="545" Ypos="313" Ypos2="313" Width="56" Height="56" Text="" Note="헌팅거부btn" Visible="false">
+				  <SubElement ElementName="Main Button" Left="1066" Top="1751" Right="1122" Bottom="1807" TextureNum="2" />
+			</Component>
+
+			<Component Type="Image" Id="820" ParentsId="1" Layer="0" Xpos="950" Xpos2="950" Ypos="85" Ypos2="85" Width="70" Height="311" Text="" Note="FlowBG" Visible="false">
+				<SubElement ElementName="Main Button" Left="1978" Top="1595" Right="2048" Bottom="1906" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="821" ParentsId="1" Layer="0" Xpos="910" Xpos2="910" Ypos="119" Ypos2="119" Width="102" Height="60" Text="" Note="Flow PRTIME" Visible="false">
+				<SubElement ElementName="Main Button" Left="1880" Top="0" Right="1982" Bottom="60" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="822" ParentsId="1" Layer="0" Xpos="910" Xpos2="910" Ypos="160" Ypos2="160" Width="102" Height="60" Text="" Note="Flow 첫인상" Visible="false">
+				<SubElement ElementName="Main Button" Left="1880" Top="120" Right="1982" Bottom="180" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="823" ParentsId="1" Layer="0" Xpos="910" Xpos2="910" Ypos="201" Ypos2="201" Width="102" Height="60" Text="" Note="Flow 킹카퀸카" Visible="false">
+				<SubElement ElementName="Main Button" Left="1880" Top="240" Right="1982" Bottom="300" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="824" ParentsId="1" Layer="0" Xpos="910" Xpos2="910" Ypos="283" Ypos2="283" Width="102" Height="60" Text="" Note="Flow 타겟선택" Visible="false">
+				<SubElement ElementName="Main Button" Left="1880" Top="360" Right="1982" Bottom="420" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="825" ParentsId="1" Layer="0" Xpos="910" Xpos2="910" Ypos="324" Ypos2="324" Width="102" Height="60" Text="" Note="Flow HUNTTIME" Visible="false">
+				<SubElement ElementName="Main Button" Left="1880" Top="480" Right="1982" Bottom="540" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="826" ParentsId="1" Layer="0" Xpos="910" Xpos2="910" Ypos="242" Ypos2="242" Width="102" Height="60" Text="" Note="Flow 노트댄스" Visible="false">
+				<SubElement ElementName="Main Button" Left="1880" Top="601" Right="1982" Bottom="661" TextureNum="2" />
+			</Component>
+		      
+			<Component Type="Image" Id="830" ParentsId="1" Layer="0" Xpos="168" Xpos2="168" Ypos="18" Ypos2="18" Width="698" Height="133" Text="" Note="첫인상 string" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="623" Right="698" Bottom="756" TextureNum="4" />
+			</Component>
+			<Component Type="Image" Id="831" ParentsId="1" Layer="0" Xpos="319" Xpos2="319" Ypos="18" Ypos2="18" Width="407" Height="114" Text="" Note="타겟선택 string" Visible="false">
+				<SubElement ElementName="Main Button" Left="613" Top="489" Right="1020" Bottom="603" TextureNum="4" />
+			</Component>
+			<Component Type="Image" Id="839" ParentsId="1" Layer="0" Xpos="704" Xpos2="704" Ypos="68" Ypos2="78" Width="64" Height="75" Text="" Note="타겟선택 string 순위" Visible="false">
+				<SubElement ElementName="Main Button" Left="763" Top="623" Right="827" Bottom="698" TextureNum="4" />
+			</Component>
+			<Component Type="Image" Id="832" ParentsId="1" Layer="0" Xpos="215" Xpos2="215" Ypos="18" Ypos2="18" Width="612" Height="133" Text="" Note="퀸킹댄스 string" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="489" Right="612" Bottom="622" TextureNum="4" />
+				<SubElement ElementName="Sub Image" Xpos="376" Xpos2="376" Ypos="58" Ypos2="58" Width="125" Height="75" Left="0" Top="1724" Right="125" Bottom="1799" Visible="false" TextureNum="5" />
+			</Component>
+			
+			<Component Type="Image" Id="834" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="219" Ypos2="219" Width="132" Height="119" Text="" Note="닉네임 하트" Visible="false">
+				<SubElement ElementName="Main Button" Left="648" Top="0" Right="780" Bottom="119" TextureNum="4" />
+				<SubElement ElementName="Sub Static" Xpos="11" Xpos2="18" Ypos="36" Ypos2="50" Width="100" Height="15" Text="" Visible="true" Align="Center" ColorR="255" ColorG="255" ColorB="255" />
+			</Component>
+			<Component Type="Image" Id="835" ParentsId="1" Layer="0" Xpos="400" Xpos2="400" Ypos="239" Ypos2="239" Width="229" Height="81" Text="" Note="헌팅 수락str" Visible="false">
+				  <SubElement ElementName="Main Button" Left="781" Top="0" Right="1010" Bottom="81" TextureNum="4" />
+			</Component>
+			<Component Type="Image" Id="836" ParentsId="1" Layer="0" Xpos="485" Xpos2="485" Ypos="239" Ypos2="239" Width="195" Height="81" Text="" Note="헌팅 거절str" Visible="false">
+				  <SubElement ElementName="Main Button" Left="781" Top="82" Right="976" Bottom="163" TextureNum="4" />
+			</Component>
+			
+			<Component Type="Image" Id="837" ParentsId="1" Layer="0" Xpos="329" Xpos2="329" Ypos="219" Ypos2="219" Width="481" Height="118" Text="" Note="헌팅관전자용" Visible="false">
+				<SubElement ElementName="Main Button" Left="543" Top="892" Right="1024" Bottom="1024" TextureNum="4" />
+				<SubElement ElementName="Sub Static" Xpos="367" Xpos2="367" Ypos="55" Ypos2="55" Width="100" Height="15" Text="" Visible="true" Align="Center" ColorR="255" ColorG="255" ColorB="255" />
+			</Component>
+			<Component Type="Image" Id="838" ParentsId="1" Layer="0" Xpos="292" Xpos2="292" Ypos="239" Ypos2="239" Width="309" Height="81" Text="" Note="헌팅받은타겟" Visible="false">
+				<SubElement ElementName="Main Button" Left="629" Top="194" Right="938" Bottom="275" TextureNum="4" />
+			</Component>
+
+			<Component Type="Image" Id="827" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="214" Height="99" Text="" Note="다음헌터" Visible="false">
+				<SubElement ElementName="Main Button" Left="1010" Top="1595" Right="1224" Bottom="1694" TextureNum="2" />
+			</Component>
+      
+			<Component Type="Image" Id="840" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="46" Height="42" Text="" Note="헌팅성공" Visible="false">
+				<SubElement ElementName="Main Button" Left="1880" Top="733" Right="1926" Bottom="775" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="841" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="46" Height="42" Text="" Note="헌팅성공" Visible="false">
+				<SubElement ElementName="Main Button" Left="1880" Top="733" Right="1926" Bottom="775" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="842" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="46" Height="42" Text="" Note="헌팅성공" Visible="false">
+				<SubElement ElementName="Main Button" Left="1880" Top="733" Right="1926" Bottom="775" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="843" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="46" Height="42" Text="" Note="헌팅성공" Visible="false">
+				<SubElement ElementName="Main Button" Left="1880" Top="733" Right="1926" Bottom="775" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="844" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="53" Height="41" Text="" Note="헌팅실패" Visible="false">
+				<SubElement ElementName="Main Button" Left="1927" Top="734" Right="1980" Bottom="775" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="845" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="53" Height="41" Text="" Note="헌팅실패" Visible="false">
+				<SubElement ElementName="Main Button" Left="1927" Top="734" Right="1980" Bottom="775" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="846" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="53" Height="41" Text="" Note="헌팅실패" Visible="false">
+				<SubElement ElementName="Main Button" Left="1927" Top="734" Right="1980" Bottom="775" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="847" ParentsId="1" Layer="0" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="53" Height="41" Text="" Note="헌팅실패" Visible="false">
+				<SubElement ElementName="Main Button" Left="1927" Top="734" Right="1980" Bottom="775" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="848" ParentsId="1" Layer="0" Xpos="221" Xpos2="221" Ypos="251" Ypos2="251" Width="592" Height="81" Text="" Note="헌터종료" Visible="false">
+				<SubElement ElementName="Main Button" Left="432" Top="276" Right="1024" Bottom="357" TextureNum="4" />
+			</Component>
+			
+			<Component Type="Image" Id="828" ParentsId="1" Layer="0" Xpos="315" Xpos2="315" Ypos="0" Ypos2="0" Width="375" Height="370" Text="" Note="미션성공" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="375" Bottom="370" TextureNum="5" />
+			</Component>
+			<Component Type="Image" Id="829	" ParentsId="1" Layer="0" Xpos="317" Xpos2="317" Ypos="0" Ypos2="0" Width="371" Height="318" Text="" Note="미션실패" Visible="false">
+				<SubElement ElementName="Main Button" Left="376" Top="0" Right="747" Bottom="318" TextureNum="5" />
+			</Component>
+			<Component Type="Image" Id="833" ParentsId="1" Layer="0" Xpos="232" Xpos2="232" Ypos="21" Ypos2="21" Width="433" Height="130" Text="" Note="커플댄스 미션STR" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1800" Right="433" Bottom="1930" TextureNum="5" />
+			</Component>
+			<Component Type="Image" Id="851" ParentsId="1" Layer="0" Xpos="519" Xpos2="519" Ypos="72" Ypos2="72" Width="125" Height="75" Text="" Note="커플댄스 미션" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1724" Right="125" Bottom="1799" TextureNum="5" />
+			</Component>
+		
+			<Component Type="Image" Id="852" ParentsId="1" Layer="0" Xpos="632" Xpos2="632" Ypos="17" Ypos2="17" Width="132" Height="137" Text="" Note="미션결과 프로포즈포인트" Visible="false">
+				<SubElement ElementName="Main Button" Left="892" Top="138" Right="1024" Bottom="275" TextureNum="5" />
+				<SubElement ElementName="Sub Image" Xpos="21" Xpos2="21" Ypos="70" Ypos2="70" Width="23" Height="26" Left="376" Top="1273" Right="399" Bottom="1299" Visible="false" TextureNum="5" />
+				<SubElement ElementName="Sub Image" Xpos="43" Xpos2="43" Ypos="66" Ypos2="66" Width="28" Height="30" Left="376" Top="1300" Right="404" Bottom="1330" Visible="false" TextureNum="5" />
+			</Component>
+		
+			<Component Type="Image" Id="853" ParentsId="1" Layer="0" Xpos="632" Xpos2="632" Ypos="17" Ypos2="17" Width="132" Height="137" Text="" Note="미션결과 데이트카드" Visible="false">
+				<SubElement ElementName="Main Button" Left="892" Top="276" Right="1024" Bottom="413" TextureNum="5" />
+				<SubElement ElementName="Sub Image" Xpos="21" Xpos2="21" Ypos="70" Ypos2="70" Width="23" Height="26" Left="376" Top="1273" Right="399" Bottom="1299" Visible="false" TextureNum="5" />
+				<SubElement ElementName="Sub Image" Xpos="43" Xpos2="43" Ypos="66" Ypos2="66" Width="28" Height="30" Left="376" Top="1300" Right="404" Bottom="1330" Visible="false" TextureNum="5" />
+			</Component>
+
+			<Component Type="Image" Id="854" ParentsId="1" Layer="0" Xpos="632" Xpos2="632" Ypos="17" Ypos2="17" Width="132" Height="137" Text="" Note="미션결과 경험치" Visible="false">
+				<SubElement ElementName="Main Button" Left="892" Top="690" Right="1024" Bottom="827" TextureNum="5" />
+				<SubElement ElementName="Sub Image" Xpos="21" Xpos2="21" Ypos="66" Ypos2="66" Width="28" Height="30" Left="376" Top="1300" Right="404" Bottom="1330" Visible="false" TextureNum="5" />
+				<SubElement ElementName="Sub Image" Xpos="48" Xpos2="48" Ypos="70" Ypos2="70" Width="23" Height="26" Left="376" Top="1273" Right="399" Bottom="1299" Visible="false" TextureNum="5" />
+			</Component>
+	
+			<Component Type="Image" Id="855" ParentsId="1" Layer="0" Xpos="632" Xpos2="632" Ypos="17" Ypos2="17" Width="132" Height="137" Text="" Note="미션결과 게임머니" Visible="false">
+				<SubElement ElementName="Main Button" Left="892" Top="828" Right="1024" Bottom="965" TextureNum="5" />
+				<SubElement ElementName="Sub Image" Xpos="21" Xpos2="21" Ypos="66" Ypos2="66" Width="28" Height="30" Left="376" Top="1300" Right="404" Bottom="1330" Visible="false" TextureNum="5" />
+				<SubElement ElementName="Sub Image" Xpos="48" Xpos2="48" Ypos="70" Ypos2="70" Width="23" Height="26" Left="376" Top="1273" Right="399" Bottom="1299" Visible="false" TextureNum="5" />
+			</Component>
+			
+			<Component Type="Image" Id="510" ParentsId="4" Layer="9" Xpos="3" Xpos2="3" Ypos="607" Ypos2="607" Width="461" Height="63" Text="" Note="채팅창 위쪽" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="559" Right="461" Bottom="622" TextureNum="7" />
+				<SubElement ElementName="Sub Button" Xpos="426" Xpos2="426" Ypos="10" Ypos2="10" Width="27" Height="20" Left="577" Top="21" Right="604" Bottom="41" RectType="Right" TextureNum="7" Visible="false" Command="HUNTINGMODE_CHAT_EXPAND" />
+				<SubElement ElementName="Sub Button" Xpos="426" Xpos2="426" Ypos="-110" Ypos2="-110" Width="27" Height="20" Left="577" Top="0" Right="604" Bottom="20" RectType="Right" TextureNum="7" Visible="False" Command="HUNTINGMODE_CHAT_EXPAND" />
+				<SubElement ElementName="Sub Button" Xpos="426" Xpos2="426" Ypos="-230" Ypos2="-230" Width="27" Height="20" Left="577" Top="58" Right="604" Bottom="78" RectType="Right" TextureNum="7" Visible="False" Command="HUNTINGMODE_CHAT_EXPAND" />
+				<SubElement ElementName="Sub Button" Xpos="426" Xpos2="426" Ypos="38" Ypos2="38" Width="27" Height="20" Left="577" Top="21" Right="604" Bottom="41" RectType="Right" TextureNum="7" Visible="true" Command="HUNTINGMODE_CHAT_SCROLL_UP" />
+			</Component>
+			<Component Type="Image" Id="511" ParentsId="4" Layer="9" Xpos="3" Xpos2="3" Ypos="551" Ypos2="550" Width="461" Height="120" Text="" Note="채팅창 가운데 확장1" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="729" Right="461" Bottom="849" TextureNum="7" />
+			</Component>
+			<Component Type="Image" Id="512" ParentsId="4" Layer="9" Xpos="3" Xpos2="3" Ypos="432" Ypos2="430" Width="461" Height="120" Text="" Note="채팅창 가운데 확장2" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="729" Right="461" Bottom="849" TextureNum="7" />
+			</Component>
+			<Component Type="Image" Id="513" ParentsId="4" Layer="9" Xpos="3" Xpos2="3" Ypos="670" Ypos2="670" Width="461" Height="63" Text="" Note="채팅창 아래쪽" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="644" Right="461" Bottom="707" TextureNum="7" />
+				<SubElement ElementName="Sub Image" Xpos="426" Xpos2="426" Ypos="16" Ypos2="16" Width="27" Height="15" Left="577" Top="42" Right="604" Bottom="57" TextureNum="7" Visible="true" />
+				<SubElement ElementName="Sub Button" Xpos="426" Xpos2="426" Ypos="36" Ypos2="36" Width="27" Height="20" Left="577" Top="58" Right="604" Bottom="78" RectType="Right" TextureNum="7" Visible="true" Command="HUNTINGMODE_CHAT_SCROLL_DOWN" />
+			</Component>
+			<Component Type="Image" Id="514" ParentsId="4" Layer="9" Xpos="3" Xpos2="3" Ypos="742" Ypos2="742" Width="462" Height="20" Text="" Note="하단 입력줄" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="708" Right="462" Bottom="728" TextureNum="7" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="28" Height="20" Left="374" Top="374" Right="402" Bottom="394" TextureNum="7" Visible="true" Note="채팅 종류 선택" Command="HUNTINGMODE_CHAT_SELECT" />
+			</Component>
+			<Component Type="Image" Id="515" ParentsId="4" Layer="9" Xpos="8" Xpos2="8" Ypos="688" Ypos2="688" Width="107" Height="77" Text="" Note="채팅 종류" Visible="false">
+				<SubElement ElementName="Main Button" Left="372" Top="135" Right="479" Bottom="212" TextureNum="7" />
+				<SubElement ElementName="Sub Button" Xpos="3" Xpos2="3" Ypos="2" Ypos2="2" Width="101" Height="17" Left="0" Top="487" Right="101" Bottom="504" RectType="Right" TextureNum="7" Visible="true" Note="일반채팅" Command="HUNTINGMODE_CHAT_GENERAL" />
+				<SubElement ElementName="Sub Button" Xpos="3" Xpos2="3" Ypos="21" Ypos2="21" Width="101" Height="17" Left="0" Top="541" Right="101" Bottom="558" RectType="Right" TextureNum="7" Visible="true" Note="귓속말" Command="HUNTINGMODE_CHAT_WHISPER" />
+				<SubElement ElementName="Sub Button" Xpos="3" Xpos2="3" Ypos="40" Ypos2="40" Width="101" Height="17" Left="0" Top="505" Right="101" Bottom="522" RectType="Right" TextureNum="7" Visible="true" Note="FAM" Command="HUNTINGMODE_CHAT_FAM" />
+				<SubElement ElementName="Sub Button" Xpos="3" Xpos2="3" Ypos="59" Ypos2="59" Width="101" Height="17" Left="0" Top="523" Right="101" Bottom="540" RectType="Right" TextureNum="7" Visible="true" Note="외치기" Command="HUNTINGMODE_CHAT_SHOUT" />
+			</Component>
+			
+		</DlgInfo>
+	</TotalInfo>
+</UIXml>

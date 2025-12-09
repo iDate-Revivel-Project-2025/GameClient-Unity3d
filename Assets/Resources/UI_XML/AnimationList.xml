@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+	<TotalInfo DlgCnt="1">
+		<DlgInfo ID="52" TextureCnt="1" ControlCnt="24">
+		<TextureInfo TexturePath="ActionSlot Icon.dds" TextureIndex="1" />
+			<Component Type="Image" Id="900" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00001" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="49" Bottom="50" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="901" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00002" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="50" Right="49" Bottom="100" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="902" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00003" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="100" Right="49" Bottom="150" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="903" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00004" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="150" Right="49" Bottom="200" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="904" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00005" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="200" Right="49" Bottom="250" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="905" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00006" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="250" Right="49" Bottom="300" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="906" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00007" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="300" Right="49" Bottom="350" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="907" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00008" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="350" Right="49" Bottom="400" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="908" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00009" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="400" Right="49" Bottom="450" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="909" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00010" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="450" Right="49" Bottom="500" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="910" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00011" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="500" Right="49" Bottom="550" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="911" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL1_00012" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="550" Right="49" Bottom="600" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="912" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00001" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="0" Right="197" Bottom="50" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="913" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00002" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="50" Right="197" Bottom="100" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="914" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00003" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="100" Right="197" Bottom="150" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="915" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00004" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="150" Right="197" Bottom="200" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="916" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00005" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="200" Right="197" Bottom="250" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="917" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00006" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="250" Right="197" Bottom="300" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="918" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00007" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="300" Right="197" Bottom="350" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="919" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00008" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="350" Right="197" Bottom="400" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="920" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00009" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="400" Right="197" Bottom="450" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="921" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00010" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="450" Right="197" Bottom="500" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="922" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00011" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="500" Right="197" Bottom="550" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="923" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="49" Height="49" Text="AL2_00012" Note="Animation" Visible="false">
+				<SubElement ElementName="Main Button" Left="148" Top="550" Right="197" Bottom="600" TextureNum="1" />
+			</Component>	
+		</DlgInfo>
+	</TotalInfo>
+</UIXml>	

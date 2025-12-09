@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+    <TotalInfo DlgCnt="1">
+		<DlgInfo ID="12" TextureCnt="8" ControlCnt="56">
+			<TextureInfo TexturePath="common_ui.dds" TextureIndex="1" />
+			<TextureInfo TexturePath="common_ui2.dds" TextureIndex="2" />
+			<TextureInfo TexturePath="ChatRoomUI.dds" TextureIndex="3" />
+			<TextureInfo TexturePath="mode_mission.dds" TextureIndex="4" />
+			<TextureInfo TexturePath="BlackBG.dds" TextureIndex="5" />
+			<TextureInfo TexturePath="ActionSlot Icon.dds" TextureIndex="6" />
+			<TextureInfo TexturePath="Itemcharactor.dds" TextureIndex="7" />
+			<TextureInfo TexturePath="mode_mission2.dds" TextureIndex="8" />
+						
+			<Component Type="Image" Id="100" ParentsId="4" Layer="4" Xpos="163" Xpos2="163" Ypos="0" Ypos2="0" Width="861" Height="54" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="861" Bottom="54" TextureNum="1" />
+				<SubElement ElementName="Sub Static" Xpos="10" Xpos2="10" Ypos="8" Ypos2="8" Width="300" Height="15" Text="" Note="서버/채널" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				<SubElement ElementName="Sub Button" Xpos="367" Xpos2="367" Ypos="7" Ypos2="6" Width="46" Height="39" Left="557" Top="324" Right="603" Bottom="363" RectType="Right" TextureNum="1" Visible="false" Command="MAIN_CHATROOM_RANKING" />
+				<SubElement ElementName="Sub Button" Xpos="420" Xpos2="420" Ypos="7" Ypos2="6" Width="46" Height="39" Left="557" Top="364" Right="603" Bottom="403" RectType="Right" TextureNum="1" Visible="false" Command="MAIN_CHATROOM_OPTION" />
+				<SubElement ElementName="Sub Button" Xpos="486" Xpos2="486" Ypos="9" Ypos2="6" Width="83" Height="34" Left="0" Top="88" Right="83" Bottom="122" RectType="Right" TextureNum="1" Visible="true" Command="MAIN_CHATROOM_LOBBY" />
+				<SubElement ElementName="Sub Button" Xpos="572" Xpos2="572" Ypos="9" Ypos2="6" Width="83" Height="34" Left="0" Top="123" Right="83" Bottom="157" RectType="Right" TextureNum="1" Visible="true" Command="MAIN_CHATROOM_SHOP" />
+				<SubElement ElementName="Sub Button" Xpos="658" Xpos2="658" Ypos="9" Ypos2="6" Width="83" Height="34" Left="0" Top="158" Right="83" Bottom="192" RectType="Right" TextureNum="1" Visible="true" Command="MAIN_CHATROOM_CLUB" />
+				<SubElement ElementName="Sub Button" Xpos="761" Xpos2="761" Ypos="7" Ypos2="6" Width="93" Height="39" Left="0" Top="228" Right="93" Bottom="267" RectType="Right" TextureNum="1" Visible="true" Command="MAIN_CHATROOM_EXIT" />
+			</Component>				
+			
+			<Component Type="Image" Id="109" ParentsId="1" Layer="0" Xpos="480" Xpos2="480" Ypos="684" Ypos2="684" Width="92" Height="52" Text="" Note="관계게이지" Visible="true">
+				 <SubElement ElementName="Main Button" Left="921" Top="0" Right="1013" Bottom="52" TextureNum="3" />
+				 <SubElement ElementName="Sub Image" Xpos="92" Xpos2="92" Ypos="3" Ypos2="3" Width="436" Height="52" Left="588" Top="446" Right="1024" Bottom="498" Visible="true" TextureNum="3" Note="게이지배경" />
+				 <SubElement ElementName="Sub Image" Xpos="92" Xpos2="92" Ypos="17" Ypos2="17" Width="424" Height="24" Left="592" Top="421" Right="1016" Bottom="445" Visible="true" TextureNum="3" Note="게이지" />
+			</Component>
+				 
+			<Component Type="Image" Id="110" ParentsId="1" Layer="0" Xpos="320" Xpos2="320" Ypos="240" Ypos2="240" Width="382" Height="138" Text="" Note="샤이닝st로 이동알림" Visible="false">
+				 <SubElement ElementName="Main Button" Left="1294" Top="1704" Right="1676" Bottom="1842" TextureNum="1" />
+				 <SubElement ElementName="Sub Static" Xpos="30" Xpos2="30" Ypos="50" Ypos2="50" Width="300" Height="15" Text="Moving  to  Club." Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+			</Component>  
+			
+			<Component Type="Image" Id="113" ParentsId="1" Layer="5" Xpos="290" Xpos2="290" Ypos="270" Ypos2="270" Width="462" Height="185" Text="" Note="프로포즈 시작알림" Visible="true">
+				<SubElement ElementName="Main Button" Left="458" Top="0" Right="920" Bottom="185" TextureNum="3" />
+				<SubElement ElementName="Sub Button" Xpos="155" Xpos2="155" Ypos="122" Ypos2="122" Width="139" Height="39" Left="0" Top="268" Right="139" Bottom="307" TextureNum="1" Visible="true" Command="PROPOSE_START" />
+			</Component>
+						
+ 			<Component Type="Image" Id="114" ParentsId="1" Layer="5" Xpos="261" Xpos2="261" Ypos="110" Ypos2="110" Width="497" Height="383" Text="" Note="프로포즈 축하" Visible="false">
+				<SubElement ElementName="Main Button" Left="374" Top="1340" Right="871" Bottom="1723" TextureNum="4" />
+			</Component>
+			
+			<Component Type="Image" Id="115" ParentsId="1" Layer="5" Xpos="97" Xpos2="97" Ypos="543" Ypos2="543" Width="853" Height="117" Text="" Note="프로포즈 결과 메시지" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="1931" Right="853" Bottom="2048" TextureNum="4" />
+			</Component>
+			
+			<Component Type="Image" Id="116" ParentsId="1" Layer="5" Xpos="211" Xpos2="211" Ypos="358" Ypos2="358" Width="132" Height="137" Text="" Note="연인 보상 1" Visible="false">
+				<SubElement ElementName="Main Button" Left="892" Top="0" Right="1024" Bottom="137" TextureNum="4" />
+				<SubElement ElementName="Sub Image" Xpos="21" Xpos2="21" Ypos="66" Ypos2="66" Width="28" Height="30" Left="376" Top="1300" Right="404" Bottom="1330" Visible="false" TextureNum="4" Note="10의자리수" />
+				<SubElement ElementName="Sub Image" Xpos="48" Xpos2="48" Ypos="70" Ypos2="70" Width="23" Height="26" Left="376" Top="1273" Right="399" Bottom="1299" Visible="false" TextureNum="4" Note="1의자리수" />
+			</Component>
+			
+			<Component Type="Image" Id="117" ParentsId="1" Layer="5" Xpos="345" Xpos2="345" Ypos="396" Ypos2="396" Width="62" Height="62" Text="" Note="+표시" Visible="false">
+				<SubElement ElementName="Main Button" Left="657" Top="1273" Right="719" Bottom="1335" TextureNum="4" />
+			</Component>
+			
+			<Component Type="Image" Id="118" ParentsId="1" Layer="5" Xpos="408" Xpos2="408" Ypos="358" Ypos2="358" Width="132" Height="137" Text="" Note="연인 보상 2" Visible="false">
+				<SubElement ElementName="Main Button" Left="892" Top="0" Right="1024" Bottom="137" TextureNum="4" />
+			</Component>
+			
+			<Component Type="Image" Id="119" ParentsId="1" Layer="5" Xpos="545" Xpos2="545" Ypos="358" Ypos2="358" Width="132" Height="137" Text="" Note="연인 보상 3" Visible="false">
+				<SubElement ElementName="Main Button" Left="892" Top="0" Right="1024" Bottom="137" TextureNum="4" />
+				<SubElement ElementName="Sub Image" Xpos="21" Xpos2="21" Ypos="66" Ypos2="66" Width="28" Height="30" Left="460" Top="1300" Right="488" Bottom="1330" Visible="true" TextureNum="4" Note="100의자리수" />
+				<SubElement ElementName="Sub Image" Xpos="45" Xpos2="45" Ypos="70" Ypos2="70" Width="23" Height="26" Left="376" Top="1273" Right="399" Bottom="1299" Visible="true" TextureNum="4" Note="10의자리수" />
+				<SubElement ElementName="Sub Image" Xpos="66" Xpos2="66" Ypos="70" Ypos2="70" Width="23" Height="26" Left="376" Top="1273" Right="399" Bottom="1299" Visible="true" TextureNum="4" Note="1의자리수" />
+			</Component>
+			
+			<Component Type="Image" Id="120" ParentsId="1" Layer="5" Xpos="682" Xpos2="682" Ypos="358" Ypos2="358" Width="132" Height="137" Text="" Note="연인 보상 4" Visible="false">
+				<SubElement ElementName="Main Button" Left="892" Top="0" Right="1024" Bottom="137" TextureNum="4" />
+			</Component>
+			
+			<Component Type="Image" Id="520" ParentsId="3" Layer="1" Xpos="10" Xpos2="10" Ypos="115" Ypos2="115" Width="117" Height="372" Text="" Note="확장된 남자 소셜 액션슬롯" Visible="false">
+				<SubElement ElementName="Main Button" Left="577" Top="79" Right="694" Bottom="451" TextureNum="2" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="351" Ypos2="351" Width="101" Height="13" Left="0" Top="850" Right="101" Bottom="863" RectType="Right" TextureNum="2" Visible="true" Command="CHAT_ACTIONSLOT_REDUCE" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="34" Ypos2="34" Width="49" Height="49" Left="0" Top="0" Right="49" Bottom="49" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F1" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="87" Ypos2="87" Width="49" Height="49" Left="0" Top="50" Right="49" Bottom="99" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F2" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="140" Ypos2="140" Width="49" Height="49" Left="0" Top="100" Right="49" Bottom="149" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F3" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="193" Ypos2="193" Width="49" Height="49" Left="0" Top="150" Right="49" Bottom="199" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F4" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="246" Ypos2="246" Width="49" Height="49" Left="0" Top="200" Right="49" Bottom="249" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F5" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="299" Ypos2="299" Width="49" Height="49" Left="0" Top="250" Right="49" Bottom="299" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F6" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="34" Ypos2="34" Width="49" Height="49" Left="0" Top="300" Right="49" Bottom="349" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F7" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="87" Ypos2="87" Width="49" Height="49" Left="0" Top="350" Right="49" Bottom="399" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F8" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="140" Ypos2="140" Width="49" Height="49" Left="0" Top="400" Right="49" Bottom="449" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F9" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="193" Ypos2="193" Width="49" Height="49" Left="0" Top="450" Right="49" Bottom="499" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F10" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="246" Ypos2="246" Width="49" Height="49" Left="0" Top="500" Right="49" Bottom="549" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F11" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="299" Ypos2="299" Width="49" Height="49" Left="0" Top="550" Right="49" Bottom="599" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F12" />
+			</Component>
+			<Component Type="Image" Id="521" ParentsId="3" Layer="1" Xpos="10" Xpos2="10" Ypos="115" Ypos2="115" Width="117" Height="372" Text="" Note="확장된 여자 소셜 액션슬롯" Visible="false">
+				<SubElement ElementName="Main Button" Left="577" Top="79" Right="694" Bottom="451" TextureNum="2" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="351" Ypos2="351" Width="101" Height="13" Left="0" Top="850" Right="101" Bottom="863" RectType="Right" TextureNum="2" Visible="true" Command="CHAT_ACTIONSLOT_REDUCE" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="34" Ypos2="34" Width="49" Height="49" Left="148" Top="0" Right="197" Bottom="49" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F1" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="87" Ypos2="87" Width="49" Height="49" Left="148" Top="50" Right="197" Bottom="99" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F2" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="140" Ypos2="140" Width="49" Height="49" Left="148" Top="100" Right="197" Bottom="149" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F3" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="193" Ypos2="193" Width="49" Height="49" Left="148" Top="150" Right="197" Bottom="199" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F4" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="246" Ypos2="246" Width="49" Height="49" Left="148" Top="200" Right="197" Bottom="249" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F5" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="299" Ypos2="299" Width="49" Height="49" Left="148" Top="250" Right="197" Bottom="299" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F6" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="34" Ypos2="34" Width="49" Height="49" Left="148" Top="300" Right="197" Bottom="349" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F7" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="87" Ypos2="87" Width="49" Height="49" Left="148" Top="350" Right="197" Bottom="399" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F8" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="140" Ypos2="140" Width="49" Height="49" Left="148" Top="400" Right="197" Bottom="449" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F9" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="193" Ypos2="193" Width="49" Height="49" Left="148" Top="450" Right="197" Bottom="499" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F10" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="246" Ypos2="246" Width="49" Height="49" Left="148" Top="500" Right="197" Bottom="549" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F11" />
+				<SubElement ElementName="Sub Button" Xpos="60" Xpos2="60" Ypos="299" Ypos2="299" Width="49" Height="49" Left="148" Top="550" Right="197" Bottom="599" RectType="Right" TextureNum="6" Visible="true" Command="CHAT_ACTIONSLOT_F12" />
+			</Component>
+			<Component Type="Image" Id="522" ParentsId="3" Layer="1" Xpos="10" Xpos2="10" Ypos="115" Ypos2="115" Width="117" Height="55" Text="" Note="축소된 소셜 액션슬롯" Visible="false">
+				<SubElement ElementName="Main Button" Left="459" Top="79" Right="576" Bottom="134" TextureNum="2" />
+				<SubElement ElementName="Sub Button" Xpos="8" Xpos2="8" Ypos="34" Ypos2="34" Width="101" Height="13" Left="0" Top="864" Right="101" Bottom="877" RectType="Right" TextureNum="2" Visible="true" Command="CHAT_ACTIONSLOT_EXPAND" />
+			</Component>
+			
+			<Component Type="Image" Id="121" ParentsId="1" Layer="5" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="1024" Height="768" Text="" Note="채팅룸 선물 선택및결과 배경" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="1024" Bottom="768" TextureNum="5" />
+			</Component>
+			
+			<Component Type="Image" Id="122" ParentsId="1" Layer="5" Xpos="294" Xpos2="294" Ypos="50" Ypos2="50" Width="436" Height="130" Text="" Note="채팅룸 선물 선택" Visible="false">
+				<SubElement ElementName="Main Button" Left="151" Top="881" Right="587" Bottom="1011" TextureNum="3" />
+			</Component>
+			
+			<Component Type="Image" Id="123" ParentsId="1" Layer="5" Xpos="127" Xpos2="127" Ypos="180" Ypos2="180" Width="250" Height="250" Text="" Note="선물 선택 F1" Visible="false">
+				<SubElement ElementName="Main Button" Left="524" Top="499" Right="774" Bottom="749" TextureNum="3" Note="선물 이미지" />
+				<SubElement ElementName="Sub Image" Xpos="173" Xpos2="173" Ypos="173" Ypos2="173" Width="77" Height="77" Left="0" Top="470" Right="77" Bottom="547" Visible="false" TextureNum="3" Note="F1 이미지" />
+			</Component>
+			
+			<Component Type="Image" Id="124" ParentsId="1" Layer="5" Xpos="387" Xpos2="387" Ypos="180" Ypos2="180" Width="250" Height="250" Text="" Note="선물 선택 F2" Visible="false">
+				<SubElement ElementName="Main Button" Left="524" Top="499" Right="774" Bottom="749" TextureNum="3" Note="선물 이미지" />
+				<SubElement ElementName="Sub Image" Xpos="173" Xpos2="173" Ypos="173" Ypos2="173" Width="77" Height="77" Left="0" Top="548" Right="77" Bottom="625" Visible="false" TextureNum="3" Note="F2 이미지" />
+			</Component>
+			
+			<Component Type="Image" Id="125" ParentsId="1" Layer="5" Xpos="647" Xpos2="647" Ypos="180" Ypos2="180" Width="250" Height="250" Text="" Note="선물 선택 F3" Visible="false">
+				<SubElement ElementName="Main Button" Left="524" Top="499" Right="774" Bottom="749" TextureNum="3" Note="선물 이미지" />
+				<SubElement ElementName="Sub Image" Xpos="173" Xpos2="173" Ypos="173" Ypos2="173" Width="77" Height="77" Left="0" Top="626" Right="77" Bottom="703" Visible="false" TextureNum="3" Note="F3 이미지" />
+			</Component>
+
+			<Component Type="Image" Id="133" ParentsId="1" Layer="5" Xpos="350" Xpos2="350" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 1" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="134" ParentsId="1" Layer="5" Xpos="512" Xpos2="512" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 2" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+
+			<Component Type="Image" Id="135" ParentsId="1" Layer="5" Xpos="289" Xpos2="289" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 1" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="136" ParentsId="1" Layer="5" Xpos="446" Xpos2="446" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 2" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="137" ParentsId="1" Layer="5" Xpos="603" Xpos2="603" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 3" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+
+			<Component Type="Image" Id="138" ParentsId="1" Layer="5" Xpos="218" Xpos2="218" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 1" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="139" ParentsId="1" Layer="5" Xpos="370" Xpos2="370" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 2" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="140" ParentsId="1" Layer="5" Xpos="522" Xpos2="522" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 3" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="141" ParentsId="1" Layer="5" Xpos="674" Xpos2="674" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 4" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+				
+			<Component Type="Image" Id="142" ParentsId="1" Layer="5" Xpos="152" Xpos2="152" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 1" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="143" ParentsId="1" Layer="5" Xpos="299" Xpos2="299" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 2" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="144" ParentsId="1" Layer="5" Xpos="446" Xpos2="446" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 3" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="145" ParentsId="1" Layer="5" Xpos="593" Xpos2="593" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 4" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="146" ParentsId="1" Layer="5" Xpos="740" Xpos2="740" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 5" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="147" ParentsId="1" Layer="5" Xpos="91" Xpos2="91" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 1" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="148" ParentsId="1" Layer="5" Xpos="233" Xpos2="233" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 2" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="149" ParentsId="1" Layer="5" Xpos="375" Xpos2="375" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 3" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="150" ParentsId="1" Layer="5" Xpos="517" Xpos2="517" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 4" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="151" ParentsId="1" Layer="5" Xpos="659" Xpos2="659" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 5" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="152" ParentsId="1" Layer="5" Xpos="801" Xpos2="801" Ypos="433" Ypos2="433" Width="132" Height="137" Text="" Note="선물 종류 6" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 종류 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="153" ParentsId="1" Layer="5" Xpos="162" Xpos2="162" Ypos="577" Ypos2="577" Width="350" Height="31" Text="" Note="받을 수 있는 선물 설명" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="704" Right="350" Bottom="735" TextureNum="3" />
+				<SubElement ElementName="Sub Image" Xpos="350" Xpos2="350" Ypos="0" Ypos2="0" Width="350" Height="31" Left="0" Top="736" Right="350" Bottom="767" Visible="true" TextureNum="3" Note="" />
+			</Component>
+			
+			<Component Type="Image" Id="126" ParentsId="1" Layer="5" Xpos="394" Xpos2="394" Ypos="40" Ypos2="40" Width="236" Height="494" Text="" Note="채팅룸 선물" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="769" Right="118" Bottom="1016" TextureNum="5" />
+			</Component>
+			
+			<Component Type="Image" Id="127" ParentsId="1" Layer="5" Xpos="294" Xpos2="294" Ypos="110" Ypos2="110" Width="436" Height="130" Text="" Note="채팅룸 선물 결과 [선물있음]" Visible="false">
+				<SubElement ElementName="Main Button" Left="588" Top="750" Right="1024" Bottom="880" TextureNum="3" />
+			</Component>
+			
+			<Component Type="Image" Id="128" ParentsId="1" Layer="5" Xpos="446" Xpos2="446" Ypos="240" Ypos2="240" Width="132" Height="137" Text="" Note="받은 선물 [악세서리]" Visible="false">
+				<SubElement ElementName="Main Button" Left="288" Top="470" Right="420" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="129" ParentsId="1" Layer="5" Xpos="446" Xpos2="446" Ypos="240" Ypos2="240" Width="132" Height="137" Text="" Note="받은 선물 [타이틀]" Visible="false">
+				<SubElement ElementName="Main Button" Left="155" Top="470" Right="287" Bottom="607" TextureNum="3" Note="BG IMAGE" RectType="None" />
+				<SubElement ElementName="Sub Image" Xpos="33" Xpos2="33" Ypos="30" Ypos2="30" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="0" Visible="true" Note="선물 썸네일" />
+			</Component>
+			
+			<Component Type="Image" Id="130" ParentsId="1" Layer="5" Xpos="294" Xpos2="294" Ypos="110" Ypos2="110" Width="436" Height="130" Text="" Note="채팅룸 선물 결과 [꽝]" Visible="false">
+				<SubElement ElementName="Main Button" Left="588" Top="881" Right="1024" Bottom="1011" TextureNum="3" />
+			</Component>
+			
+
+
+
+
+
+
+
+
+
+			<Component Type="Image" Id="232" ParentsId="1" Layer="5" Xpos="331" Xpos2="331" Ypos="397" Ypos2="397" Width="100" Height="24" Text="" Note="채팅룸 선물 시간정보" Visible="false">
+				<SubElement ElementName="Main Button" Left="155" Top="608" Right="255" Bottom="632" TextureNum="3" />
+				<SubElement ElementName="Sub Image" Xpos="100" Xpos2="100" Ypos="2" Ypos2="2" Width="16" Height="19" Left="349" Top="682" Right="365" Bottom="701" Visible="true" TextureNum="3" Note="날짜 10의 자리수" />
+				<SubElement ElementName="Sub Image" Xpos="117" Xpos2="117" Ypos="2" Ypos2="2" Width="16" Height="19" Left="349" Top="682" Right="365" Bottom="701" Visible="true" TextureNum="3" Note="날짜 1의 자리수" />
+				<SubElement ElementName="Sub Image" Xpos="138" Xpos2="138" Ypos="2" Ypos2="2" Width="73" Height="19" Left="292" Top="608" Right="365" Bottom="632" Visible="true" TextureNum="3" Note="날짜" />
+				<SubElement ElementName="Sub Image" Xpos="214" Xpos2="214" Ypos="2" Ypos2="2" Width="16" Height="19" Left="349" Top="682" Right="365" Bottom="701" Visible="true" TextureNum="3" Note="시간 10의 자리수" />
+				<SubElement ElementName="Sub Image" Xpos="231" Xpos2="231" Ypos="2" Ypos2="2" Width="16" Height="19" Left="349" Top="682" Right="365" Bottom="701" Visible="true" TextureNum="3" Note="시간 1의 자리수" />
+				<SubElement ElementName="Sub Image" Xpos="251" Xpos2="251" Ypos="2" Ypos2="2" Width="57" Height="19" Left="405" Top="608" Right="462" Bottom="632" Visible="true" TextureNum="3" Note="시간" />
+			</Component>
+
+
+			<Component Type="Image" Id="132" ParentsId="1" Layer="5" Xpos="331" Xpos2="331" Ypos="421" Ypos2="421" Width="363" Height="49" Text="" Note="채팅룸 선물 상세정보" Visible="false">
+				<SubElement ElementName="Main Button" Left="155" Top="632" Right="518" Bottom="681" TextureNum="3" />
+				<SubElement ElementName="Sub Image" Xpos="2" Xpos2="2" Ypos="2" Ypos2="2" Width="17" Height="19" Left="155" Top="682" Right="172" Bottom="701" Visible="true" TextureNum="3" Note="EXP 10의 자리수" />
+				<SubElement ElementName="Sub Image" Xpos="17" Xpos2="17" Ypos="2" Ypos2="2" Width="17" Height="19" Left="155" Top="682" Right="172" Bottom="701" Visible="true" TextureNum="3" Note="EXP 1의 자리수" />
+				<SubElement ElementName="Sub Image" Xpos="32" Xpos2="32" Ypos="2" Ypos2="2" Width="17" Height="19" Left="326" Top="682" Right="348" Bottom="701" Visible="true" TextureNum="3" Note="EXP 1의 자리수" />
+				<SubElement ElementName="Sub Image" Xpos="2" Xpos2="2" Ypos="27" Ypos2="27" Width="17" Height="19" Left="155" Top="682" Right="172" Bottom="701" Visible="true" TextureNum="3" Note="MONEY 10의 자리수" />
+				<SubElement ElementName="Sub Image" Xpos="17" Xpos2="17" Ypos="27" Ypos2="27" Width="17" Height="19" Left="155" Top="682" Right="172" Bottom="701" Visible="true" TextureNum="3" Note="MONEY 10의 자리수" />
+				<SubElement ElementName="Sub Image" Xpos="32" Xpos2="32" Ypos="27" Ypos2="27" Width="17" Height="19" Left="326" Top="682" Right="348" Bottom="701" Visible="true" TextureNum="3" Note="MONEY 1의 자리수" />
+			</Component>
+
+			<Component Type="Image" Id="510" ParentsId="4" Layer="9" Xpos="3" Xpos2="3" Ypos="607" Ypos2="607" Width="461" Height="63" Text="" Note="채팅창 위쪽" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="559" Right="461" Bottom="622" TextureNum="2" />
+				<SubElement ElementName="Sub Button" Xpos="426" Xpos2="426" Ypos="10" Ypos2="10" Width="27" Height="20" Left="577" Top="21" Right="604" Bottom="41" RectType="Right" TextureNum="2" Visible="false" Command="CHATROOM_CHAT_EXPAND" />
+				<SubElement ElementName="Sub Button" Xpos="426" Xpos2="426" Ypos="-110" Ypos2="-110" Width="27" Height="20" Left="577" Top="0" Right="604" Bottom="20" RectType="Right" TextureNum="2" Visible="False" Command="CHATROOM_CHAT_EXPAND" />
+				<SubElement ElementName="Sub Button" Xpos="426" Xpos2="426" Ypos="-230" Ypos2="-230" Width="27" Height="20" Left="577" Top="58" Right="604" Bottom="78" RectType="Right" TextureNum="2" Visible="False" Command="CHATROOM_CHAT_EXPAND" />
+				<SubElement ElementName="Sub Button" Xpos="426" Xpos2="426" Ypos="38" Ypos2="38" Width="27" Height="20" Left="577" Top="21" Right="604" Bottom="41" RectType="Right" TextureNum="2" Visible="true" Command="CHATROOM_CHAT_SCROLL_UP" />
+			</Component>
+			<Component Type="Image" Id="511" ParentsId="4" Layer="9" Xpos="3" Xpos2="3" Ypos="551" Ypos2="550" Width="461" Height="120" Text="" Note="채팅창 가운데 확장1" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="729" Right="461" Bottom="849" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="512" ParentsId="4" Layer="9" Xpos="3" Xpos2="3" Ypos="432" Ypos2="430" Width="461" Height="120" Text="" Note="채팅창 가운데 확장2" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="729" Right="461" Bottom="849" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="513" ParentsId="4" Layer="9" Xpos="3" Xpos2="3" Ypos="670" Ypos2="670" Width="461" Height="63" Text="" Note="채팅창 아래쪽" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="644" Right="461" Bottom="707" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="426" Xpos2="426" Ypos="16" Ypos2="16" Width="27" Height="15" Left="577" Top="42" Right="604" Bottom="57" TextureNum="2" Visible="true" />
+				<SubElement ElementName="Sub Button" Xpos="426" Xpos2="426" Ypos="36" Ypos2="36" Width="27" Height="20" Left="577" Top="58" Right="604" Bottom="78" RectType="Right" TextureNum="2" Visible="true" Command="CHATROOM_CHAT_SCROLL_DOWN" />
+			</Component>
+			<Component Type="Image" Id="514" ParentsId="4" Layer="9" Xpos="0" Xpos2="0" Ypos="736" Ypos2="736" Width="861" Height="32" Text="" Note="하단" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="992" Right="861" Bottom="1024" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="31" Xpos2="31" Ypos="10" Ypos2="10" Width="434" Height="20" Left="28" Top="708" Right="462" Bottom="728" TextureNum="2" Visible="true" />
+				<SubElement ElementName="Sub Image" Xpos="3" Xpos2="3" Ypos="10" Ypos2="10" Width="28" Height="20" Left="374" Top="374" Right="402" Bottom="394" TextureNum="2" Visible="true" Note="채팅 종류 선택" Command="CHATROOM_CHAT_SELECT" />
+			</Component>
+			<Component Type="Image" Id="515" ParentsId="4" Layer="9" Xpos="8" Xpos2="8" Ypos="688" Ypos2="688" Width="107" Height="77" Text="" Note="채팅 종류" Visible="false">
+				<SubElement ElementName="Main Button" Left="372" Top="135" Right="479" Bottom="212" TextureNum="2" />
+				<SubElement ElementName="Sub Button" Xpos="3" Xpos2="3" Ypos="2" Ypos2="2" Width="101" Height="17" Left="0" Top="487" Right="101" Bottom="504" RectType="Right" TextureNum="2" Visible="true" Note="일반채팅" Command="CHATROOM_CHAT_GENERAL" />
+				<SubElement ElementName="Sub Button" Xpos="3" Xpos2="3" Ypos="21" Ypos2="21" Width="101" Height="17" Left="0" Top="541" Right="101" Bottom="558" RectType="Right" TextureNum="2" Visible="true" Note="귓속말" Command="CHATROOM_CHAT_WHISPER" />
+				<SubElement ElementName="Sub Button" Xpos="3" Xpos2="3" Ypos="40" Ypos2="40" Width="101" Height="17" Left="0" Top="505" Right="101" Bottom="522" RectType="Right" TextureNum="2" Visible="true" Note="FAM" Command="CHATROOM_CHAT_FAM" />
+				<SubElement ElementName="Sub Button" Xpos="3" Xpos2="3" Ypos="59" Ypos2="59" Width="101" Height="17" Left="0" Top="523" Right="101" Bottom="540" RectType="Right" TextureNum="2" Visible="true" Note="외치기" Command="CHATROOM_CHAT_SHOUT" />
+			</Component>
+			
+			<Component Type="Image" Id="131" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="371" Height="199" Text="" Note="공통 경고창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1677" Top="560" Right="2048" Bottom="759" TextureNum="1" />
+				<SubElement ElementName="Sub Button" Xpos="116" Xpos2="116" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="268" Right="139" Bottom="307" TextureNum="1" Visible="true" Command="CHATROOM_POPNOTE_OK" />
+				<SubElement ElementName="Sub Static" Xpos="35" Xpos2="35" Ypos="70" Ypos2="70" Width="300" Height="15" Text="알림" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+			
+			
+			<Component Type="Image" Id="2000" ParentsId="1" Layer="5" Xpos="0" Xpos2="32" Ypos="543" Ypos2="543" Width="980" Height="70" Text="" Note="헤어지기 결과 메시지" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="1024" Bottom="70" TextureNum="8" />
+			</Component>
+			
+			<Component Type="Image" Id="1999" ParentsId="1" Layer="5" Xpos="290" Xpos2="290" Ypos="270" Ypos2="270" Width="462" Height="185" Text="" Note="헤어지기 스타트" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="70" Right="462" Bottom="255" TextureNum="8" />
+				<SubElement ElementName="Sub Button" Xpos="155" Xpos2="155" Ypos="122" Ypos2="122" Width="139" Height="39" Left="0" Top="268" Right="139" Bottom="307" TextureNum="1" Visible="true" Command="LOVERCANCEL_START" />
+			</Component>
+			
+
+			
+    	</DlgInfo>
+    </TotalInfo>
+</UIXml>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

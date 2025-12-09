@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+    <TotalInfo DlgCnt="1">
+		<DlgInfo ID="0" TextureCnt="2" ControlCnt="2">
+        <TextureInfo TexturePath="loading03.dds" TextureIndex="1" />
+        <TextureInfo TexturePath="loading_xmas.dds" TextureIndex="2" />
+			<Component Type="Image" Id="1" ParentsId="1" Layer="1" Xpos="0" Ypos="0" Width="1024" Height="768" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="1024" Bottom="768" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="2" ParentsId="1" Layer="1" Xpos="0" Ypos="0" Width="1024" Height="768" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="1024" Bottom="768" TextureNum="2" />
+			</Component>
+		</DlgInfo>
+    </TotalInfo>
+</UIXml>
+
+
+
+
+
+ 
+ 
+ 

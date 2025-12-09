@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+    <TotalInfo DlgCnt="1">
+		<DlgInfo ID="38" TextureCnt="3" ControlCnt="43">
+		<TextureInfo TexturePath="common_ui.dds" TextureIndex="1" />
+		<TextureInfo TexturePath="lotto.dds" TextureIndex="2" />
+		<TextureInfo TexturePath="common_ui2.dds" TextureIndex="3" />
+			<Component Type="Image" Id="1" ParentsId="1" Layer="1" Xpos="0" Ypos="0" Width="1024" Height="768" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="1024" Bottom="768" TextureNum="2" />
+			</Component>
+			
+	
+			
+			<Component Type="Image" Id="100" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="322" Height="194" Text="" Note="아이템 구입 질문창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1218" Top="806" Right="1540" Bottom="1000" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="12" Xpos2="12" Ypos="61" Ypos2="61" Width="293" Height="59" Left="453" Top="917" Right="746" Bottom="976" TextureNum="2"   />
+				<SubElement ElementName="Sub Button" Xpos="53" Xpos2="53" Ypos="131" Ypos2="131" Width="104" Height="39" Left="0" Top="816" Right="104" Bottom="856" TextureNum="1" Visible="true" Command="LOTTO_ITEM_BUY_OK" />
+				<SubElement ElementName="Sub Button" Xpos="161" Xpos2="161" Ypos="131" Ypos2="131" Width="104" Height="39" Left="0" Top="700" Right="104" Bottom="740" TextureNum="1" Visible="true" Command="LOTTO_ITEM_BUY_CANCEL" />
+				<SubElement ElementName="Sub Static" Xpos="13" Xpos2="13" Ypos="22" Ypos2="22" Width="291" Height="22" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+			
+			<Component Type="Image" Id="101" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="322" Height="194" Text="" Note="아이템 오픈 질문창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1218" Top="806" Right="1540" Bottom="1000" TextureNum="2" />
+				
+				
+				<SubElement ElementName="Sub Image" Xpos="12" Xpos2="12" Ypos="61" Ypos2="61" Width="293" Height="59" Left="924" Top="866" Right="1217" Bottom="925" TextureNum="2"   />
+				
+				<SubElement ElementName="Sub Button" Xpos="53" Xpos2="53" Ypos="131" Ypos2="131" Width="104" Height="39" Left="0" Top="816" Right="104" Bottom="856" TextureNum="1" Visible="true" Command="LOTTO_ITEM_OPEN_OK" />
+				<SubElement ElementName="Sub Button" Xpos="161" Xpos2="161" Ypos="131" Ypos2="131" Width="104" Height="39" Left="0" Top="700" Right="104" Bottom="740" TextureNum="1" Visible="true" Command="LOTTO_ITEM_OPEN_CANCEL" />
+				<SubElement ElementName="Sub Static" Xpos="13" Xpos2="13" Ypos="22" Ypos2="22" Width="291" Height="22" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+			
+			
+			<Component Type="Image" Id="102" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="452" Height="274" Text="" Note="아이템 교환 질문창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1541" Top="727" Right="1993" Bottom="1001" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="57" Xpos2="57" Ypos="22" Ypos2="22" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" TextureNum="2"  Visible="false" />
+				<SubElement ElementName="Sub Button" Xpos="120" Xpos2="120" Ypos="212" Ypos2="212" Width="104" Height="39" Left="0" Top="816" Right="104" Bottom="856" TextureNum="1" Visible="true" Command="LOTTO_ITEM_CHANGE_OK" />
+				<SubElement ElementName="Sub Button" Xpos="228" Xpos2="228" Ypos="212" Ypos2="212" Width="104" Height="39" Left="0" Top="700" Right="104" Bottom="740" TextureNum="1" Visible="true" Command="LOTT_ITEM_CHANGE_CANCEL" />
+				<SubElement ElementName="Sub Static" Xpos="290" Xpos2="290" Ypos="19" Ypos2="19" Width="56" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+				<SubElement ElementName="Sub Static" Xpos="248" Xpos2="248" Ypos="45" Ypos2="45" Width="56" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+				<SubElement ElementName="Sub Static" Xpos="290" Xpos2="290" Ypos="72" Ypos2="72" Width="56" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+				
+			</Component>
+			
+			
+			<Component Type="Image" Id="103" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="322" Height="194" Text="" Note="아이템 구입 성공 창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1218" Top="806" Right="1540" Bottom="1000" TextureNum="2" />	
+				<SubElement ElementName="Sub Image" Xpos="12" Xpos2="12" Ypos="61" Ypos2="61" Width="293" Height="59" Left="924" Top="806" Right="1217" Bottom="865" TextureNum="2"   />
+				<SubElement ElementName="Sub Button" Xpos="53" Xpos2="53" Ypos="131" Ypos2="131" Width="104" Height="39" Left="453" Top="877" Right="557" Bottom="916" TextureNum="2" Visible="true" Command="LOTTO_ITEM_BUY_SUCC" />
+				<SubElement ElementName="Sub Button" Xpos="160" Xpos2="160" Ypos="131" Ypos2="131" Width="104" Height="39" Left="0" Top="856" Right="104" Bottom="896" TextureNum="1" Visible="true" Command="LOTTO_ITEM_BUY_NO" />
+				<SubElement ElementName="Sub Static" Xpos="203" Xpos2="203" Ypos="95" Ypos2="95" Width="35" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+				<SubElement ElementName="Sub Static" Xpos="31" Xpos2="31" Ypos="30" Ypos2="30" Width="255" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+			
+			<Component Type="Image" Id="104" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="322" Height="194" Text="" Note="아이템 오픈 성공 창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1218" Top="806" Right="1540" Bottom="1000" TextureNum="2" />	
+				<SubElement ElementName="Sub Image" Xpos="12" Xpos2="12" Ypos="61" Ypos2="61" Width="293" Height="59" Left="924" Top="926" Right="1217" Bottom="985" TextureNum="2"   />
+				<SubElement ElementName="Sub Button" Xpos="100" Xpos2="100" Ypos="131" Ypos2="131" Width="104" Height="39" Left="0" Top="816" Right="104" Bottom="856" TextureNum="1" Visible="true" Command="LOTTO_ITEM_OPEN_SUCCE" />
+				<SubElement ElementName="Sub Static" Xpos="203" Xpos2="203" Ypos="80" Ypos2="80" Width="35" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+				<SubElement ElementName="Sub Static" Xpos="31" Xpos2="31" Ypos="30" Ypos2="30" Width="255" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+			
+			<Component Type="Image" Id="110" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="371" Height="199" Text="" Note="경고창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1677" Top="560" Right="2048" Bottom="759" TextureNum="1" />
+				<SubElement ElementName="Sub Button" Xpos="110" Xpos2="110" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="268" Right="139" Bottom="306" TextureNum="1" Visible="true" Command="LOTTO_ITEM_FAILED" />
+				<SubElement ElementName="Sub Static" Xpos="35" Xpos2="35" Ypos="70" Ypos2="70" Width="300" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+			
+
+			
+			<Component Type="Image" Id="200" ParentsId="1" Layer="1" Xpos="41" Xpos2="41" Ypos="125" Ypos2="125" Width="430" Height="601" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="1025" Top="0" Right="1455" Bottom="601" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="201" ParentsId="1" Layer="1" Xpos="41" Xpos2="41" Ypos="125" Ypos2="125" Width="430" Height="601" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="1456" Top="0" Right="1886" Bottom="601" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="30" 	Xpos2="30" 	Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP1" />
+				<SubElement ElementName="Sub Image" Xpos="55" 	Xpos2="55" 	Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP2"/>
+				<SubElement ElementName="Sub Image" Xpos="80" 	Xpos2="80" 	Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP3"/>
+				<SubElement ElementName="Sub Image" Xpos="105" 	Xpos2="105" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP4"/>
+				<SubElement ElementName="Sub Image" Xpos="130" 	Xpos2="130" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP5"/>
+				<SubElement ElementName="Sub Image" Xpos="155" 	Xpos2="155" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP6" />
+				<SubElement ElementName="Sub Image" Xpos="180" 	Xpos2="180" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP7"/>
+				<SubElement ElementName="Sub Image" Xpos="205" 	Xpos2="205" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP8"/>
+				<SubElement ElementName="Sub Image" Xpos="230" 	Xpos2="230" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP9"/>
+				<SubElement ElementName="Sub Image" Xpos="255" 	Xpos2="255" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP10"/>			
+				<SubElement ElementName="Sub Image" Xpos="280" 	Xpos2="280" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP11" />
+				<SubElement ElementName="Sub Image" Xpos="305" 	Xpos2="305" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP12"/>
+				<SubElement ElementName="Sub Image" Xpos="330" 	Xpos2="330" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP13"/>
+				<SubElement ElementName="Sub Image" Xpos="355" 	Xpos2="355" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP14"/>
+				<SubElement ElementName="Sub Image" Xpos="380" 	Xpos2="380" Ypos="348" Ypos2="348" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP15"/>		
+			</Component>		
+			<Component Type="Image" Id="202" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="0" Height="0" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="71" Xpos2="71" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP16" />
+				<SubElement ElementName="Sub Image" Xpos="96" Xpos2="96" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP17"/>
+				<SubElement ElementName="Sub Image" Xpos="121" Xpos2="121" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP18"/>
+				<SubElement ElementName="Sub Image" Xpos="146" Xpos2="146" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP19"/>
+				<SubElement ElementName="Sub Image" Xpos="171" Xpos2="171" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP20"/>
+				<SubElement ElementName="Sub Image" Xpos="196" Xpos2="196" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP21" />
+				<SubElement ElementName="Sub Image" Xpos="221" Xpos2="221" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP22"/>
+				<SubElement ElementName="Sub Image" Xpos="246" Xpos2="246" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP23"/>
+				<SubElement ElementName="Sub Image" Xpos="271" Xpos2="271" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP24"/>
+				<SubElement ElementName="Sub Image" Xpos="296" Xpos2="296" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP25"/>
+				<SubElement ElementName="Sub Image" Xpos="321" Xpos2="321" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP26" />
+				<SubElement ElementName="Sub Image" Xpos="346" Xpos2="346" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP27"/>
+				<SubElement ElementName="Sub Image" Xpos="371" Xpos2="371" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP28"/>
+				<SubElement ElementName="Sub Image" Xpos="396" Xpos2="396" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP29"/>
+				<SubElement ElementName="Sub Image" Xpos="421" Xpos2="421" 	Ypos="498" Ypos2="498" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP30"/>	
+			</Component>		
+			<Component Type="Image" Id="203" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="0" Height="0" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="71" Xpos2="71"  Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP31" />
+				<SubElement ElementName="Sub Image" Xpos="96" Xpos2="96"  Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP32"/>
+				<SubElement ElementName="Sub Image" Xpos="121" Xpos2="121" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP33"/>
+				<SubElement ElementName="Sub Image" Xpos="146" Xpos2="146" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP34"/>
+				<SubElement ElementName="Sub Image" Xpos="171" Xpos2="171" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP35"/>
+				<SubElement ElementName="Sub Image" Xpos="196" Xpos2="196" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP36" />
+				<SubElement ElementName="Sub Image" Xpos="221" Xpos2="221" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP37"/>
+				<SubElement ElementName="Sub Image" Xpos="246" Xpos2="246" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP38"/>
+				<SubElement ElementName="Sub Image" Xpos="271" Xpos2="271" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP39"/>
+				<SubElement ElementName="Sub Image" Xpos="296" Xpos2="296" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP40"/>
+				<SubElement ElementName="Sub Image" Xpos="321" Xpos2="321" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP41" />
+				<SubElement ElementName="Sub Image" Xpos="346" Xpos2="346" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP42"/>
+				<SubElement ElementName="Sub Image" Xpos="371" Xpos2="371" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP43"/>
+				<SubElement ElementName="Sub Image" Xpos="396" Xpos2="396" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP44"/>
+				<SubElement ElementName="Sub Image" Xpos="421" Xpos2="421" Ypos="523" Ypos2="523" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP45"/>
+			</Component>		
+			<Component Type="Image" Id="204" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="0" Height="0" Text="" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="71" Xpos2="71"  Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP46" />
+				<SubElement ElementName="Sub Image" Xpos="96" Xpos2="96"  Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP47"/>
+				<SubElement ElementName="Sub Image" Xpos="121" Xpos2="121" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP48"/>
+				<SubElement ElementName="Sub Image" Xpos="146" Xpos2="146" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP49"/>
+				<SubElement ElementName="Sub Image" Xpos="171" Xpos2="171" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP50"/>
+				<SubElement ElementName="Sub Image" Xpos="196" Xpos2="196" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP51" />
+				<SubElement ElementName="Sub Image" Xpos="221" Xpos2="221" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP52"/>
+				<SubElement ElementName="Sub Image" Xpos="246" Xpos2="246" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP53"/>
+				<SubElement ElementName="Sub Image" Xpos="271" Xpos2="271" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP54"/>
+				<SubElement ElementName="Sub Image" Xpos="296" Xpos2="296" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP55"/>
+				<SubElement ElementName="Sub Image" Xpos="321" Xpos2="321" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP56" />
+				<SubElement ElementName="Sub Image" Xpos="346" Xpos2="346" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP57"/>
+				<SubElement ElementName="Sub Image" Xpos="371" Xpos2="371" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP58"/>
+				<SubElement ElementName="Sub Image" Xpos="396" Xpos2="396" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP59"/>
+				<SubElement ElementName="Sub Image" Xpos="421" Xpos2="421" Ypos="548" Ypos2="548" Width="20" Height="20" Left="778" Top="788" Right="798" Bottom="808" TextureNum="2"  Note="COP60"/>
+			</Component>
+			<Component Type="Button" Id="220" ParentsId="1" Layer="1" Xpos="84" Xpos2="84" Ypos="153" Ypos2="153" Width="113" Height="28" Text="" Visible="true" Command="LOTTO_CASH_BTN">
+				<SubElement ElementName="Main Button" Left="0" Top="769" Right="113" Bottom="797" TextureNum="2" RectType="Right" />
+			</Component>
+			<Component Type="Button" Id="221" ParentsId="1" Layer="1" Xpos="200" Xpos2="200" Ypos="153" Ypos2="153" Width="110" Height="28" Text="" Visible="true" Command="LOTTO_POINT_BTN">
+				<SubElement ElementName="Main Button" Left="0" Top="798" Right="110" Bottom="826" TextureNum="2" RectType="Right" />
+			</Component>
+			<Component Type="Button" Id="222" ParentsId="1" Layer="1" Xpos="314" Xpos2="314" Ypos="153" Ypos2="153" Width="113" Height="28" Text="" Visible="true" Command="LOTTO_MYBOX_BTN">
+				<SubElement ElementName="Main Button" Left="0" Top="827" Right="113" Bottom="855" TextureNum="2" RectType="Right" />
+			</Component>
+			
+
+			
+			
+			<Component Type="Image" Id="1500" ParentsId="4" Layer="4" Xpos="163" Xpos2="163" Ypos="0" Ypos2="0" Width="861" Height="54" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="861" Bottom="54" TextureNum="1" />
+				 <SubElement ElementName="Sub Static" Xpos="10" Xpos2="10" Ypos="8" Ypos2="8" Width="300" Height="15" Text="" Note="서버/채널" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				 <SubElement ElementName="Sub Button" Xpos="486" Xpos2="486" Ypos="10" Ypos2="6" Width="83" Height="34" Left="0" Top="88" Right="83" Bottom="122" RectType="Right" TextureNum="1" Visible="true" Command="MAIN_LOTTO_SHOP_LOBBY" />
+				 <SubElement ElementName="Sub Button" Xpos="572" Xpos2="572" Ypos="10" Ypos2="6" Width="83" Height="34" Left="0" Top="123" Right="83" Bottom="157" RectType="Right" TextureNum="1" Visible="true" Command="MAIN_LOTTO_SHOP_SHOP" />
+				 <SubElement ElementName="Sub Button" Xpos="658" Xpos2="658" Ypos="10" Ypos2="6" Width="83" Height="34" Left="0" Top="158" Right="83" Bottom="192" RectType="Right" TextureNum="1" Visible="true" Command="MAIN_LOTTO_SHOP_CLUB" />
+				 <SubElement ElementName="Sub Button" Xpos="761" Xpos2="761" Ypos="7" Ypos2="6" Width="93" Height="39" Left="0" Top="228" Right="93" Bottom="267" RectType="Right" TextureNum="1" Visible="true" Command="MAIN_LOTTO_SHOP_EXIT" />
+				 <SubElement ElementName="Sub Button" Xpos="350" Xpos2="350" Ypos="7" Ypos2="6" Width="117" Height="38" Left="453" Top="838" Right="570" Bottom="877" RectType="Right" TextureNum="2" Visible="true"  />
+			</Component>
+		
+
+			
+
+			<Component Type="Button" Id="1100" ParentsId="5" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="360" Height="53" Text="" Note=" 테스트2" Visible="false">
+				<SubElement ElementName="Main Button" Left="1887" Top="146" Right="1961" Bottom="195"  RectType="Bottom" TextureNum="2" />
+				<SubElement ElementName="Sub Static" Xpos="4" Xpos2="4" Ypos="16" Ypos2="16" Width="146" Height="20" ColorR="255" ColorG="255" ColorB="255" Visible="false" Note="아이템이름" />
+				<SubElement ElementName="Sub Static" Xpos="210" Xpos2="157" Ypos="16" Ypos2="16" Width="62" Height="20" ColorR="255" ColorG="255" ColorB="255" Visible="false" Note="아이템이름" />
+				<SubElement ElementName="Sub Static" Xpos="350" Xpos2="276" Ypos="6" Ypos2="6" Width="42" Height="17" ColorR="255" ColorG="255" ColorB="255" Visible="false" Note="" />
+				<SubElement ElementName="Sub Button" Xpos="410" Xpos2="320" Ypos="6" Ypos2="6" Width="33" Height="18" Left="1541" Top="691" Right="1574" Bottom="708" RectType="Right" TextureNum="2" Visible="false" Command="LOTTO_PLUS" />
+				<SubElement ElementName="Sub Button" Xpos="300" Xpos2="237" Ypos="27" Ypos2="27" Width="118" Height="18" Left="453" Top="769" Right="571" Bottom="787" RectType="Right" TextureNum="2" Visible="false" Command="LOTTO_BUY" />
+				<SubElement ElementName="Sub Button" Xpos="300" Xpos2="237" Ypos="6" Ypos2="6" Width="33" Height="18" Left="1541" Top="709" Right="1574" Bottom="726" RectType="Right" TextureNum="2" Visible="false" Command="LOTTO_MANUS" />
+				
+			</Component>
+		
+			<Component Type="List Box" Id="1000" ParentsId="5" Layer="4" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="395" Height="477" Text="" Note="BuyList" Visible="false">
+				<SubElement ElementName="Scroll_Bar" Xpos="368" Xpos2="368" Ypos="34" Ypos2="32" Width="27" Height="53" Left="742" Top="300" Right="769" Bottom="350" TextureNum="1" />
+				<SubElement ElementName="Scroll_Up" Xpos="368" Xpos2="368" Ypos="4" Ypos2="2" Width="27" Height="27" Left="742" Top="244" Right="769" Bottom="271" TextureNum="1" />
+				<SubElement ElementName="Scroll_Down" Xpos="368" Xpos2="368" Ypos="445" Ypos2="445" Width="27" Height="27" Left="742" Top="272" Right="769" Bottom="299" TextureNum="1" />
+				<SubElement ElementName="SubElement" ListName="List_Lotto_Buy" SubID="1100" SpaceH="53" />
+			</Component>
+			
+			
+			<Component Type="Button" Id="2100" ParentsId="5" Layer="2" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="360" Height="50" Text="" Note="테스트 1" Visible="false">
+				<SubElement ElementName="Main Button" Left="1887" Top="146" Right="1961" Bottom="195"  RectType="Bottom" TextureNum="2" />
+				<SubElement ElementName="Sub Static" Xpos="4" Xpos2="4" Ypos="16" Ypos2="16" Width="195" Height="20" ColorR="255" ColorG="255" ColorB="255" Visible="false" Note="아이템이름1" />
+				<SubElement ElementName="Sub Static" Xpos="260" Xpos2="208" Ypos="16" Ypos2="16" Width="65" Height="20" ColorR="255" ColorG="255" ColorB="255" Visible="false" Note="아이템갯수" />
+				<SubElement ElementName="Sub Button" Xpos="350" Xpos2="278" Ypos="0" Ypos2="0" Width="81" Height="49" Left="456" Top="788" Right="537" Bottom="837" RectType="Right" TextureNum="2" Visible="false" Command="LOTTO_OPEN" />
+			</Component>
+		
+			<Component Type="List Box" Id="2000" ParentsId="5" Layer="4" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="360" Height="200" Text="" Note="MyBoxList" Visible="false">
+				<SubElement ElementName="Scroll_Bar" Xpos="368" Xpos2="368" Ypos="34" Ypos2="32" Width="27" Height="50" Left="742" Top="300" Right="769" Bottom="350" TextureNum="1" />
+				<SubElement ElementName="Scroll_Up" Xpos="368" Xpos2="368" Ypos="4" Ypos2="2" Width="27" Height="27" Left="742" Top="244" Right="769" Bottom="271" TextureNum="1" />
+				<SubElement ElementName="Scroll_Down" Xpos="368" Xpos2="368" Ypos="173" Ypos2="173" Width="27" Height="27" Left="742" Top="272" Right="769" Bottom="299" TextureNum="1" />
+				<SubElement ElementName="SubElement" ListName="List_Lotto_Mybox" SubID="2100" SpaceH="50" />
+			</Component>
+			
+			<Component Type="Image" Id="501" ParentsId="1" Layer="1" Xpos="41" Xpos2="41" Ypos="125" Ypos2="125" Width="0" Height="0" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				
+				<SubElement ElementName="Sub Image" Xpos="26" Xpos2="26" Ypos="469" Ypos2="469" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="false" />
+				<SubElement ElementName="Sub Image" Xpos="104" Xpos2="104" Ypos="469" Ypos2="469" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="false" />
+				<SubElement ElementName="Sub Image" Xpos="182" Xpos2="182" Ypos="469" Ypos2="469" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="false"  />
+				<SubElement ElementName="Sub Image" Xpos="262" Xpos2="262" Ypos="469" Ypos2="469" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="false"  />
+				<SubElement ElementName="Sub Image" Xpos="340" Xpos2="340" Ypos="469" Ypos2="469" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="false"  />
+				
+				<SubElement ElementName="Sub Image" Xpos="23" Xpos2="23" Ypos="466" Ypos2="466" Width="70" Height="70" Left="1887" Top="71" Right="1961" Bottom="145" Visible="false" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="101" Xpos2="101" Ypos="466" Ypos2="466" Width="70" Height="70" Left="1887" Top="71" Right="1961" Bottom="145" Visible="false" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="179" Xpos2="179" Ypos="466" Ypos2="466" Width="70" Height="70" Left="1887" Top="71" Right="1961" Bottom="145" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="259" Xpos2="259" Ypos="466" Ypos2="466" Width="70" Height="70" Left="1887" Top="71" Right="1961" Bottom="145" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="337" Xpos2="337" Ypos="466" Ypos2="466" Width="70" Height="70" Left="1887" Top="71" Right="1961" Bottom="145" Visible="false" TextureNum="2"  />
+						
+				<SubElement ElementName="Sub Image" Xpos="26" Xpos2="26" Ypos="469" Ypos2="469" Width="64" Height="14" Left="1888" Top="0" Right="1952" Bottom="14" Visible="false" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="104" Xpos2="104" Ypos="469" Ypos2="469" Width="64" Height="14" Left="1888" Top="14" Right="1952" Bottom="28" Visible="false" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="182" Xpos2="182" Ypos="469" Ypos2="469" Width="64" Height="14" Left="1888" Top="28" Right="1952" Bottom="42" Visible="false" TextureNum="2"  />
+				<SubElement ElementName="Sub Image" Xpos="262" Xpos2="262" Ypos="469" Ypos2="469" Width="64" Height="14" Left="1888" Top="42" Right="1952" Bottom="56" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="340" Xpos2="340" Ypos="469" Ypos2="469" Width="64" Height="14" Left="1888" Top="56" Right="1952" Bottom="70" Visible="false" TextureNum="2"   />
+			</Component>
+			
+			
+			<Component Type="Button" Id="511" ParentsId="1" Layer="1" Xpos="67" Xpos2="67" Ypos="594" Ypos2="594" Width="64" Height="64" Text="" Visible="true" Command="LOTTO_COPUON_1ST">
+				<SubElement ElementName="Main Button" Left="1888" Top="294" Right="1952" Bottom="358" RectType="Bottom" Visible="false" TextureNum="2"  />
+			</Component>
+			<Component Type="Button" Id="512" ParentsId="1" Layer="1" Xpos="145" Xpos2="145" Ypos="594" Ypos2="594" Width="64" Height="64" Text="" Visible="true" Command="LOTTO_COPUON_2ND">
+				<SubElement ElementName="Main Button" Left="1888" Top="294" Right="1952" Bottom="358" RectType="Bottom" Visible="false" TextureNum="2" />
+			</Component>
+			<Component Type="Button" Id="513" ParentsId="1" Layer="1" Xpos="223" Xpos2="223" Ypos="594" Ypos2="594" Width="64" Height="64" Text="" Visible="true" Command="LOTTO_COPUON_3RD">
+				<SubElement ElementName="Main Button" Left="1888" Top="294" Right="1952" Bottom="358" RectType="Bottom" Visible="false" TextureNum="2"  />
+			</Component>
+			
+			<Component Type="Button" Id="514" ParentsId="1" Layer="1" Xpos="303" Xpos2="303" Ypos="594" Ypos2="594" Width="64" Height="64" Text="" Visible="true" Command="LOTTO_COPUON_4TH">
+				<SubElement ElementName="Main Button" Left="1888" Top="294" Right="1952" Bottom="358" RectType="Bottom" Visible="false" TextureNum="2" />
+			</Component>
+			
+			<Component Type="Button" Id="515" ParentsId="1" Layer="1" Xpos="381" Xpos2="381" Ypos="594" Ypos2="594" Width="64" Height="64" Text="" Visible="true" Command="LOTTO_COPUON_5TH">
+				<SubElement ElementName="Main Button" Left="1888" Top="294" Right="1952" Bottom="358" RectType="Bottom" Visible="false" TextureNum="2" />
+			</Component>
+			
+		
+			<Component Type="Image" Id="502" ParentsId="1" Layer="1" Xpos="41" Xpos2="41" Ypos="125" Ypos2="125" Width="0" Height="0" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+			</Component>
+
+			<Component Type="Button" Id="301" ParentsId="5" Layer="2" Xpos="62" Xpos2="62" Ypos="679" Ypos2="679" Width="389" Height="38" Text="" Note="" Visible="false" Command="LOTTO_MYBOX_COUPONOK">
+				<SubElement ElementName="Main Button" Left="0" Top="856" Right="389" Bottom="894" TextureNum="2" RectType="Bottom" />
+			</Component>
+			
+				<Component Type="Image" Id="240" ParentsId="1" Layer="4"  Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="0" Height="0"  Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub ListBox" Xpos="58" Xpos2="58" Ypos="237" Ypos2="237" Width="395" Height="477" PageSize="9" SubID="1000" />
+			</Component>
+				<Component Type="Image" Id="241" ParentsId="1" Layer="4" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="0" Height="0" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub ListBox" Xpos="58" Xpos2="58" Ypos="237" Ypos2="237" Width="395" Height="200" PageSize="4" SubID="2000" />
+			</Component>
+			
+			<Component Type="Image" Id="701" ParentsId="1" Layer="1" Xpos="510" Xpos2="510" Ypos="203" Ypos2="203" Width="198" Height="88" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="1541" Top="602" Right="1739" Bottom="690" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="11" Xpos2="11" Ypos="12" Ypos2="12" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="true"  />
+				<SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="0" Top="0" Right="0" Bottom="0" RectType="Right" TextureNum="0" Visible="true" Command="LOTTO_NAME_1" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="8" Ypos2="8" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="22" Ypos2="22" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="36" Ypos2="36" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="50" Ypos2="50" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="64" Ypos2="64" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+			</Component>
+			
+			<Component Type="Image" Id="702" ParentsId="1" Layer="1" Xpos="753" Xpos2="753" Ypos="203" Ypos2="203" Width="198" Height="88" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="1541" Top="602" Right="1739" Bottom="690" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="11" Xpos2="11" Ypos="12" Ypos2="12" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="true"  />
+				<SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="0" Top="0" Right="0" Bottom="0" RectType="Right" TextureNum="0" Visible="true" Command="LOTTO_NAME_2" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="8" Ypos2="8" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="22" Ypos2="22" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="36" Ypos2="36" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="50" Ypos2="50" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="64" Ypos2="64" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				
+			</Component>
+			
+			<Component Type="Image" Id="703" ParentsId="1" Layer="1" Xpos="510" Xpos2="510" Ypos="294" Ypos2="294" Width="198" Height="88" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="1541" Top="602" Right="1739" Bottom="690" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="11" Xpos2="11" Ypos="12" Ypos2="12" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="true"  />
+				<SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="0" Top="0" Right="0" Bottom="0" RectType="Right" TextureNum="0" Visible="true" Command="LOTTO_NAME_3" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="8" Ypos2="8" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="22" Ypos2="22" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="36" Ypos2="36" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="50" Ypos2="50" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="64" Ypos2="64" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				
+			</Component>
+			
+			<Component Type="Image" Id="704" ParentsId="1" Layer="1" Xpos="753" Xpos2="753" Ypos="294" Ypos2="294" Width="198" Height="88" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="1541" Top="602" Right="1739" Bottom="690" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="11" Xpos2="11" Ypos="12" Ypos2="12" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="true"  />
+				<SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="0" Top="0" Right="0" Bottom="0" RectType="Right" TextureNum="0" Visible="true" Command="LOTTO_NAME_4" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="8" Ypos2="8" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="22" Ypos2="22" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="36" Ypos2="36" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="50" Ypos2="50" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="64" Ypos2="64" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+			</Component>
+			
+			
+			<Component Type="Image" Id="705" ParentsId="1" Layer="1" Xpos="510" Xpos2="510" Ypos="385" Ypos2="385" Width="198" Height="88" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="1541" Top="602" Right="1739" Bottom="690" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="11" Xpos2="11" Ypos="12" Ypos2="12" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="true"  />
+				<SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="0" Top="0" Right="0" Bottom="0" RectType="Right" TextureNum="0" Visible="true" Command="LOTTO_NAME_5" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="8" Ypos2="8" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="22" Ypos2="22" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="36" Ypos2="36" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="50" Ypos2="50" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="64" Ypos2="64" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+			</Component>
+			
+			
+			<Component Type="Image" Id="706" ParentsId="1" Layer="1" Xpos="753" Xpos2="753" Ypos="385" Ypos2="385" Width="198" Height="88" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="1541" Top="602" Right="1739" Bottom="690" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="11" Xpos2="11" Ypos="12" Ypos2="12" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="true"  />
+				<SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="0" Top="0" Right="0" Bottom="0" RectType="Right" TextureNum="0" Visible="true" Command="LOTTO_NAME_6" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="8" Ypos2="8" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="22" Ypos2="22" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="36" Ypos2="36" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="50" Ypos2="50" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="64" Ypos2="64" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+			</Component>
+			
+			<Component Type="Image" Id="707" ParentsId="1" Layer="1" Xpos="510" Xpos2="510" Ypos="476" Ypos2="476" Width="198" Height="88" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="1541" Top="602" Right="1739" Bottom="690" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="11" Xpos2="11" Ypos="12" Ypos2="12" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="true"  />
+				<SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="0" Top="0" Right="0" Bottom="0" RectType="Right" TextureNum="0" Visible="true" Command="LOTTO_NAME_7" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="8" Ypos2="8" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="22" Ypos2="22" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="36" Ypos2="36" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="50" Ypos2="50" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="64" Ypos2="64" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+			</Component>
+			
+			<Component Type="Image" Id="708" ParentsId="1" Layer="1" Xpos="753" Xpos2="753" Ypos="476" Ypos2="476" Width="198" Height="88" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="1541" Top="602" Right="1739" Bottom="690" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="11" Xpos2="11" Ypos="12" Ypos2="12" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="true"  />
+				<SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="0" Top="0" Right="0" Bottom="0" RectType="Right" TextureNum="0" Visible="true" Command="LOTTO_NAME_8" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="8" Ypos2="8" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="22" Ypos2="22" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="36" Ypos2="36" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="50" Ypos2="50" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="64" Ypos2="64" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+			</Component>
+			
+			<Component Type="Image" Id="709" ParentsId="1" Layer="1" Xpos="510" Xpos2="510" Ypos="567" Ypos2="567" Width="198" Height="88" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="1541" Top="602" Right="1739" Bottom="690" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="11" Xpos2="11" Ypos="12" Ypos2="12" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="true"  />
+				<SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="0" Top="0" Right="0" Bottom="0" RectType="Right" TextureNum="0" Visible="true" Command="LOTTO_NAME_9" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="8" Ypos2="8" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="22" Ypos2="22" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="36" Ypos2="36" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="50" Ypos2="50" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="64" Ypos2="64" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+			</Component>
+			
+			
+			<Component Type="Image" Id="710" ParentsId="1" Layer="1" Xpos="753" Xpos2="753" Ypos="567" Ypos2="567" Width="198" Height="88" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="1541" Top="602" Right="1739" Bottom="690" Visible="false"  TextureNum="2" />
+				<SubElement ElementName="Sub Image" Xpos="11" Xpos2="11" Ypos="12" Ypos2="12" Width="64" Height="64" Left="0" Top="0" Right="64" Bottom="64" Visible="true"  />
+				<SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="198" Height="88" Left="0" Top="0" Right="0" Bottom="0" RectType="Right" TextureNum="0" Visible="true" Command="LOTTO_NAME_10" />
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="8" Ypos2="8" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="22" Ypos2="22" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="36" Ypos2="36" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="50" Ypos2="50" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+				<SubElement ElementName="Sub Static" Xpos="89" Xpos2="89" Ypos="64" Ypos2="64" Width="101" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템설명" />	
+			</Component>
+			
+			<Component Type="Image" Id="801" ParentsId="1" Layer="6" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="0" Height="0" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Static" Xpos="68" Xpos2="68" Ypos="201" Ypos2="201" Width="376" Height="15" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이템이름" />
+			</Component>	
+			
+			<Component Type="Image" Id="900" ParentsId="4" Layer="5" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="201" Height="66" Text="" Note="아이템 상세정보창" Visible="false">
+				<SubElement ElementName="Main Button" Left="686" Top="0" Right="887" Bottom="66" TextureNum="3" />
+				<SubElement ElementName="Sub Static" Xpos="12" Xpos2="12" Ypos="3" Ypos2="3" Width="179" Height="15" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="12" Xpos2="12" Ypos="23" Ypos2="23" Width="179" Height="15" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="12" Xpos2="12" Ypos="43" Ypos2="43" Width="179" Height="15" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="12" Xpos2="12" Ypos="63" Ypos2="63" Width="179" Height="15" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="12" Xpos2="12" Ypos="83" Ypos2="83" Width="179" Height="15" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="12" Xpos2="12" Ypos="103" Ypos2="103" Width="179" Height="15" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="12" Xpos2="12" Ypos="123" Ypos2="123" Width="179" Height="15" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="12" Xpos2="12" Ypos="143" Ypos2="143" Width="179" Height="15" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="12" Xpos2="12" Ypos="163" Ypos2="163" Width="179" Height="15" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+				<SubElement ElementName="Sub Static" Xpos="12" Xpos2="12" Ypos="183" Ypos2="183" Width="179" Height="15" Align="Left" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+			</Component>
+
+			<Component Type="Image" Id="3000" ParentsId="1" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="0" Height="0" Text="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="2" />
+				<SubElement ElementName="Sub Static" Xpos="622" Xpos2="622" Ypos="136" Ypos2="136" Width="218" Height="22" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="true" />
+			</Component>
+		</DlgInfo>
+    </TotalInfo>
+</UIXml>
+
+
+
+
+
+ 
+ 
+ 

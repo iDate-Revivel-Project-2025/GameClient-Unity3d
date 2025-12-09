@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+    <TotalInfo DlgCnt="1">
+		<DlgInfo ID="7" TextureCnt="1" ControlCnt="23">
+        <TextureInfo TexturePath="Result.dds" TextureIndex="1" />
+			<Component Type="Image" Id="700" ParentsId="6" Layer="3" Xpos="25" Xpos2="25" Ypos="41" Ypos2="41" Width="973" Height="681" Text="" Note="결과창 배경" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="342" Right="973" Bottom="1023" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="40" Xpos2="40" Ypos="52" Ypos2="52" Width="108" Height="79" Left="0" Top="263" Right="108" Bottom="342" TextureNum="1" Visible="true" Note="내등수" />
+				 <SubElement ElementName="Sub Image" Xpos="647" Xpos2="647" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Prefect 백단위" />
+				 <SubElement ElementName="Sub Image" Xpos="658" Xpos2="658" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Prefect 십단위" />
+				 <SubElement ElementName="Sub Image" Xpos="669" Xpos2="669" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Prefect 일단위" />
+				 <SubElement ElementName="Sub Image" Xpos="711" Xpos2="711" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Great 백단위" />
+				 <SubElement ElementName="Sub Image" Xpos="722" Xpos2="722" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Great 십단위" />
+				 <SubElement ElementName="Sub Image" Xpos="733" Xpos2="733" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Great 일단위" />
+				 <SubElement ElementName="Sub Image" Xpos="775" Xpos2="775" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Cool 백단위" />
+				 <SubElement ElementName="Sub Image" Xpos="786" Xpos2="786" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Cool 십단위" />
+				 <SubElement ElementName="Sub Image" Xpos="797" Xpos2="797" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Cool 일단위" />
+				 <SubElement ElementName="Sub Image" Xpos="839" Xpos2="839" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Bad 백단위" />
+				 <SubElement ElementName="Sub Image" Xpos="850" Xpos2="850" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Bad 십단위" />
+				 <SubElement ElementName="Sub Image" Xpos="861" Xpos2="861" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Bad 일단위" />
+				 <SubElement ElementName="Sub Image" Xpos="903" Xpos2="903" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Miss 백단위" />
+				 <SubElement ElementName="Sub Image" Xpos="914" Xpos2="914" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Miss 십단위" />
+				 <SubElement ElementName="Sub Image" Xpos="925" Xpos2="925" Ypos="257" Ypos2="257" Width="11" Height="12" Left="31" Top="147" Right="42" Bottom="159" RectType="Right" TextureNum="1" Visible="true" Note="Miss 일단위" />
+				 <SubElement ElementName="Sub Image" Xpos="119" Xpos2="119" Ypos="57" Ypos2="57" Width="173" Height="44" Left="570" Top="218" Right="743" Bottom="262" TextureNum="1" Visible="true" Note="아이디배경" />
+				 <SubElement ElementName="Sub Static" Xpos="125" Xpos2="125" Ypos="70" Ypos2="70" Width="150" Height="15" Text="" Align="Center" Visible="true" Note="아이디" />
+			</Component>
+			
+			<Component Type="Image" Id="705" ParentsId="0" Layer="0" Xpos="691" Xpos2="691" Ypos="112" Ypos2="112" Width="6" Height="172" Text="" Note="Prefect 게이지" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="0" Right="6" Bottom="172" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="706" ParentsId="0" Layer="0" Xpos="755" Xpos2="755" Ypos="112" Ypos2="112" Width="6" Height="172" Text="" Note="Great 게이지" Visible="true">
+				 <SubElement ElementName="Main Button" Left="6" Top="0" Right="12" Bottom="172" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="707" ParentsId="0" Layer="0" Xpos="819" Xpos2="819" Ypos="112" Ypos2="112" Width="6" Height="172" Text="" Note="Cool 게이지" Visible="true">
+				 <SubElement ElementName="Main Button" Left="12" Top="0" Right="18" Bottom="172" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="708" ParentsId="0" Layer="0" Xpos="883" Xpos2="883" Ypos="112" Ypos2="112" Width="6" Height="172" Text="" Note="Bad 게이지" Visible="true">
+				 <SubElement ElementName="Main Button" Left="18" Top="0" Right="24" Bottom="172" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="709" ParentsId="0" Layer="0" Xpos="947" Xpos2="947" Ypos="112" Ypos2="112" Width="6" Height="172" Text="" Note="Miss 게이지" Visible="true">
+				 <SubElement ElementName="Main Button" Left="24" Top="0" Right="30" Bottom="172" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="710" ParentsId="0" Layer="0" Xpos="681" Xpos2="681" Ypos="259" Ypos2="259" Width="27" Height="31" Text="" Note="Prefect 위치버튼" Visible="true">
+				 <SubElement ElementName="Main Button" Left="31" Top="0" Right="58" Bottom="31" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="711" ParentsId="0" Layer="0" Xpos="745" Xpos2="745" Ypos="259" Ypos2="259" Width="27" Height="31" Text="" Note="Great 위치버튼" Visible="true">
+				 <SubElement ElementName="Main Button" Left="31" Top="0" Right="58" Bottom="31" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="712" ParentsId="0" Layer="0" Xpos="809" Xpos2="809" Ypos="259" Ypos2="259" Width="27" Height="31" Text="" Note="Cool 위치버튼" Visible="true">
+				 <SubElement ElementName="Main Button" Left="31" Top="0" Right="58" Bottom="31" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="713" ParentsId="0" Layer="0" Xpos="873" Xpos2="873" Ypos="259" Ypos2="259" Width="27" Height="31" Text="" Note="Bad 위치버튼" Visible="true">
+				 <SubElement ElementName="Main Button" Left="31" Top="0" Right="58" Bottom="31" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="714" ParentsId="0" Layer="0" Xpos="937" Xpos2="937" Ypos="259" Ypos2="259" Width="27" Height="31" Text="" Note="Miss 위치버튼" Visible="true">
+				 <SubElement ElementName="Main Button" Left="31" Top="0" Right="58" Bottom="31" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="701" ParentsId="6" Layer="3" Xpos="430" Xpos2="430" Ypos="121" Ypos2="121" Width="0" Height="0" Text="" Note="내점수" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="36" Left="31" Top="32" Right="63" Bottom="68" TextureNum="1" Visible="true" Note="십만자리" />
+				 <SubElement ElementName="Sub Image" Xpos="32" Xpos2="32" Ypos="0" Ypos2="0" Width="32" Height="36" Left="31" Top="32" Right="63" Bottom="68" TextureNum="1" Visible="true" Note="만자리" />
+				 <SubElement ElementName="Sub Image" Xpos="64" Xpos2="64" Ypos="0" Ypos2="0" Width="32" Height="36" Left="31" Top="32" Right="63" Bottom="68" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="96" Xpos2="96" Ypos="0" Ypos2="0" Width="32" Height="36" Left="31" Top="32" Right="63" Bottom="68" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="128" Xpos2="128" Ypos="0" Ypos2="0" Width="32" Height="36" Left="31" Top="32" Right="63" Bottom="68" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="161" Xpos2="161" Ypos="0" Ypos2="0" Width="32" Height="36" Left="31" Top="32" Right="63" Bottom="68" TextureNum="1" Visible="true" Note="일자리" />
+			</Component>
+			<Component Type="Image" Id="702" ParentsId="6" Layer="3" Xpos="541" Xpos2="541" Ypos="178" Ypos2="178" Width="0" Height="0" Text="" Note="내KOOL콤보" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="22" Height="23" Left="31" Top="69" Right="53" Bottom="92" TextureNum="1" Visible="true" Note="천백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="22" Xpos2="22" Ypos="0" Ypos2="0" Width="22" Height="23" Left="31" Top="69" Right="53" Bottom="92" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="44" Xpos2="44" Ypos="0" Ypos2="0" Width="22" Height="23" Left="31" Top="69" Right="53" Bottom="92" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="66" Xpos2="66" Ypos="0" Ypos2="0" Width="22" Height="23" Left="31" Top="69" Right="53" Bottom="92" TextureNum="1" Visible="true" Note="일자리" />
+			</Component>
+			<Component Type="Image" Id="703" ParentsId="6" Layer="3" Xpos="482" Xpos2="482" Ypos="225" Ypos2="225" Width="0" Height="0" Text="" Note="포인트" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="24" Height="26" Left="31" Top="93" Right="55" Bottom="119" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="24" Xpos2="24" Ypos="0" Ypos2="0" Width="24" Height="26" Left="31" Top="93" Right="55" Bottom="119" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="48" Xpos2="48" Ypos="0" Ypos2="0" Width="24" Height="26" Left="31" Top="93" Right="55" Bottom="119" TextureNum="1" Visible="true" Note="일자리" />
+			</Component>
+			<Component Type="Image" Id="704" ParentsId="6" Layer="3" Xpos="482" Xpos2="482" Ypos="251" Ypos2="251" Width="0" Height="0" Text="" Note="경험치" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="0" Right="0" Bottom="0" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="24" Height="26" Left="31" Top="93" Right="55" Bottom="119" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="24" Xpos2="24" Ypos="0" Ypos2="0" Width="24" Height="26" Left="31" Top="93" Right="55" Bottom="119" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="48" Xpos2="48" Ypos="0" Ypos2="0" Width="24" Height="26" Left="31" Top="93" Right="55" Bottom="119" TextureNum="1" Visible="true" Note="일자리" />
+			</Component>
+			<Component Type="Image" Id="1" ParentsId="6" Layer="3" Xpos="396" Xpos2="396" Ypos="404" Ypos2="404" Width="569" Height="32" Text="" Note="1등" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="198" Right="569" Bottom="230" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="31" Top="160" Right="63" Bottom="192" TextureNum="1" Visible="true" Note="하트" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="64" Top="160" Right="96" Bottom="192" TextureNum="1" Visible="true" Note="폭탄" />
+				 <SubElement ElementName="Sub Image" Xpos="41" Xpos2="41" Ypos="0" Ypos2="0" Width="48" Height="32" Left="976" Top="0" Right="1024" Bottom="32" TextureNum="1" Visible="true" Note="등수" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="3" Ypos2="3" Width="12" Height="13" Left="568" Top="14" Right="580" Bottom="27" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="3" Ypos2="3" Width="15" Height="13" Left="581" Top="14" Right="596" Bottom="27" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="16" Ypos2="16" Width="12" Height="13" Left="568" Top="0" Right="580" Bottom="13" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="16" Ypos2="16" Width="15" Height="13" Left="581" Top="0" Right="596" Bottom="13" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Static" Xpos="85" Xpos2="85" Ypos="10" Ypos2="10" Width="45" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="레벨" />
+				 <SubElement ElementName="Sub Static" Xpos="130" Xpos2="130" Ypos="10" Ypos2="10" Width="120" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이디" />
+				 <SubElement ElementName="Sub Static" Xpos="235" Xpos2="235" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="노트 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="295" Xpos2="295" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="미션 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="355" Xpos2="355" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="댄스 경험치" />
+				 <SubElement ElementName="Sub Static" Xpos="490" Xpos2="490" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="얻은 포인트" />
+			</Component>
+			<Component Type="Image" Id="2" ParentsId="6" Layer="3" Xpos="396" Xpos2="396" Ypos="440" Ypos2="440" Width="569" Height="32" Text="" Note="2등" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="198" Right="569" Bottom="230" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="31" Top="160" Right="63" Bottom="192" TextureNum="1" Visible="true" Note="하트" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="64" Top="160" Right="96" Bottom="192" TextureNum="1" Visible="true" Note="폭탄" />
+				 <SubElement ElementName="Sub Image" Xpos="41" Xpos2="41" Ypos="0" Ypos2="0" Width="48" Height="32" Left="976" Top="0" Right="1024" Bottom="32" TextureNum="1" Visible="true" Note="등수" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="3" Ypos2="3" Width="12" Height="13" Left="568" Top="14" Right="580" Bottom="27" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="3" Ypos2="3" Width="15" Height="13" Left="581" Top="14" Right="596" Bottom="27" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="16" Ypos2="16" Width="12" Height="13" Left="568" Top="0" Right="580" Bottom="13" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="16" Ypos2="16" Width="15" Height="13" Left="581" Top="0" Right="596" Bottom="13" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Static" Xpos="85" Xpos2="85" Ypos="10" Ypos2="10" Width="45" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="레벨" />
+				 <SubElement ElementName="Sub Static" Xpos="130" Xpos2="130" Ypos="10" Ypos2="10" Width="120" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이디" />
+				 <SubElement ElementName="Sub Static" Xpos="235" Xpos2="235" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="노트 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="295" Xpos2="295" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="미션 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="355" Xpos2="355" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="댄스 경험치" />
+				 <SubElement ElementName="Sub Static" Xpos="490" Xpos2="490" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="얻은 포인트" />
+			</Component>
+			<Component Type="Image" Id="3" ParentsId="6" Layer="3" Xpos="396" Xpos2="396" Ypos="476" Ypos2="476" Width="569" Height="32" Text="" Note="3등" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="198" Right="569" Bottom="230" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="31" Top="160" Right="63" Bottom="192" TextureNum="1" Visible="true" Note="하트" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="64" Top="160" Right="96" Bottom="192" TextureNum="1" Visible="true" Note="폭탄" />
+				 <SubElement ElementName="Sub Image" Xpos="41" Xpos2="41" Ypos="0" Ypos2="0" Width="48" Height="32" Left="976" Top="0" Right="1024" Bottom="32" TextureNum="1" Visible="true" Note="등수" />
+				 
+				  <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="3" Ypos2="3" Width="12" Height="13" Left="568" Top="14" Right="580" Bottom="27" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="3" Ypos2="3" Width="15" Height="13" Left="581" Top="14" Right="596" Bottom="27" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="16" Ypos2="16" Width="12" Height="13" Left="568" Top="0" Right="580" Bottom="13" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="16" Ypos2="16" Width="15" Height="13" Left="581" Top="0" Right="596" Bottom="13" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Static" Xpos="85" Xpos2="85" Ypos="10" Ypos2="10" Width="45" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="레벨" />
+				 <SubElement ElementName="Sub Static" Xpos="130" Xpos2="130" Ypos="10" Ypos2="10" Width="120" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이디" />
+				 <SubElement ElementName="Sub Static" Xpos="235" Xpos2="235" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="노트 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="295" Xpos2="295" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="미션 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="355" Xpos2="355" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="댄스 경험치" />
+				 <SubElement ElementName="Sub Static" Xpos="490" Xpos2="490" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="얻은 포인트" />
+			</Component>
+			<Component Type="Image" Id="4" ParentsId="6" Layer="3" Xpos="396" Xpos2="396" Ypos="512" Ypos2="512" Width="569" Height="32" Text="" Note="4등" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="198" Right="569" Bottom="230" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="31" Top="160" Right="63" Bottom="192" TextureNum="1" Visible="true" Note="하트" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="64" Top="160" Right="96" Bottom="192" TextureNum="1" Visible="true" Note="폭탄" />
+				 <SubElement ElementName="Sub Image" Xpos="41" Xpos2="41" Ypos="0" Ypos2="0" Width="48" Height="32" Left="976" Top="0" Right="1024" Bottom="32" TextureNum="1" Visible="true" Note="등수" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="3" Ypos2="3" Width="12" Height="13" Left="568" Top="14" Right="580" Bottom="27" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="3" Ypos2="3" Width="15" Height="13" Left="581" Top="14" Right="596" Bottom="27" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="16" Ypos2="16" Width="12" Height="13" Left="568" Top="0" Right="580" Bottom="13" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="16" Ypos2="16" Width="15" Height="13" Left="581" Top="0" Right="596" Bottom="13" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Static" Xpos="85" Xpos2="85" Ypos="10" Ypos2="10" Width="45" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="레벨" />
+				 <SubElement ElementName="Sub Static" Xpos="130" Xpos2="130" Ypos="10" Ypos2="10" Width="120" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이디" />
+				 <SubElement ElementName="Sub Static" Xpos="235" Xpos2="235" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="노트 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="295" Xpos2="295" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="미션 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="355" Xpos2="355" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="댄스 경험치" />
+				 <SubElement ElementName="Sub Static" Xpos="490" Xpos2="490" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="얻은 포인트" />
+			</Component>
+			<Component Type="Image" Id="5" ParentsId="6" Layer="3" Xpos="396" Xpos2="396" Ypos="548" Ypos2="548" Width="569" Height="32" Text="" Note="5등" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="198" Right="569" Bottom="230" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="31" Top="160" Right="63" Bottom="192" TextureNum="1" Visible="true" Note="하트" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="64" Top="160" Right="96" Bottom="192" TextureNum="1" Visible="true" Note="폭탄" />
+				 <SubElement ElementName="Sub Image" Xpos="41" Xpos2="41" Ypos="0" Ypos2="0" Width="48" Height="32" Left="976" Top="0" Right="1024" Bottom="32" TextureNum="1" Visible="true" Note="등수" />
+				 
+				  <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="3" Ypos2="3" Width="12" Height="13" Left="568" Top="14" Right="580" Bottom="27" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="3" Ypos2="3" Width="15" Height="13" Left="581" Top="14" Right="596" Bottom="27" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="16" Ypos2="16" Width="12" Height="13" Left="568" Top="0" Right="580" Bottom="13" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="16" Ypos2="16" Width="15" Height="13" Left="581" Top="0" Right="596" Bottom="13" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Static" Xpos="85" Xpos2="85" Ypos="10" Ypos2="10" Width="45" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="레벨" />
+				 <SubElement ElementName="Sub Static" Xpos="130" Xpos2="130" Ypos="10" Ypos2="10" Width="120" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이디" />
+				 <SubElement ElementName="Sub Static" Xpos="235" Xpos2="235" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="노트 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="295" Xpos2="295" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="미션 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="355" Xpos2="355" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="댄스 경험치" />
+				 <SubElement ElementName="Sub Static" Xpos="490" Xpos2="490" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="얻은 포인트" />
+			</Component>
+			<Component Type="Image" Id="6" ParentsId="6" Layer="3" Xpos="396" Xpos2="396" Ypos="584" Ypos2="584" Width="569" Height="32" Text="" Note="6등" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="198" Right="569" Bottom="230" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="31" Top="160" Right="63" Bottom="192" TextureNum="1" Visible="true" Note="하트" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="64" Top="160" Right="96" Bottom="192" TextureNum="1" Visible="true" Note="폭탄" />
+				 <SubElement ElementName="Sub Image" Xpos="41" Xpos2="41" Ypos="0" Ypos2="0" Width="48" Height="32" Left="976" Top="0" Right="1024" Bottom="32" TextureNum="1" Visible="true" Note="등수" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="3" Ypos2="3" Width="12" Height="13" Left="568" Top="14" Right="580" Bottom="27" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="3" Ypos2="3" Width="15" Height="13" Left="581" Top="14" Right="596" Bottom="27" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="16" Ypos2="16" Width="12" Height="13" Left="568" Top="0" Right="580" Bottom="13" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="16" Ypos2="16" Width="15" Height="13" Left="581" Top="0" Right="596" Bottom="13" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Static" Xpos="85" Xpos2="85" Ypos="10" Ypos2="10" Width="45" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="레벨" />
+				 <SubElement ElementName="Sub Static" Xpos="130" Xpos2="130" Ypos="10" Ypos2="10" Width="120" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이디" />
+				 <SubElement ElementName="Sub Static" Xpos="235" Xpos2="235" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="노트 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="295" Xpos2="295" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="미션 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="355" Xpos2="355" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="댄스 경험치" />
+				 <SubElement ElementName="Sub Static" Xpos="490" Xpos2="490" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="얻은 포인트" />
+			</Component>
+			<Component Type="Image" Id="7" ParentsId="6" Layer="3" Xpos="396" Xpos2="396" Ypos="620" Ypos2="620" Width="569" Height="32" Text="" Note="7등" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="198" Right="569" Bottom="230" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="31" Top="160" Right="63" Bottom="192" TextureNum="1" Visible="true" Note="하트" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="64" Top="160" Right="96" Bottom="192" TextureNum="1" Visible="true" Note="폭탄" />
+				 <SubElement ElementName="Sub Image" Xpos="41" Xpos2="41" Ypos="0" Ypos2="0" Width="48" Height="32" Left="976" Top="0" Right="1024" Bottom="32" TextureNum="1" Visible="true" Note="등수" />
+				 
+				  <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="3" Ypos2="3" Width="12" Height="13" Left="568" Top="14" Right="580" Bottom="27" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="3" Ypos2="3" Width="15" Height="13" Left="581" Top="14" Right="596" Bottom="27" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="16" Ypos2="16" Width="12" Height="13" Left="568" Top="0" Right="580" Bottom="13" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="16" Ypos2="16" Width="15" Height="13" Left="581" Top="0" Right="596" Bottom="13" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Static" Xpos="85" Xpos2="85" Ypos="10" Ypos2="10" Width="45" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="레벨" />
+				 <SubElement ElementName="Sub Static" Xpos="130" Xpos2="130" Ypos="10" Ypos2="10" Width="120" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이디" />
+				 <SubElement ElementName="Sub Static" Xpos="235" Xpos2="235" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="노트 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="295" Xpos2="295" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="미션 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="355" Xpos2="355" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="댄스 경험치" />
+				 <SubElement ElementName="Sub Static" Xpos="490" Xpos2="490" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="얻은 포인트" />
+			</Component>
+			<Component Type="Image" Id="8" ParentsId="6" Layer="3" Xpos="396" Xpos2="396" Ypos="656" Ypos2="656" Width="569" Height="32" Text="" Note="8등" Visible="true">
+				 <SubElement ElementName="Main Button" Left="0" Top="198" Right="569" Bottom="230" TextureNum="1" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="31" Top="160" Right="63" Bottom="192" TextureNum="1" Visible="true" Note="하트" />
+				 <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="32" Height="32" Left="64" Top="160" Right="96" Bottom="192" TextureNum="1" Visible="true" Note="폭탄" />
+				 <SubElement ElementName="Sub Image" Xpos="41" Xpos2="41" Ypos="0" Ypos2="0" Width="48" Height="32" Left="976" Top="0" Right="1024" Bottom="32" TextureNum="1" Visible="true" Note="등수" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="3" Ypos2="3" Width="12" Height="13" Left="568" Top="14" Right="580" Bottom="27" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="3" Ypos2="3" Width="12" Height="13" Left="447" Top="14" Right="459" Bottom="27" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="3" Ypos2="3" Width="15" Height="13" Left="581" Top="14" Right="596" Bottom="27" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 <SubElement ElementName="Sub Image" Xpos="441" Xpos2="441" Ypos="16" Ypos2="16" Width="12" Height="13" Left="568" Top="0" Right="580" Bottom="13" TextureNum="1" Visible="true" Note="+표시" />
+				 <SubElement ElementName="Sub Image" Xpos="453" Xpos2="453" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="천자리" />
+				 <SubElement ElementName="Sub Image" Xpos="464" Xpos2="464" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="백자리" />
+				 <SubElement ElementName="Sub Image" Xpos="475" Xpos2="475" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="십자리" />
+				 <SubElement ElementName="Sub Image" Xpos="485" Xpos2="485" Ypos="16" Ypos2="16" Width="12" Height="13" Left="447" Top="0" Right="459" Bottom="13" TextureNum="1" Visible="true" Note="일자리" />
+				 <SubElement ElementName="Sub Image" Xpos="498" Xpos2="498" Ypos="16" Ypos2="16" Width="15" Height="13" Left="581" Top="0" Right="596" Bottom="13" TextureNum="1" Visible="true" Note="%표시" />
+				 
+				 
+				 <SubElement ElementName="Sub Static" Xpos="85" Xpos2="85" Ypos="10" Ypos2="10" Width="45" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="레벨" />
+				 <SubElement ElementName="Sub Static" Xpos="130" Xpos2="130" Ypos="10" Ypos2="10" Width="120" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="아이디" />
+				 <SubElement ElementName="Sub Static" Xpos="235" Xpos2="235" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="노트 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="295" Xpos2="295" Ypos="10" Ypos2="10" Width="90" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="미션 점수" />
+				 <SubElement ElementName="Sub Static" Xpos="355" Xpos2="355" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="댄스 경험치" />
+				 <SubElement ElementName="Sub Static" Xpos="490" Xpos2="490" Ypos="10" Ypos2="10" Width="95" Height="15" Text="" Align="Center" ColorR="255" ColorG="255" ColorB="255" Visible="true" Note="얻은 포인트" />
+			</Component>
+										 
+		</DlgInfo>
+    </TotalInfo>
+</UIXml>
+
+
+
+
+
+ 
+ 
+ 
+

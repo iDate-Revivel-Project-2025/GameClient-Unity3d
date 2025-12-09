@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+    <TotalInfo DlgCnt="1">
+		<DlgInfo ID="2" TextureCnt="2" ControlCnt="22">
+			<TextureInfo TexturePath="common_ui.dds" TextureIndex="1" />
+			<TextureInfo TexturePath="CharCreate.dds" TextureIndex="2" />
+
+            <Component Type="Image" Id="200" ParentsId="2" Layer="1" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="1024" Height="768" Text="" Note="생성메뉴 배경" Visible="false">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="1024" Bottom="768" TextureNum="2" />
+			</Component>
+			<Component Type="Button" Id="201" ParentsId="2" Layer="1" Xpos="85" Xpos2="85" Ypos="606" Ypos2="606" Width="349" Height="155" Text="" Note="캐릭터 회전버튼" Visible="true">
+                <SubElement ElementName="Main Button" Left="1025" Top="245" Right="1374" Bottom="400" TextureNum="2" RectType="Bottom" />
+                <SubElement ElementName="Sub Button" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="174" Height="155" Left="1779" Top="112" Right="1789" Bottom="122" MsgType="true" TextureNum="2" RectNum="1" Visible="true" Command="CHARCREATE_VLEFT" />
+                <SubElement ElementName="Sub Button" Xpos="176" Xpos2="176" Ypos="0" Ypos2="0" Width="174" Height="155" Left="1779" Top="112" Right="1789" Bottom="122" MsgType="true" TextureNum="2" RectNum="1" Visible="true" Command="CHARCREATE_VRIGHT" />
+            </Component>
+            <Component Type="Button" Id="202" ParentsId="2" Layer="1" Xpos="562" Xpos2="562" Ypos="211" Ypos2="211" Width="94" Height="112" Text="" Note="헤어스타일1" Visible="true" Command="CHARCREATE_HAIRSTYLE01">
+                <SubElement ElementName="Main Button" Left="0" Top="769" Right="94" Bottom="881" TextureNum="2" RectType="Right" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1496" Top="0" Right="1590" Bottom="112" Visible="false" TextureNum="2" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1025" Top="0" Right="1119" Bottom="112" Visible="false" TextureNum="2" />
+            </Component>
+            <Component Type="Button" Id="203" ParentsId="2" Layer="1" Xpos="664" Xpos2="664" Ypos="211" Ypos2="211" Width="94" Height="112" Text="" Note="헤어스타일2" Visible="true" Command="CHARCREATE_HAIRSTYLE02">
+                <SubElement ElementName="Main Button" Left="0" Top="769" Right="94" Bottom="881" TextureNum="2" RectType="Right" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1402" Top="0" Right="1496" Bottom="112" Visible="false" TextureNum="2" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1119" Top="0" Right="1213" Bottom="112" Visible="false" TextureNum="2" />
+            </Component>
+            <Component Type="Image" Id="204" ParentsId="2" Layer="1" Xpos="781" Xpos2="781" Ypos="211" Ypos2="211" Width="94" Height="112" Text="" Note="얼굴스타일1" Visible="true">
+                <SubElement ElementName="Main Button" Left="0" Top="769" Right="94" Bottom="881" TextureNum="2" RectType="Right" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1779" Top="0" Right="1873" Bottom="112" Visible="false" TextureNum="2" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1779" Top="0" Right="1873" Bottom="112" Visible="false" TextureNum="2" />
+            </Component>
+            <Component Type="Image" Id="205" ParentsId="2" Layer="1" Xpos="883" Xpos2="883" Ypos="211" Ypos2="211" Width="94" Height="112" Text="" Note="얼굴스타일2" Visible="true">
+                <SubElement ElementName="Main Button" Left="0" Top="769" Right="94" Bottom="881" TextureNum="2" RectType="Right" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1779" Top="0" Right="1873" Bottom="112" Visible="false" TextureNum="2" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1779" Top="0" Right="1873" Bottom="112" Visible="false" TextureNum="2" />
+            </Component>
+            <Component Type="Button" Id="206" ParentsId="2" Layer="1" Xpos="562" Xpos2="562" Ypos="354" Ypos2="354" Width="135" Height="77" Text="" Note="여자 헤어컬러1" Visible="true" Command="CHARCREATE_HAIR_COLOR01">
+                <SubElement ElementName="Main Button" Left="377" Top="769" Right="512" Bottom="846" TextureNum="2" RectType="Right" />
+            </Component>
+            <Component Type="Button" Id="207" ParentsId="2" Layer="1" Xpos="702" Xpos2="702" Ypos="354" Ypos2="354" Width="135" Height="77" Text="" Note="여자 헤어컬러2" Visible="true" Command="CHARCREATE_HAIR_COLOR02">
+                <SubElement ElementName="Main Button" Left="377" Top="846" Right="512" Bottom="923" TextureNum="2" RectType="Right" />
+            </Component>
+            <Component Type="Button" Id="208" ParentsId="2" Layer="1" Xpos="842" Xpos2="842" Ypos="354" Ypos2="354" Width="135" Height="77" Text="" Note="여자 헤어컬러3" Visible="true" Command="CHARCREATE_HAIR_COLOR03">
+                <SubElement ElementName="Main Button" Left="377" Top="923" Right="512" Bottom="1000" TextureNum="2" RectType="Right" />
+            </Component>
+            
+            <Component Type="Button" Id="209" ParentsId="2" Layer="1" Xpos="562" Xpos2="562" Ypos="354" Ypos2="354" Width="135" Height="77" Text="" Note="남자 헤어컬러1" Visible="true" Command="CHARCREATE_HAIR_COLOR01">
+                <SubElement ElementName="Main Button" Left="783" Top="769" Right="918" Bottom="846" TextureNum="2" RectType="Right" />
+            </Component>
+            <Component Type="Button" Id="210" ParentsId="2" Layer="1" Xpos="702" Xpos2="702" Ypos="354" Ypos2="354" Width="135" Height="77" Text="" Note="남자 헤어컬러2" Visible="true" Command="CHARCREATE_HAIR_COLOR02">
+                <SubElement ElementName="Main Button" Left="783" Top="846" Right="918" Bottom="923" TextureNum="2" RectType="Right" />
+            </Component>
+            <Component Type="Button" Id="211" ParentsId="2" Layer="1" Xpos="842" Xpos2="842" Ypos="354" Ypos2="354" Width="135" Height="77" Text="" Note="남자 헤어컬러3" Visible="true" Command="CHARCREATE_HAIR_COLOR03">
+                <SubElement ElementName="Main Button" Left="783" Top="923" Right="918" Bottom="1000" TextureNum="2" RectType="Right" />
+            </Component>
+            <Component Type="Button" Id="212" ParentsId="2" Layer="1" Xpos="562" Xpos2="562" Ypos="513" Ypos2="513" Width="94" Height="112" Text="" Note="상체스타일1" Visible="true" Command="CHARCREATE_UPPERSTYLE01">
+                <SubElement ElementName="Main Button" Left="0" Top="769" Right="94" Bottom="881" TextureNum="2" RectType="Right" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1402" Top="112" Right="1496" Bottom="245" Visible="false" TextureNum="2" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1025" Top="112" Right="1119" Bottom="245" Visible="false" TextureNum="2" />
+            </Component>
+            <Component Type="Button" Id="213" ParentsId="2" Layer="1" Xpos="664" Xpos2="664" Ypos="513" Ypos2="513" Width="94" Height="112" Text="" Note="상체스타일2" Visible="true" Command="CHARCREATE_UPPERSTYLE02">
+                <SubElement ElementName="Main Button" Left="0" Top="769" Right="94" Bottom="881" TextureNum="2" RectType="Right" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1496" Top="112" Right="1590" Bottom="245" Visible="false" TextureNum="2" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1119" Top="112" Right="1213" Bottom="245" Visible="false" TextureNum="2" />
+            </Component>
+            
+            <Component Type="Button" Id="214" ParentsId="2" Layer="1" Xpos="781" Xpos2="781" Ypos="513" Ypos2="513" Width="94" Height="112" Text="" Note="하체스타일1" Visible="true" Command="CHARCREATE_LOWERSTYLE01">
+                <SubElement ElementName="Main Button" Left="0" Top="882" Right="94" Bottom="1014" TextureNum="2" RectType="Right" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1590" Top="112" Right="1684" Bottom="245" Visible="false" TextureNum="2" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1307" Top="112" Right="1402" Bottom="245" Visible="false" TextureNum="2" />
+            </Component>
+            <Component Type="Button" Id="215" ParentsId="2" Layer="1" Xpos="883" Xpos2="883" Ypos="513" Ypos2="513" Width="94" Height="112" Text="" Note="하체스타일2" Visible="true" Command="CHARCREATE_LOWERSTYLE02">
+                <SubElement ElementName="Main Button" Left="0" Top="882" Right="94" Bottom="1014" TextureNum="2" RectType="Right" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1684" Top="112" Right="1796" Bottom="245" Visible="false" TextureNum="2" />
+                <SubElement ElementName="Sub Image" Xpos="0" Xpos2="0" Ypos="0" Ypos2="0" Width="94" Height="112" Left="1213" Top="112" Right="1307" Bottom="245" Visible="false" TextureNum="2" />
+            </Component>
+            
+            <Component Type="Button" Id="216" ParentsId="2" Layer="1" Xpos="569" Xpos2="569" Ypos="684" Ypos2="684" Width="141" Height="58" Text="" Note="생성" Visible="true" Command="CHARCREATE_CREATE">
+                <SubElement ElementName="Main Button" Left="1189" Top="769" Right="1330" Bottom="827" TextureNum="2" RectType="Right" />
+            </Component>
+            <Component Type="Button" Id="217" ParentsId="2" Layer="1" Xpos="702" Xpos2="702" Ypos="684" Ypos2="684" Width="141" Height="58" Text="" Note="초기화" Visible="true" Command="CHARCREATE_RESET">
+                <SubElement ElementName="Main Button" Left="1189" Top="828" Right="1330" Bottom="886" TextureNum="2" RectType="Right" />
+            </Component>
+            <Component Type="Button" Id="218" ParentsId="2" Layer="1" Xpos="835" Xpos2="835" Ypos="684" Ypos2="684" Width="141" Height="58" Text="" Note="종료" Visible="true" Command="CHARCREATE_EXIT">
+                <SubElement ElementName="Main Button" Left="1189" Top="887" Right="1330" Bottom="945" TextureNum="2" RectType="Right" />
+            </Component>
+             <Component Type="Ime" Id="219" ParentsId="1" Layer="0" Xpos="673" Xpos2="673" Ypos="122" Ypos2="122" Width="250" Height="15" Text="" Note="ID입력" Visible="true" ColorR="255" ColorG="255" ColorB="255" TexLen="14">
+			</Component>
+			<Component Type="Image" Id="220" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="371" Height="199" Text="" Note="경고창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1677" Top="560" Right="2048" Bottom="759" TextureNum="1" />
+				<SubElement ElementName="Sub Button" Xpos="116" Xpos2="116" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="268" Right="139" Bottom="307" TextureNum="1" Visible="true" Command="CHARCREATE_POP_NOTE" />
+				<SubElement ElementName="Sub Static" Xpos="35" Xpos2="35" Ypos="70" Ypos2="70" Width="300" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+			<Component Type="Image" Id="221" ParentsId="1" Layer="5" Xpos="330" Xpos2="330" Ypos="270" Ypos2="270" Width="371" Height="199" Text="" Note="종료확인 질문창" Visible="false">
+				<SubElement ElementName="Main Button" Left="1677" Top="560" Right="2048" Bottom="759" TextureNum="1" />
+				<SubElement ElementName="Sub Button" Xpos="38" Xpos2="38" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="268" Right="139" Bottom="306" TextureNum="1" Visible="true" Command="CHARCREATE_EXITQUES_OK" />
+				<SubElement ElementName="Sub Button" Xpos="191" Xpos2="191" Ypos="132" Ypos2="132" Width="139" Height="39" Left="0" Top="582" Right="139" Bottom="621" TextureNum="1" Visible="true" Command="CHARCREATE_EXITQUES_CANCEL" />
+				<SubElement ElementName="Sub Static" Xpos="35" Xpos2="35" Ypos="70" Ypos2="70" Width="300" Height="15" Text="" ColorR="255" ColorG="255" ColorB="255" Visible="false" />
+			</Component>
+		</DlgInfo>
+    </TotalInfo>
+</UIXml>
+
+
+
+
+
+ 
+ 
+ 

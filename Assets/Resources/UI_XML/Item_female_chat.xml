@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+	<TotalInfo DlgCnt="1">
+		<DlgInfo ID="46" TextureCnt="1" ControlCnt="5">
+		<TextureInfo TexturePath="F01_AC_CHAT_0001_00.dds" TextureIndex="1" />
+		
+			<Component Type="Image" Id="900" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C41_A8_10002" Note="여자 Chat" Visible="true">
+				<SubElement ElementName="Main Button" Left="320" Top="0" Right="384" Bottom="64" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="901" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C41_A8_10004" Note="여자 Chat" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="64" Right="64" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="902" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C41_A8_10006" Note="여자 Chat" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="64" Right="128" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="903" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C41_A8_10008" Note="여자 Chat" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="0" Right="448" Bottom="64" TextureNum="1" />
+			</Component>			
+			<Component Type="Image" Id="904" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C41_A8_10010" Note="여자 Chat" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="0" Right="512" Bottom="64" TextureNum="1" />
+			</Component>
+			
+
+
+			
+		</DlgInfo>
+	</TotalInfo>
+</UIXml>	

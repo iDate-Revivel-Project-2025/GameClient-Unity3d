@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIXml>
+	<TotalInfo DlgCnt="1">
+		<DlgInfo ID="50" TextureCnt="2" ControlCnt="67">
+		<TextureInfo TexturePath="M01_AC_SETITEM_0001_00.dds" TextureIndex="1" />
+		<TextureInfo TexturePath="FM01_PA_NORMAL_0001_00.dds" TextureIndex="2" />
+			
+			<Component Type="Image" Id="900" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_00001" Note="남자_SETITEM" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="0" Right="128" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="901" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_00003" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="64" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="906" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10001" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="0" Right="128" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="907" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10003" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="64" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="908" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10005" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="0" Right="192" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="909" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10007" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="0" Right="256" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="910" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10009" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="256" Top="0" Right="320" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="911" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10011" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="320" Top="0" Right="384" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="912" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10013" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="0" Right="448" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="919" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10015" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="0" Right="512" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="920" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10017" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="512" Top="0" Right="576" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="921" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10019" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="576" Top="0" Right="640" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="928" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10023" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="704" Top="0" Right="768" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="930" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10021" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="640" Top="0" Right="704" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="934" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10025" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="768" Top="0" Right="832" Bottom="64" TextureNum="1" />
+			</Component>							  
+			<Component Type="Image" Id="935" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10027" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="832" Top="0" Right="896" Bottom="64" TextureNum="1" />
+			</Component>							  
+			<Component Type="Image" Id="936" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10029" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="896" Top="0" Right="960" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="940" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10031" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="960" Top="0" Right="1024" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="941" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10033" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="64" Right="64" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="942" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10035" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="64" Right="128" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="944" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10039" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="64" Right="192" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="947" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10041" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="64" Right="256" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="948" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10043" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="256" Top="64" Right="320" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="954" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10045" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="320" Top="64" Right="384" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="955" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10047" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="64" Right="448" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="956" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10049" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="512" Top="0" Right="576" Bottom="64" TextureNum="1" />
+			</Component>							 
+			<Component Type="Image" Id="957" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10051" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="0" Right="448" Bottom="64" TextureNum="1" />
+			</Component>							 
+			<Component Type="Image" Id="958" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10053" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="0" Right="512" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="959" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10055" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="64" Right="512" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="961" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10061" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="512" Top="64" Right="574" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="963" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10063" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="576" Top="64" Right="640" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="965" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_10065" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="640" Top="64" Right="704" Bottom="128" TextureNum="1" />
+			</Component>
+
+			
+			
+			
+			<Component Type="Image" Id="902" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_02001" Note="GAMEMONEY_남자_PACKAGE" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="0" Right="128" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="904" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_02003" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="64" Bottom="64" TextureNum="1" />
+			</Component>
+
+			<Component Type="Image" Id="903" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11001" Note="CASH_남자_PACKAGE" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="0" Right="128" Bottom="64" TextureNum="1" />			   
+			</Component>
+			<Component Type="Image" Id="905" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11003" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="0" Right="64" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="913" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11005" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="0" Right="192" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="914" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11007" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="0" Right="256" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="915" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11009" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="256" Top="0" Right="320" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="916" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11011" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="320" Top="0" Right="384" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="917" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11013" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="0" Right="448" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="918" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11015" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="384" Right="192" Bottom="448" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="922" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11017" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="0" Right="512" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="923" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11019" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="512" Top="0" Right="576" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="924" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11021" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="576" Top="0" Right="640" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="925" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11023" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="384" Right="256" Bottom="448" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="926" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11025" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="256" Top="384" Right="320" Bottom="448" TextureNum="2" />
+			</Component>
+			<Component Type="Image" Id="927" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11027" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="640" Top="0" Right="704" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="929" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11029" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="704" Top="0" Right="768" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="931" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11031" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="768" Top="0" Right="832" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="932" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11033" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="832" Top="0" Right="896" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="933" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11035" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="896" Top="0" Right="960" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="937" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11037" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="960" Top="0" Right="1024" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="938" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11039" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="0" Top="64" Right="64" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="939" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11041" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="64" Top="64" Right="128" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="943" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11045" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="128" Top="64" Right="192" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="945" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11047" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="192" Top="64" Right="256" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="946" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11049" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="256" Top="64" Right="320" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="949" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11051" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="320" Top="64" Right="384" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="950" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11053" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="64" Right="448" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="951" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11055" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="512" Top="0" Right="576" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="952" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11057" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="384" Top="0" Right="448" Bottom="64" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="953" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11059" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="0" Right="512" Bottom="64" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="960" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11061" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="448" Top="64" Right="512" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="962" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11067" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="512" Top="64" Right="576" Bottom="128" TextureNum="1" />
+			</Component>
+			
+			<Component Type="Image" Id="964" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11069" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="576" Top="64" Right="640" Bottom="128" TextureNum="1" />
+			</Component>
+			<Component Type="Image" Id="966" ParentsId="0" Layer="0" Xpos="0" Ypos="0" Width="64" Height="64" Text="C11_A9_11071" Note="" Visible="true">
+				<SubElement ElementName="Main Button" Left="640" Top="64" Right="704" Bottom="128" TextureNum="1" />
+			</Component>
+
+		</DlgInfo>
+	</TotalInfo>
+</UIXml>

@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+        "ida-pro-mcp": {
+            "command": "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/bin/python3",
+            "args": [
+                "/opt/homebrew/lib/python3.13/site-packages/ida_pro_mcp/server.py",
+                "--ida-rpc",
+                "http://127.0.0.1:13337"
+            ],
+            "disabled": false,
+            "alwaysAllow": []
+        },
+        "unityMCP": {
+            "serverUrl": "http://localhost:8080/mcp",
+            "disabled": false
+        }
+    }
+}
