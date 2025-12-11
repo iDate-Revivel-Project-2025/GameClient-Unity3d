@@ -30,7 +30,7 @@ namespace Assets.Scripts.Data
     {
         public static ItemDatabase Instance { get; private set; }
 
-        public string databasePath = "/Users/hades/UnityGames/iDate Revival 2025/iDateEmulator(Server)/server/ShopItem.ido";
+        public string databasePath; // Set in Awake
         public List<ItemData> loadedItems = new List<ItemData>();
         
         private const int RECORD_SIZE = 456; // 0x1C8
@@ -38,6 +38,7 @@ namespace Assets.Scripts.Data
         private void Awake()
         {
             Instance = this;
+            databasePath = System.IO.Path.Combine(Application.streamingAssetsPath, "ShopItem.ido");
             LoadDatabase();
         }
 

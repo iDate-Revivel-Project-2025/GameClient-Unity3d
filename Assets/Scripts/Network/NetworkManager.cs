@@ -460,28 +460,24 @@ namespace iDate.Network
 
         public void SendLogin(string username = "testuser", string password = "pass1234")
         {
-            // According to discovered protocol:
-            // "testuser" -> "stteerus" (Swap i, i+2 logic)
-            // Packet is OP.ENCRYPTED (0x042E)
-            // Payload: [ScrambledUsername] [ScrambledPassword]
+            // According to the encryption spec:
+            // - If ENCRYPT_INIT is NOT sent, login uses swap algorithm only
+            // - Username and password are encoded as UTF-16LE and encrypted with swap
+            // - Standard lengths: username 28 bytes (14 chars), password 20 bytes (10 chars)
             
-            string scrUser = CryptoHelper.Scramble(username);
-            string scrPass = CryptoHelper.Scramble(password);
+            const int USERNAME_LEN = 28; // 14 UTF-16LE characters
+            const int PASSWORD_LEN = 20; // 10 UTF-16LE characters
             
-            Debug.Log($"Login Encrypt: {username}->{scrUser}, {password}->{scrPass}");
+            byte[] encryptedUser = CryptoUtils.EncodeString(username, USERNAME_LEN);
+            byte[] encryptedPass = CryptoUtils.EncodeString(password, PASSWORD_LEN);
+            
+            Debug.Log($"[Login] Sending encrypted credentials for user: {username}");
             
             using (Packet p = new Packet((ushort)OpCode.ENCRYPTED))
             {
-                // We use WriteStringForLogin to append the raw unicode bytes without length prefixes
-                // (Assuming the server parses by fixed offset or expects raw stream)
-                // Note: The provided emulator ignores the body, so this is safe to add.
-                // For a real server, we might need to pad to specific lengths (e.g. 14 chars for user, 10 for pass).
-                // Let's assume standardized 40 bytes or similar if it fails.
-                // But for now, let's write them.
-                
-                // WARNING: Standard C# BinaryWriter length-prefixes strings. We implemented WriteStringForLogin to avoid that.
-                p.WriteStringForLogin(scrUser);
-                p.WriteStringForLogin(scrPass);
+                // Write encrypted username and password directly
+                p.WriteBytes(encryptedUser);
+                p.WriteBytes(encryptedPass);
                 
                 Send(p);
             }

@@ -54,23 +54,31 @@ namespace iDate.Editor
             GameObject canvasGO = new GameObject("Canvas");
             Canvas canvas = canvasGO.AddComponent<Canvas>();
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-            canvasGO.AddComponent<CanvasScaler>();
+            CanvasScaler scaler = canvasGO.AddComponent<CanvasScaler>();
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.referenceResolution = new Vector2(1280, 720); // Mobile-friendly resolution
+            scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
+            scaler.matchWidthOrHeight = 0.5f; // Balance between width and height
             canvasGO.AddComponent<GraphicRaycaster>();
 
-            // 3. Login Panel
+            // 3. Login Panel - Centered with reasonable size
             GameObject panel = new GameObject("LoginPanel");
             panel.transform.SetParent(canvasGO.transform, false);
             Image bg = panel.AddComponent<Image>();
-            bg.color = new Color(0.1f, 0.1f, 0.2f, 1f);
+            bg.color = new Color(0.1f, 0.1f, 0.2f, 0.95f);
             RectTransform rt = panel.GetComponent<RectTransform>();
-            rt.anchorMin = Vector2.zero;
-            rt.anchorMax = Vector2.one;
-            rt.offsetMin = Vector2.zero;
-            rt.offsetMax = Vector2.zero;
+            rt.anchorMin = new Vector2(0.5f, 0.5f);
+            rt.anchorMax = new Vector2(0.5f, 0.5f);
+            rt.pivot = new Vector2(0.5f, 0.5f);
+            rt.sizeDelta = new Vector2(400, 500); // Fixed size panel
+            rt.anchoredPosition = Vector2.zero;
 
-            // Inputs
-            GameObject userObj = CreateInputField("Username", 0, panel.transform);
-            GameObject passObj = CreateInputField("Password", -40, panel.transform);
+            // Title
+            CreateText("iDate Revival", 180, panel.transform, 36, Color.white);
+
+            // Inputs - positioned relative to panel center
+            GameObject userObj = CreateInputField("Username", 80, panel.transform);
+            GameObject passObj = CreateInputField("Password", 20, panel.transform);
             
             // Button
             GameObject btnObj = new GameObject("LoginButton");
@@ -79,18 +87,17 @@ namespace iDate.Editor
             btnImg.color = Color.green;
             Button btn = btnObj.AddComponent<Button>();
             RectTransform btnRT = btnObj.GetComponent<RectTransform>();
-            btnRT.anchoredPosition = new Vector2(0, -100);
-            btnRT.sizeDelta = new Vector2(160, 40);
+            btnRT.anchoredPosition = new Vector2(0, -60);
+            btnRT.sizeDelta = new Vector2(200, 50);
             
             // Login Logic
             LoginUI loginUI = canvasGO.AddComponent<LoginUI>();
             loginUI.UsernameInput = userObj.GetComponent<TMP_InputField>();
             loginUI.PasswordInput = passObj.GetComponent<TMP_InputField>();
-            loginUI.LoginButton = btn; // Standard Button
+            loginUI.LoginButton = btn;
             
-            // Text Labels
-            CreateText("LOGIN", 100, panel.transform, 48);
-            CreateText("Login", 0, btnObj.transform, 24, Color.black);
+            // Button Label
+            CreateText("LOGIN", 0, btnObj.transform, 24, Color.black);
 
             // Save
             string path = "Assets/Scenes/Login.unity";
@@ -568,10 +575,6 @@ namespace iDate.Editor
 
         private static GameObject CreateInputField(string name, float y, Transform parent)
         {
-            // Simplified TMP InputField creation (requires TMP Essentials, assuming mostly standard)
-            // Just making a placeholder hierarchy if TMP is missing, but script uses TMP.
-            // Using standard InputField fallback might be safer if TMP isn't set up, but user has TMP in folder structure.
-            
             GameObject root = new GameObject(name);
             root.transform.SetParent(parent, false);
             
@@ -582,7 +585,7 @@ namespace iDate.Editor
             input.targetGraphic = img;
             
             RectTransform rt = root.GetComponent<RectTransform>();
-            rt.sizeDelta = new Vector2(200, 30);
+            rt.sizeDelta = new Vector2(320, 45); // Larger for mobile touch
             rt.anchoredPosition = new Vector2(0, y);
             
             // Text Area
@@ -590,11 +593,36 @@ namespace iDate.Editor
             textObj.transform.SetParent(root.transform, false);
             TextMeshProUGUI text = textObj.AddComponent<TextMeshProUGUI>();
             text.color = Color.black;
-            text.fontSize = 14;
-            text.alignment = TextAlignmentOptions.Center;
+            text.fontSize = 18; // Larger font for readability
+            text.alignment = TextAlignmentOptions.Left;
+            text.margin = new Vector4(10, 0, 10, 0); // Padding
             
-            input.textViewport = root.GetComponent<RectTransform>();
+            RectTransform textRT = textObj.GetComponent<RectTransform>();
+            textRT.anchorMin = Vector2.zero;
+            textRT.anchorMax = Vector2.one;
+            textRT.offsetMin = new Vector2(10, 0);
+            textRT.offsetMax = new Vector2(-10, 0);
+            
+            input.textViewport = textRT;
             input.textComponent = text;
+            
+            // Placeholder
+            GameObject placeholderObj = new GameObject("Placeholder");
+            placeholderObj.transform.SetParent(root.transform, false);
+            TextMeshProUGUI placeholder = placeholderObj.AddComponent<TextMeshProUGUI>();
+            placeholder.text = name;
+            placeholder.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+            placeholder.fontSize = 18;
+            placeholder.alignment = TextAlignmentOptions.Left;
+            placeholder.margin = new Vector4(10, 0, 10, 0);
+            
+            RectTransform phRT = placeholderObj.GetComponent<RectTransform>();
+            phRT.anchorMin = Vector2.zero;
+            phRT.anchorMax = Vector2.one;
+            phRT.offsetMin = new Vector2(10, 0);
+            phRT.offsetMax = new Vector2(-10, 0);
+            
+            input.placeholder = placeholder;
             
             return root;
         }
