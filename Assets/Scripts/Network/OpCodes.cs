@@ -17,6 +17,7 @@ namespace iDate.Network
         LOBBY_INIT         = 0x05FA,
         CLUB_LIST          = 0x05E6,
         CLUB_CREATE_REQ    = 0x05F0,
+        CLUB_JOIN_REQ      = 0x05F2,
         ROOM_LIST          = 0x07E4,
         CASH_POINT         = 0x0C26,
         STAGE_INFO         = 0x0596,
@@ -28,6 +29,13 @@ namespace iDate.Network
         CHAR_EQUIP         = 0x0BE0,
         APPEARANCE_BROADCAST = 0x0C30,
         CHAR_INFO          = 0x0546,
+        CHAR_INFO_RESP     = 0x0547,
+
+        // Couples
+        COUPLE_REQ         = 0x0550,
+        COUPLE_RESP        = 0x0551,
+        COUPLE_INFO        = 0x0552,
+        COUPLE_BREAK       = 0x0553,
         ROOM_LIST_REQ      = 0x0870,
         ROOM_LEAVE_BROADCAST = 0x088e,
         LEVEL_UP           = 0x0FA6,
@@ -57,6 +65,13 @@ namespace iDate.Network
         GAME_BOOSTER       = 0x0988,
         BUY_ITEM           = 0x0BCC,
         PREMIUM_ITEM_EQUIP = 0x0C4E,
+        SONG_LIST_REQ      = 0x0C00,
+        SONG_LIST          = 0x0C01,
+        SHIPPING_LIST_REQ  = 0x0D00, // Matching server name slightly differently or just SHOP
+        SHOP_LIST_REQ      = 0x0D00,
+        SHOP_LIST          = 0x0D01,
+        BUY_ITEM_REQ       = 0x0D02,
+        BUY_ITEM_RESP      = 0x0D03,
         
         // Room Management (Extended)
         ROOM_JOIN          = 0x0848,
@@ -65,6 +80,33 @@ namespace iDate.Network
         ROOM_READY         = 0x08D4,
         ROOM_PLAYER_JOIN   = 0x085C,
         ROOM_PLAYER_LEAVE  = 0x0894,
-        ROOM_PLAYER_READY  = 0x08DE
+        ROOM_PLAYER_READY  = 0x08DE,
+
+        // Social System
+        FRIEND_ADD_REQ     = 0x0E00,
+        FRIEND_ADD_RESP    = 0x0E01,
+        FRIEND_REMOVE_REQ  = 0x0E02,
+        FRIEND_REMOVE_RESP = 0x0E03,
+        FRIEND_LIST_REQ    = 0x0E04,
+        FRIEND_LIST_RESP   = 0x0E05,
+        
+        // Custom
+        // Custom
+        TOP_RANKING_REQ    = 0x0E10,
+        TOP_RANKING_RESP   = 0x0E11,
+
+        // Mail Extended
+        MAIL_SEND_REQ      = 0x0E20,
+        MAIL_SEND_RESP     = 0x0E21,
+        MAIL_READ_REQ      = 0x0E22,
+        MAIL_READ_RESP     = 0x0E23,
+        MAIL_DELETE_REQ    = 0x0E24,
+        MAIL_DELETE_RESP   = 0x0E25,
+
+        // Messenger System
+        MSG_SEND_REQ       = 0x1500,
+        MSG_SEND_RESP      = 0x1501,
+        MSG_RECV           = 0x1502,
+        
     }
 }

@@ -1,169 +1,171 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Collections.Generic;
 
 namespace iDate.Network
 {
     public class Packet : IDisposable
     {
-        private MemoryStream _ms;
-        private BinaryWriter _bw;
-        private BinaryReader _br; // For reading
+        public ushort Length { get; private set; }
+        public ushort OpCode { get; set; } // Renamed to OpCode to match NetworkManager
+        public ushort ChecksumHigh { get; set; }
+        public ushort ChecksumLow { get; set; }
+        
+        private MemoryStream _payloadStream;
+        private BinaryWriter _writer;
+        private BinaryReader _reader;
 
-        public ushort OpCode { get; private set; }
-
-        // Writing mode
-        public Packet(ushort opCode)
-        {
-            OpCode = opCode;
-            _ms = new MemoryStream();
-            _bw = new BinaryWriter(_ms);
-            
-            // Placeholder for Header (8 bytes)
-            // 0-1: Size
-            // 2-3: OpCode
-            // 4-5: Res
-            // 6-7: Padding
-            _bw.Write((ushort)0); // Size (to be filled later)
-            _bw.Write(opCode);
-            _bw.Write((ushort)0); // Res
-            _bw.Write((ushort)0); // Padding
-        }
-
-        // Reading mode
-        public Packet(byte[] data)
-        {
-            _ms = new MemoryStream(data);
-            _br = new BinaryReader(_ms);
-            
-            ushort size = _br.ReadUInt16();
-            OpCode = _br.ReadUInt16();
-            ushort res = _br.ReadUInt16();
-            ushort padding = _br.ReadUInt16();
-        }
-
-        public void Write(byte value) => _bw.Write(value);
-        public void Write(short value) => _bw.Write(value);
-        public void Write(ushort value) => _bw.Write(value);
-        public void Write(int value) => _bw.Write(value);
-        public void Write(uint value) => _bw.Write(value);
-        public void Write(float value) => _bw.Write(value);
-        public void Write(long value) => _bw.Write(value);
-        public void Write(ulong value) => _bw.Write(value);
-        public void Write(byte[] value) => _bw.Write(value);
-
-        // Helper methods for common types
-        public void WriteInt32(int value) => _bw.Write(value);
-        public void WriteBool(bool value) => _bw.Write(value);
-
-        public void WriteString(string value)
-        {
-            if (string.IsNullOrEmpty(value))
+        public byte[] Payload 
+        { 
+            get => _payloadStream.ToArray();
+            set 
             {
-                _bw.Write((ushort)0);
-                return;
+                _payloadStream = new MemoryStream(value);
+                _reader = new BinaryReader(_payloadStream);
+                _writer = new BinaryWriter(_payloadStream);
             }
-            byte[] bytes = Encoding.Unicode.GetBytes(value);
-            // Protocol usually sends Length (in characters?) or Bytes?
-            // "readWString" in JS: converts buffer to string.
-            // "writeWString": writes fixed length usually. 
-            // BUT for login, we might need variable length?
-            // Let's assume standard [UShort Len] [Chars] if not fixed.
-            // Actually, based on User input: "this is what get sent to the server".
-            // It's likely just appended.
-            // To be safe, let's stick to the existing WriteString(val, max) for fixed fields,
-            // and add a WriteStringVariable(val) if needed.
-            
-            // Re-implementing existing fixed writer first to ensure it's correct
         }
 
-        public void WriteString(string value, int maxChars)
+        // Send Constructor
+        public Packet(ushort opcode)
         {
-            byte[] stringBytes = Encoding.Unicode.GetBytes(value);
-            int copyBytes = Math.Min(stringBytes.Length, maxChars * 2);
-            
-            byte[] buffer = new byte[maxChars * 2]; 
-            Array.Copy(stringBytes, buffer, copyBytes);
-            
-            _bw.Write(buffer);
-        }
-            
-        public void WriteStringForLogin(string value)
-        {
-            // Login packet specifically seems to just append the scrambled string?
-            // User says "this is what get sent to ...".
-            // If the Emulator uses `readWString`, it expects a fixed buffer.
-            // But if we are sending raw, we might just need to write bytes.
-            // Let's implement WriteBytes directly for scrambled strings if needed.
-            if (string.IsNullOrEmpty(value)) return;
-            
-            byte[] bytes = Encoding.ASCII.GetBytes(value); // Scrambled string is ASCII-compatible? 
-            // Wait, "testuser" -> "stteerus". 
-            // If input is ASCII, output is ASCII.
-            // Game uses Unicode (UTF-16LE) usually.
-            // "readWString" reads 2 bytes per char.
-            // Let's write Unicode.
-            byte[] unicodeBytes = Encoding.Unicode.GetBytes(value);
-            _bw.Write(unicodeBytes);
+            OpCode = opcode;
+            _payloadStream = new MemoryStream();
+            _writer = new BinaryWriter(_payloadStream);
         }
 
-        public byte ReadByte() => _br.ReadByte();
-        public short ReadShort() => _br.ReadInt16();
-        public ushort ReadUShort() => _br.ReadUInt16();
-        public int ReadInt() => _br.ReadInt32();
-        public uint ReadUInt() => _br.ReadUInt32();
-        public float ReadFloat() => _br.ReadSingle();
-        public long ReadLong() => _br.ReadInt64();
-        public ulong ReadULong() => _br.ReadUInt64();
-        public byte[] ReadBytes(int count) => _br.ReadBytes(count);
+        public Packet(OpCode opcode) : this((ushort)opcode) { }
 
-        public string ReadString(int maxChars)
+        // Receive Constructor
+        public Packet(byte[] fullPacket)
         {
-             // Strings are fixed length buffers in this protocol
-            byte[] buffer = _br.ReadBytes(maxChars * 2);
-            // Find null terminator (0x00 0x00)
-            int nullIndex = -1;
-            for (int i = 0; i < buffer.Length; i += 2)
+            using (var ms = new MemoryStream(fullPacket))
+            using (var br = new BinaryReader(ms))
             {
-                if (buffer[i] == 0 && buffer[i+1] == 0)
+                Length = br.ReadUInt16();
+                OpCode = br.ReadUInt16();
+                ChecksumHigh = br.ReadUInt16();
+                ChecksumLow = br.ReadUInt16();
+                
+                int payloadLen = Length - 8;
+                if (payloadLen > 0)
                 {
-                    nullIndex = i;
-                    break;
+                    byte[] payloadBytes = br.ReadBytes(payloadLen);
+                    Payload = payloadBytes;
+                }
+                else
+                {
+                    Payload = new byte[0];
                 }
             }
-            
-            int len = nullIndex != -1 ? nullIndex : buffer.Length;
-            return Encoding.Unicode.GetString(buffer, 0, len);
         }
 
         public byte[] GetBytes()
         {
-            // If writing mode
-            if (_bw != null)
+            // Flush payload
+            byte[] payloadData = _payloadStream.ToArray();
+            ushort totalLen = (ushort)(8 + payloadData.Length);
+            
+            using (var ms = new MemoryStream())
+            using (var bw = new BinaryWriter(ms))
             {
-                long currentPos = _ms.Position;
-                ushort size = (ushort)currentPos;
-                
-                _ms.Position = 0;
-                _bw.Write(size);
-                _ms.Position = currentPos;
-                
-                return _ms.ToArray();
+                bw.Write(totalLen);
+                bw.Write(OpCode);
+                bw.Write(ChecksumHigh);
+                bw.Write(ChecksumLow);
+                bw.Write(payloadData);
+                return ms.ToArray();
             }
-            // If reading mode
-            else if (_ms != null)
+        }
+
+        public BinaryWriter Writer => _writer;
+        public BinaryReader Reader => _reader;
+
+        // Helpers to match usage in Managers
+        public void WriteUInt(uint value) => _writer.Write(value);
+        public uint ReadUInt() => _reader.ReadUInt32();
+        
+        public void WriteInt32(int value) => _writer.Write(value);
+        public int ReadInt32() => _reader.ReadInt32();
+
+        public void WriteUShort(ushort value) => _writer.Write(value);
+        public ushort ReadUShort() => _reader.ReadUInt16();
+
+        public void WriteBool(bool value) => _writer.Write(value);
+        public bool ReadBool() => _reader.ReadBoolean();
+
+        public void WriteByte(byte value) => _writer.Write(value);
+        public byte ReadByte() => _reader.ReadByte();
+
+        public void WriteLong(long value) => _writer.Write(value);
+        public long ReadLong() => _reader.ReadInt64();
+
+        public void WriteBytes(byte[] value) => _writer.Write(value);
+        public byte[] ReadBytes(int count) => _reader.ReadBytes(count);
+
+        public void WriteString(string value)
+        {
+            byte[] bytes = Encoding.Unicode.GetBytes(value);
+            // Write length prefixed? Or just bytes?
+            // Based on usage: p.WriteString(name)
+            // Existing WriteStringForLogin writes raw bytes without prefix.
+            // C# BinaryWriter.Write(string) writes length-prefixed (7-bit encoded int).
+            // Let's assume standard BinaryWriter for these helpers unless specified.
+            // BUT our protocol seems to use fixed size strings often.
+            // However, typical custom Packet helpers do:
+            // WriteInt(len); WriteBytes(data); OR just Write(string) with 7-bit length.
+            // Given the code in managers uses WriteString(), it likely expects C# behavior:
+            _writer.Write(value); 
+        }
+
+        public string ReadString() => _reader.ReadString();
+
+        public string ReadString(int length)
+        {
+            byte[] bytes = _reader.ReadBytes(length * 2); // Unicode assumes 2 bytes/char ? 
+            // OR if input is `ReadString(32)` meaning 32 CHARS or 32 BYTES?
+            // "16 WChars" comment in LobbyLogic suggests 32 BYTES.
+            // Let's assume length is number of BYTES based on "ReadString(32); // 16 WChars"
+           return Encoding.Unicode.GetString(bytes).TrimEnd('\0');
+        }
+
+        public void Write(byte[] buffer) => _writer.Write(buffer);
+        public void Write(int value) => _writer.Write(value);
+        public void Write(uint value) => _writer.Write(value);
+        public void Write(ushort value) => _writer.Write(value);
+        public void Write(byte value) => _writer.Write(value);
+        public void Write(bool value) => _writer.Write(value);
+        public void Write(long value) => _writer.Write(value);
+        public void Write(string value) => _writer.Write(value);
+
+        public void WriteStringForLogin(string s)
+        {
+            byte[] bytes = Encoding.ASCII.GetBytes(s);
+            _writer.Write(bytes);
+        }
+
+        public void WriteString(string s, int maxLength)
+        {
+            // Write string with specific length (padding or truncation)
+            byte[] bytes = Encoding.Unicode.GetBytes(s);
+            int currentLen = bytes.Length;
+            int targetLen = maxLength * 2; // Unicode = 2 bytes per char
+            
+            _writer.Write(bytes);
+            
+            // Pad
+            if (currentLen < targetLen)
             {
-                return _ms.ToArray();
+                _writer.Write(new byte[targetLen - currentLen]);
             }
-            return null;
         }
 
         public void Dispose()
         {
-            _bw?.Dispose();
-            _br?.Dispose();
-            _ms?.Dispose();
+            _writer?.Dispose();
+            _reader?.Dispose();
+            _payloadStream?.Dispose();
         }
     }
 }

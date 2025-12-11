@@ -15,8 +15,10 @@ namespace iDate.Gameplay
         public string Password;
         public int MaxPlayers = 8;
         public int GameMode; // 0 = Normal, 1 = Battle, 2 = Team
+        public int KeyMode; // 0 = 4k, 1 = 8k
         public int Difficulty = 5;
         public string SongId;
+        public uint StageId = 1;
         public bool IsPrivate;
     }
 
@@ -70,6 +72,8 @@ namespace iDate.Gameplay
         public event Action<RoomPlayer> OnPlayerReadyChanged;
         public event Action OnGameStarting;
         public event Action<RoomState> OnStateChanged;
+        public event Action<string, List<int[]>> OnPlayerAppearanceUpdated;
+        public event Action<RoomSettings> OnRoomSettingsChanged;
 
         private void Awake()
         {
@@ -256,6 +260,18 @@ namespace iDate.Gameplay
                 case OpCode.GAME_START:
                     HandleGameStart(packet);
                     break;
+                case OpCode.ROOM_SET_MODE_RESP:
+                    HandleSetMode(packet);
+                    break;
+                case OpCode.ROOM_SET_DIFFICULTY_RESP:
+                    HandleSetDifficulty(packet);
+                    break;
+                case OpCode.SET_STAGE:
+                    HandleSetStage(packet);
+                    break;
+                case OpCode.SET_MUSIC:
+                    HandleSetMusic(packet);
+                    break;
             }
         }
 
@@ -336,6 +352,47 @@ namespace iDate.Gameplay
 
             // Load game scene
             LoadGameScene();
+            // Load game scene
+            LoadGameScene();
+        }
+
+        private void HandleSetMode(Packet packet)
+        {
+            if (CurrentRoom == null) return;
+            // Mode (1), KeyMode (1)
+            byte mode = packet.ReadByte();
+            byte key = packet.ReadByte();
+            CurrentRoom.GameMode = mode;
+            CurrentRoom.KeyMode = key;
+            Debug.Log($"Room Mode Updated: {mode}, Key: {key}");
+            OnRoomSettingsChanged?.Invoke(CurrentRoom);
+        }
+
+        private void HandleSetDifficulty(Packet packet)
+        {
+            if (CurrentRoom == null) return;
+            byte diff = packet.ReadByte();
+            CurrentRoom.Difficulty = diff;
+            Debug.Log($"Room Difficulty Updated: {diff}");
+            OnRoomSettingsChanged?.Invoke(CurrentRoom);
+        }
+
+        private void HandleSetStage(Packet packet)
+        {
+            if (CurrentRoom == null) return;
+            uint stage = packet.ReadUInt();
+            CurrentRoom.StageId = stage;
+            Debug.Log($"Room Stage Updated: {stage}");
+            OnRoomSettingsChanged?.Invoke(CurrentRoom);
+        }
+
+        private void HandleSetMusic(Packet packet)
+        {
+            if (CurrentRoom == null) return;
+            uint music = packet.ReadUInt();
+            CurrentRoom.SongId = music.ToString(); // Server sends ID, convert to string or lookup? Setting as string for now.
+            Debug.Log($"Room Music Updated: {music}");
+            OnRoomSettingsChanged?.Invoke(CurrentRoom);
         }
 
         // Packet Senders
@@ -406,6 +463,51 @@ namespace iDate.Gameplay
             }
         }
 
+        public void SetGameMode(int mode, int keyMode)
+        {
+            if (NetworkManager.Instance == null) return;
+            using (Packet p = new Packet((ushort)OpCode.ROOM_SET_MODE_REQ)) // 0x08A2
+            {
+                p.Write((byte)mode);
+                p.Write((byte)keyMode);
+                NetworkManager.Instance.Send(p);
+            }
+        }
+
+        public void SetDifficulty(int diff)
+        {
+             if (NetworkManager.Instance == null) return;
+            // Using 0x08A5 as generic Set Difficulty if bidirectional
+            // Or maybe Client->Server uses ROOM_SET_DIFFICULTY_RESP code or a REQ?
+            // Assuming generic packet structure or finding the REQ.
+            // PacketDefinitions had ROOM_SET_DIFFICULTY_RESP: 0x08A5.
+            using (Packet p = new Packet((ushort)OpCode.ROOM_SET_DIFFICULTY_RESP)) 
+            {
+                p.Write((byte)diff);
+                NetworkManager.Instance.Send(p);
+            }
+        }
+        
+        public void SetStage(int stageId)
+        {
+             if (NetworkManager.Instance == null) return;
+            using (Packet p = new Packet((ushort)OpCode.SET_STAGE))
+            {
+                p.Write((uint)stageId);
+                NetworkManager.Instance.Send(p);
+            }
+        }
+
+        public void SetMusic(int musicId)
+        {
+             if (NetworkManager.Instance == null) return;
+            using (Packet p = new Packet((ushort)OpCode.SET_MUSIC))
+            {
+                p.Write((uint)musicId);
+                NetworkManager.Instance.Send(p);
+            }
+        }
+
         /// <summary>
         /// Load the game scene
         /// </summary>
@@ -437,6 +539,17 @@ namespace iDate.Gameplay
         public bool IsHost()
         {
             return LocalPlayer != null && LocalPlayer.IsHost;
+        }
+
+        public void UpdatePlayerAppearance(string playerId, List<int[]> items)
+        {
+            // If playerId is int (from server), we might need to convert or map it.
+            // Server usage: p.writeUInt32LE(session.userId || 0, 8);
+            // RoomManager uses "PLAYER_" + Count or "LOCAL".
+            // We need a mapping or consistent ID.
+            // For now, let's just Log and Invoko.
+            Debug.Log($"[RoomManager] Updating Appearance for {playerId}: {items.Count} items.");
+            OnPlayerAppearanceUpdated?.Invoke(playerId, items);
         }
 
         private void OnDestroy()

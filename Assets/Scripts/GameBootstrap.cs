@@ -14,7 +14,7 @@ public class GameBootstrap : MonoBehaviour
         go.AddComponent<UIManager>();
         
         // Ensure EventSystem exists
-        if (Object.FindObjectOfType<UnityEngine.EventSystems.EventSystem>() == null)
+        if (Object.FindFirstObjectByType<UnityEngine.EventSystems.EventSystem>() == null)
         {
             GameObject es = new GameObject("EventSystem");
             es.AddComponent<UnityEngine.EventSystems.EventSystem>();
