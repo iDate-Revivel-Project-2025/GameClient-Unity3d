@@ -20,10 +20,10 @@ namespace iDate.Editor
         {
             SetupDirectories();
             SetupLoginScene();
-            SetupGameScene();
+            // SetupGameScene(); // DISABLED: Causes UI overlay issues - setup manually if needed
             SetupBuildSettings();
             
-            EditorUtility.DisplayDialog("iDate Setup", "Project Structure Generated Successfully!", "Let's Go!");
+            EditorUtility.DisplayDialog("iDate Setup", "Login Scene Generated Successfully!\nGame scene setup disabled to prevent UI conflicts.", "OK");
         }
 
         private static void SetupDirectories()
@@ -37,71 +37,71 @@ namespace iDate.Editor
         {
             EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             
-            // 1. Network Manager
-            GameObject netGO = new GameObject("NetworkManager");
-            NetworkManager nm = netGO.AddComponent<NetworkManager>();
-            if (nm.GetComponent<SongManager>() == null) nm.gameObject.AddComponent<SongManager>();
-            if (nm.GetComponent<ShopManager>() == null) nm.gameObject.AddComponent<ShopManager>();
-            if (nm.GetComponent<iDate.Managers.SocialManager>() == null) nm.gameObject.AddComponent<iDate.Managers.SocialManager>();
-            if (nm.GetComponent<CoupleManager>() == null) nm.gameObject.AddComponent<CoupleManager>();
-            if (nm.GetComponent<iDate.Managers.MessengerManager>() == null) nm.gameObject.AddComponent<iDate.Managers.MessengerManager>();
-            if (nm.GetComponent<RoomManager>() == null) nm.gameObject.AddComponent<RoomManager>();
-            if (nm.GetComponent<MailManager>() == null) nm.gameObject.AddComponent<MailManager>();
-            // Club System
+            // Create new scene
+            Scene scene = EditorSceneManager.NewScene(NewSceneSetup.DefaultGameObjects, NewSceneMode.Single);
+            
+            // 1. NetworkManager Setup
+            GameObject nmGO = new GameObject("NetworkManager");
+            NetworkManager nm = nmGO.AddComponent<NetworkManager>();
+            Object.DontDestroyOnLoad(nmGO);
+            
+            // Add all required managers
+            if (nm.GetComponent<iDate.Gameplay.RoomManager>() == null) nm.gameObject.AddComponent<iDate.Gameplay.RoomManager>();
             if (nm.GetComponent<iDate.Managers.ClubManager>() == null) nm.gameObject.AddComponent<iDate.Managers.ClubManager>();
-
-            // 2. UI Canvas
-            GameObject canvasGO = new GameObject("Canvas");
+            
+            // 2. UI Canvas - Responsive and properly scaled
+            GameObject canvasGO = new GameObject("LoginCanvas");
             Canvas canvas = canvasGO.AddComponent<Canvas>();
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            canvas.sortingOrder = 100; // Ensure it's on top
+            
             CanvasScaler scaler = canvasGO.AddComponent<CanvasScaler>();
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-            scaler.referenceResolution = new Vector2(1280, 720); // Mobile-friendly resolution
+            scaler.referenceResolution = new Vector2(1024, 768);
             scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
-            scaler.matchWidthOrHeight = 0.5f; // Balance between width and height
+            scaler.matchWidthOrHeight = 0.5f;
+            
             canvasGO.AddComponent<GraphicRaycaster>();
-
-            // 3. Login Panel - Centered with reasonable size
-            GameObject panel = new GameObject("LoginPanel");
-            panel.transform.SetParent(canvasGO.transform, false);
-            Image bg = panel.AddComponent<Image>();
-            bg.color = new Color(0.1f, 0.1f, 0.2f, 0.95f);
-            RectTransform rt = panel.GetComponent<RectTransform>();
-            rt.anchorMin = new Vector2(0.5f, 0.5f);
-            rt.anchorMax = new Vector2(0.5f, 0.5f);
-            rt.pivot = new Vector2(0.5f, 0.5f);
-            rt.sizeDelta = new Vector2(400, 500); // Fixed size panel
-            rt.anchoredPosition = Vector2.zero;
-
-            // Title
-            CreateText("iDate Revival", 180, panel.transform, 36, Color.white);
-
-            // Inputs - positioned relative to panel center
-            GameObject userObj = CreateInputField("Username", 80, panel.transform);
-            GameObject passObj = CreateInputField("Password", 20, panel.transform);
             
-            // Button
-            GameObject btnObj = new GameObject("LoginButton");
-            btnObj.transform.SetParent(panel.transform, false);
-            Image btnImg = btnObj.AddComponent<Image>();
-            btnImg.color = Color.green;
-            Button btn = btnObj.AddComponent<Button>();
-            RectTransform btnRT = btnObj.GetComponent<RectTransform>();
-            btnRT.anchoredPosition = new Vector2(0, -60);
-            btnRT.sizeDelta = new Vector2(200, 50);
+            // 3. Create transparent input fields matching original positions
+            // Username field - positioned at original XML coordinates (195, 470)
+            GameObject userObj = CreateTransparentInputField("UsernameField", 195, 470, 200, 30, canvasGO.transform);
+            TMP_InputField userInput = userObj.GetComponent<TMP_InputField>();
             
-            // Login Logic
+            // Password field - positioned at original XML coordinates (195, 505)
+            GameObject passObj = CreateTransparentInputField("PasswordField", 195, 505, 200, 30, canvasGO.transform);
+            TMP_InputField passInput = passObj.GetComponent<TMP_InputField>();
+            passInput.contentType = TMP_InputField.ContentType.Password;
+            
+            // 4. Create transparent button overlay for LOGIN button (417, 461, 107x67)
+            GameObject loginBtnObj = CreateTransparentButton("LoginButton", 417, 461, 107, 67, canvasGO.transform);
+            Button loginBtn = loginBtnObj.GetComponent<Button>();
+            
+            // 5. Add LoginUI component to manage the UI
             LoginUI loginUI = canvasGO.AddComponent<LoginUI>();
-            loginUI.UsernameInput = userObj.GetComponent<TMP_InputField>();
-            loginUI.PasswordInput = passObj.GetComponent<TMP_InputField>();
-            loginUI.LoginButton = btn;
+            loginUI.UsernameInput = userInput;
+            loginUI.PasswordInput = passInput;
+            loginUI.LoginButton = loginBtn;
             
-            // Button Label
-            CreateText("LOGIN", 0, btnObj.transform, 24, Color.black);
-
-            // Save
+            // 6. Add status text (optional, for debugging)
+            GameObject statusObj = new GameObject("StatusText");
+            statusObj.transform.SetParent(canvasGO.transform, false);
+            TextMeshProUGUI statusText = statusObj.AddComponent<TextMeshProUGUI>();
+            statusText.fontSize = 14;
+            statusText.color = Color.yellow;
+            statusText.alignment = TextAlignmentOptions.Center;
+            RectTransform statusRT = statusObj.GetComponent<RectTransform>();
+            statusRT.anchorMin = new Vector2(0.5f, 0);
+            statusRT.anchorMax = new Vector2(0.5f, 0);
+            statusRT.pivot = new Vector2(0.5f, 0);
+            statusRT.anchoredPosition = new Vector2(0, 20);
+            statusRT.sizeDelta = new Vector2(400, 30);
+            loginUI.StatusText = statusText;
+            
+            // Save scene
             string path = "Assets/Scenes/Login.unity";
-            EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene(), path);
+            EditorSceneManager.SaveScene(scene, path);
+            Debug.Log($"[ProjectSetup] Login scene created at {path}");
         }
 
         private static void SetupGameScene()
@@ -585,7 +585,7 @@ namespace iDate.Editor
             input.targetGraphic = img;
             
             RectTransform rt = root.GetComponent<RectTransform>();
-            rt.sizeDelta = new Vector2(320, 45); // Larger for mobile touch
+            rt.sizeDelta = new Vector2(180, 28); // Minimal for tiny window
             rt.anchoredPosition = new Vector2(0, y);
             
             // Text Area
@@ -593,15 +593,15 @@ namespace iDate.Editor
             textObj.transform.SetParent(root.transform, false);
             TextMeshProUGUI text = textObj.AddComponent<TextMeshProUGUI>();
             text.color = Color.black;
-            text.fontSize = 18; // Larger font for readability
+            text.fontSize = 11;
             text.alignment = TextAlignmentOptions.Left;
-            text.margin = new Vector4(10, 0, 10, 0); // Padding
+            text.margin = new Vector4(5, 0, 5, 0);
             
             RectTransform textRT = textObj.GetComponent<RectTransform>();
             textRT.anchorMin = Vector2.zero;
             textRT.anchorMax = Vector2.one;
-            textRT.offsetMin = new Vector2(10, 0);
-            textRT.offsetMax = new Vector2(-10, 0);
+            textRT.offsetMin = new Vector2(5, 0);
+            textRT.offsetMax = new Vector2(-5, 0);
             
             input.textViewport = textRT;
             input.textComponent = text;
@@ -612,19 +612,170 @@ namespace iDate.Editor
             TextMeshProUGUI placeholder = placeholderObj.AddComponent<TextMeshProUGUI>();
             placeholder.text = name;
             placeholder.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
-            placeholder.fontSize = 18;
+            placeholder.fontSize = 11;
             placeholder.alignment = TextAlignmentOptions.Left;
-            placeholder.margin = new Vector4(10, 0, 10, 0);
+            placeholder.margin = new Vector4(5, 0, 5, 0);
             
             RectTransform phRT = placeholderObj.GetComponent<RectTransform>();
             phRT.anchorMin = Vector2.zero;
             phRT.anchorMax = Vector2.one;
-            phRT.offsetMin = new Vector2(10, 0);
-            phRT.offsetMax = new Vector2(-10, 0);
+            phRT.offsetMin = new Vector2(5, 0);
+            phRT.offsetMax = new Vector2(-5, 0);
             
             input.placeholder = placeholder;
             
             return root;
+        }
+        
+        // XML-to-Unity UI Coordinate Conversion Helpers
+        // Original game uses top-left origin (0,0), Unity uses anchored positioning
+        private static GameObject CreateInputFieldAtPosition(string name, float xmlX, float xmlY, float width, float height, Transform parent)
+        {
+            GameObject root = new GameObject(name);
+            root.transform.SetParent(parent, false);
+            
+            Image img = root.AddComponent<Image>();
+            img.color = new Color(1f, 1f, 1f, 0.9f); // More opaque white
+            img.raycastTarget = true; // Ensure it can receive clicks
+            
+            TMP_InputField input = root.AddComponent<TMP_InputField>();
+            input.targetGraphic = img;
+            
+            // Convert from XML top-left coordinates to Unity
+            RectTransform rt = root.GetComponent<RectTransform>();
+            rt.anchorMin = new Vector2(0, 1); // Top-left anchor
+            rt.anchorMax = new Vector2(0, 1);
+            rt.pivot = new Vector2(0, 1);
+            rt.anchoredPosition = new Vector2(xmlX, -xmlY); // Y inverted
+            // Make input fields taller for better clickability
+            rt.sizeDelta = new Vector2(width, Mathf.Max(height, 25)); // Minimum 25px height
+            
+            // Text Area
+            GameObject textObj = new GameObject("Text");
+            textObj.transform.SetParent(root.transform, false);
+            TextMeshProUGUI text = textObj.AddComponent<TextMeshProUGUI>();
+            text.color = Color.black;
+            text.fontSize = 14;
+            text.alignment = TextAlignmentOptions.Left;
+            text.margin = new Vector4(8, 0, 8, 0);
+            
+            RectTransform textRT = textObj.GetComponent<RectTransform>();
+            textRT.anchorMin = Vector2.zero;
+            textRT.anchorMax = Vector2.one;
+            textRT.offsetMin = new Vector2(8, 0);
+            textRT.offsetMax = new Vector2(-8, 0);
+            
+            input.textViewport = textRT;
+            input.textComponent = text;
+            
+            // Placeholder
+            GameObject placeholderObj = new GameObject("Placeholder");
+            placeholderObj.transform.SetParent(root.transform, false);
+            TextMeshProUGUI placeholder = placeholderObj.AddComponent<TextMeshProUGUI>();
+            placeholder.text = name;
+            placeholder.color = new Color(0.3f, 0.3f, 0.3f, 0.6f);
+            placeholder.fontSize = 14;
+            placeholder.alignment = TextAlignmentOptions.Left;
+            placeholder.margin = new Vector4(8, 0, 8, 0);
+            
+            RectTransform phRT = placeholderObj.GetComponent<RectTransform>();
+            phRT.anchorMin = Vector2.zero;
+            phRT.anchorMax = Vector2.one;
+            phRT.offsetMin = new Vector2(8, 0);
+            phRT.offsetMax = new Vector2(-8, 0);
+            
+            input.placeholder = placeholder;
+            
+            return root;
+        }
+        
+        private static GameObject CreateButtonAtPosition(string name, float xmlX, float xmlY, float width, float height, Transform parent)
+        {
+            GameObject btnObj = new GameObject(name);
+            btnObj.transform.SetParent(parent, false);
+            
+            Image btnImg = btnObj.AddComponent<Image>();
+            btnImg.color = new Color(0.2f, 0.8f, 0.2f, 1f);
+            
+            Button btn = btnObj.AddComponent<Button>();
+            
+            // Convert from XML top-left coordinates to Unity
+            RectTransform btnRT = btnObj.GetComponent<RectTransform>();
+            btnRT.anchorMin = new Vector2(0, 1); // Top-left anchor
+            btnRT.anchorMax = new Vector2(0, 1);
+            btnRT.pivot = new Vector2(0, 1);
+            btnRT.anchoredPosition = new Vector2(xmlX, -xmlY); // Y inverted
+            btnRT.sizeDelta = new Vector2(width, height);
+            
+            return btnObj;
+        }
+        
+        // Transparent UI overlay helpers - these create invisible UI elements
+        // that overlay on top of the background image's painted UI
+        private static GameObject CreateTransparentInputField(string name, float xmlX, float xmlY, float width, float height, Transform parent)
+        {
+            GameObject root = new GameObject(name);
+            root.transform.SetParent(parent, false);
+            
+            Image img = root.AddComponent<Image>();
+            img.color = new Color(1f, 1f, 1f, 0.1f); // Almost transparent - just visible enough to see where it is
+            img.raycastTarget = true;
+            
+            TMP_InputField input = root.AddComponent<TMP_InputField>();
+            input.targetGraphic = img;
+            
+            // Convert from XML top-left coordinates to Unity
+            RectTransform rt = root.GetComponent<RectTransform>();
+            rt.anchorMin = new Vector2(0, 1); // Top-left anchor
+            rt.anchorMax = new Vector2(0, 1);
+            rt.pivot = new Vector2(0, 1);
+            rt.anchoredPosition = new Vector2(xmlX, -xmlY); // Y inverted
+            rt.sizeDelta = new Vector2(width, height);
+            
+            // Text Area
+            GameObject textObj = new GameObject("Text");
+            textObj.transform.SetParent(root.transform, false);
+            TextMeshProUGUI text = textObj.AddComponent<TextMeshProUGUI>();
+            text.color = Color.white; // White text for visibility
+            text.fontSize = 14;
+            text.alignment = TextAlignmentOptions.Left;
+            text.margin = new Vector4(5, 0, 5, 0);
+            
+            RectTransform textRT = textObj.GetComponent<RectTransform>();
+            textRT.anchorMin = Vector2.zero;
+            textRT.anchorMax = Vector2.one;
+            textRT.offsetMin = new Vector2(5, 0);
+            textRT.offsetMax = new Vector2(-5, 0);
+            
+            input.textViewport = textRT;
+            input.textComponent = text;
+            
+            // No placeholder - background image shows the labels
+            
+            return root;
+        }
+        
+        private static GameObject CreateTransparentButton(string name, float xmlX, float xmlY, float width, float height, Transform parent)
+        {
+            GameObject btnObj = new GameObject(name);
+            btnObj.transform.SetParent(parent, false);
+            
+            Image btnImg = btnObj.AddComponent<Image>();
+            btnImg.color = new Color(1f, 1f, 1f, 0.01f); // Almost completely transparent
+            btnImg.raycastTarget = true; // But still clickable
+            
+            Button btn = btnObj.AddComponent<Button>();
+            btn.targetGraphic = btnImg;
+            
+            // Convert from XML top-left coordinates to Unity
+            RectTransform btnRT = btnObj.GetComponent<RectTransform>();
+            btnRT.anchorMin = new Vector2(0, 1); // Top-left anchor
+            btnRT.anchorMax = new Vector2(0, 1);
+            btnRT.pivot = new Vector2(0, 1);
+            btnRT.anchoredPosition = new Vector2(xmlX, -xmlY); // Y inverted
+            btnRT.sizeDelta = new Vector2(width, height);
+            
+            return btnObj;
         }
         
         private static void CreateText(string content, float y, Transform parent, float size, Color? c = null)

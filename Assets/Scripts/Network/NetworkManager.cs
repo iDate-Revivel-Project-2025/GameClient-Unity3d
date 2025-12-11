@@ -460,13 +460,13 @@ namespace iDate.Network
 
         public void SendLogin(string username = "testuser", string password = "pass1234")
         {
-            // According to the encryption spec:
-            // - If ENCRYPT_INIT is NOT sent, login uses swap algorithm only
-            // - Username and password are encoded as UTF-16LE and encrypted with swap
-            // - Standard lengths: username 28 bytes (14 chars), password 20 bytes (10 chars)
+            // Server expects:
+            // - Username: 32 bytes (16 UTF-16LE characters)
+            // - Password: 32 bytes (16 UTF-16LE characters)
+            // - Both encrypted with swap algorithm
             
-            const int USERNAME_LEN = 28; // 14 UTF-16LE characters
-            const int PASSWORD_LEN = 20; // 10 UTF-16LE characters
+            const int USERNAME_LEN = 32; // 16 UTF-16LE characters
+            const int PASSWORD_LEN = 32; // 16 UTF-16LE characters
             
             byte[] encryptedUser = CryptoUtils.EncodeString(username, USERNAME_LEN);
             byte[] encryptedPass = CryptoUtils.EncodeString(password, PASSWORD_LEN);

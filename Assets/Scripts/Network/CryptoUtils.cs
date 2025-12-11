@@ -6,13 +6,15 @@ namespace iDate.Network
     /// <summary>
     /// Crypto utilities for iDate packet encryption/decryption
     /// 
-    /// The encryption uses two layers:
-    /// 1. Blowfish cipher (using custom P-array and S-boxes)
-    /// 2. Swap algorithm: Within groups of 4 UTF-16LE characters (8 bytes), swap character pairs:
-    ///    - Character 0 <-> Character 2 (bytes 0-1 <-> bytes 4-5)
-    ///    - Character 1 <-> Character 3 (bytes 2-3 <-> bytes 6-7)
+    /// The encryption uses a swap algorithm:
+    /// - In groups of 8 bytes, swap adjacent 32-bit blocks (4 bytes each)
+    /// - Block A (bytes 0-3) <-> Block B (bytes 4-7)
     /// 
-    /// Example: "test" (t(0) e(1) s(2) t(3)) -> "stte" (s(2) t(3) t(0) e(1))
+    /// Example: "hades" in UTF-16LE
+    /// - Before: [h a] [d e] [s \0] [\0 \0]  (4 bytes each)
+    /// - After:  [d e] [h a] [\0 \0] [s \0]
+    /// - Result: "deha" (which server decrypts back to "hades")
+    /// 
     /// The swap algorithm is symmetric, so encrypt and decrypt use the same function.
     /// </summary>
     public static class CryptoUtils
@@ -29,28 +31,27 @@ namespace iDate.Network
             byte[] result = new byte[length];
             Array.Copy(buf, start, result, 0, length);
             
-            // Swap algorithm: In groups of 4 UTF-16LE characters (8 bytes), swap character pairs:
-            // Character 0 <-> Character 2, Character 1 <-> Character 3
-            // Each UTF-16LE character is 2 bytes
+            // Character-swap algorithm (matches server's decryptBody)
+            // In groups of 4 UTF-16LE characters (8 bytes), swap char 0<->2, char 1<->3
             for (int i = 0; i < length; i += 8)
             {
                 if (i + 7 < length)
                 {
                     // Save original character pairs (each char is 2 bytes)
-                    byte temp0 = result[i];     // Char 0, byte 0
-                    byte temp1 = result[i + 1]; // Char 0, byte 1
-                    byte temp2 = result[i + 2]; // Char 1, byte 0
-                    byte temp3 = result[i + 3]; // Char 1, byte 1
+                    byte temp0 = result[i];         // Char 0, byte 0
+                    byte temp1 = result[i + 1];     // Char 0, byte 1
+                    byte temp2 = result[i + 2];     // Char 1, byte 0
+                    byte temp3 = result[i + 3];     // Char 1, byte 1
                     
                     // Swap: char 0 <-> char 2, char 1 <-> char 3
-                    result[i] = result[i + 4];     // Char 0 <- Char 2, byte 0
-                    result[i + 1] = result[i + 5]; // Char 0 <- Char 2, byte 1
-                    result[i + 2] = result[i + 6]; // Char 1 <- Char 3, byte 0
-                    result[i + 3] = result[i + 7]; // Char 1 <- Char 3, byte 1
-                    result[i + 4] = temp0;         // Char 2 <- Char 0, byte 0
-                    result[i + 5] = temp1;         // Char 2 <- Char 0, byte 1
-                    result[i + 6] = temp2;         // Char 3 <- Char 1, byte 0
-                    result[i + 7] = temp3;         // Char 3 <- Char 1, byte 1
+                    result[i] = result[i + 4];      // Char 0 <- Char 2, byte 0
+                    result[i + 1] = result[i + 5];  // Char 0 <- Char 2, byte 1
+                    result[i + 2] = result[i + 6];  // Char 1 <- Char 3, byte 0
+                    result[i + 3] = result[i + 7];  // Char 1 <- Char 3, byte 1
+                    result[i + 4] = temp0;          // Char 2 <- Char 0, byte 0
+                    result[i + 5] = temp1;          // Char 2 <- Char 0, byte 1
+                    result[i + 6] = temp2;          // Char 3 <- Char 1, byte 0
+                    result[i + 7] = temp3;          // Char 3 <- Char 1, byte 1
                 }
             }
             

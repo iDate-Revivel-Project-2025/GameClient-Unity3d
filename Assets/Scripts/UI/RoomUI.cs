@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using iDate.Gameplay;
+using iDate.Network;
 using System.Collections.Generic;
 
 namespace iDate.UI
@@ -46,9 +47,10 @@ namespace iDate.UI
                 }
             }
             
-            ReadyButton.onClick.AddListener(OnReadyClicked);
-            StartButton.onClick.AddListener(OnStartClicked);
-            LeaveButton.onClick.AddListener(OnLeaveClicked);
+            // Null safety checks
+            if (ReadyButton != null) ReadyButton.onClick.AddListener(OnReadyClicked);
+            if (StartButton != null) StartButton.onClick.AddListener(OnStartClicked);
+            if (LeaveButton != null) LeaveButton.onClick.AddListener(OnLeaveClicked);
             
             // Setup Options
             SetupDropdowns();
@@ -154,15 +156,34 @@ namespace iDate.UI
 
         private void UpdateButtons()
         {
-            if (RoomManager.Instance.LocalPlayer == null) return;
+            if (RoomManager.Instance == null || RoomManager.Instance.CurrentRoom == null)
+            {
+                // Not in a room, hide all buttons
+                if (ReadyButton != null) ReadyButton.gameObject.SetActive(false);
+                if (StartButton != null) StartButton.gameObject.SetActive(false);
+                if (LeaveButton != null) LeaveButton.gameObject.SetActive(false);
+                return;
+            }
+
+            var room = RoomManager.Instance.CurrentRoom;
+            // Check if local player is host by comparing with room's host player ID
+            bool isHost = (RoomManager.Instance.LocalPlayer != null && RoomManager.Instance.LocalPlayer.IsHost);
             
-            bool isHost = RoomManager.Instance.LocalPlayer.IsHost;
-            StartButton.gameObject.SetActive(isHost);
-            ReadyButton.gameObject.SetActive(!isHost); // Host doesn't ready up usually, or Host Ready = Start?
-            // Actually in iDate Host handles Start. Users handle Ready.
+            // Ready button for non-hosts
+            if (ReadyButton != null)
+            {
+                ReadyButton.gameObject.SetActive(!isHost);
+                if (ReadyButtonText != null && RoomManager.Instance.LocalPlayer != null)
+                    ReadyButtonText.text = RoomManager.Instance.LocalPlayer.IsReady ? "Unready" : "Ready";
+            }
             
-            // If Host, enable Start only if everyone else is ready? 
-            // We can leave that validation to Server or check locally.
+            // Start button for host only
+            if (StartButton != null)
+                StartButton.gameObject.SetActive(isHost);
+            
+            // Leave always visible
+            if (LeaveButton != null)
+                LeaveButton.gameObject.SetActive(true);
         }
 
         private void OnReadyClicked()

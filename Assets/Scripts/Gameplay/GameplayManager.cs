@@ -47,12 +47,12 @@ namespace iDate.Gameplay
 
         private void Update()
         {
-            // Input Handling (New Input System or Legacy)
-            // Using Legacy for simplicity in prototype
-            if (Input.GetKeyDown(KeyCode.UpArrow)) CheckHit(0);
-            if (Input.GetKeyDown(KeyCode.LeftArrow)) CheckHit(1);
-            if (Input.GetKeyDown(KeyCode.DownArrow)) CheckHit(2);
-            if (Input.GetKeyDown(KeyCode.RightArrow)) CheckHit(3);
+            // TODO: Implement New Input System
+            // Legacy Input disabled due to Input System package being active
+            // if (Input.GetKeyDown(KeyCode.UpArrow)) CheckHit(0);
+            // if (Input.GetKeyDown(KeyCode.LeftArrow)) CheckHit(1);
+            // if (Input.GetKeyDown(KeyCode.DownArrow)) CheckHit(2);
+            // if (Input.GetKeyDown(KeyCode.RightArrow)) CheckHit(3);
         }
 
         public void CheckHit(int lane)

@@ -46,7 +46,7 @@ namespace iDate.Gameplay
 
         public void StartMusic()
         {
-            if (MusicSource.clip == null) return;
+            if (MusicSource == null || MusicSource.clip == null) return;
             
             DspSongTime = (float)AudioSettings.dspTime;
             MusicSource.Play();
@@ -57,7 +57,7 @@ namespace iDate.Gameplay
 
         private void Update()
         {
-            if (MusicSource.isPlaying)
+            if (MusicSource != null && MusicSource.isPlaying)
             {
                 // Calculate position relative to DSP time for precision
                 SongPosition = (float)(AudioSettings.dspTime - DspSongTime - SongOffset);
